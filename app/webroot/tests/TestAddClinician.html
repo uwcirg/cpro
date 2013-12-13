@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="" />
+<title>selenium</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">selenium</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>users/login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>UserUsername</td>
+	<td>${researchstaffer_id_var}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>UserPassword</td>
+	<td>${researchstaffer_pw_var}</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//input[@value='Log in']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Admin</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=New Clinician</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>ClinicianFirstName</td>
+	<td>Abraham</td>
+</tr>
+<!-- Generate what is hopefully a unique last name -->
+<tr>
+        <td>store</td>
+        <td>javascript{'Lincoln' + (new Date()).getTime()}</td>
+        <td>lastnamevar</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>ClinicianLastName</td>
+	<td>${lastnamevar}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>ClinicianEmail</td>
+	<td>abe@example.com</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>ClinicianMailAddress</td>
+	<td>123 Anywhere Lane</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>ClinicianType</td>
+	<td>label=PA</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>ClinicianClinicId</td>
+	<td>label=${clinic}</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>ClinicianClinicalService</td>
+	<td>label=Surgery</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>ClinicianConsentStatus</td>
+	<td>label=declined</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//input[@value='Submit']</td>
+	<td></td>
+</tr>
+<!-- Should go to view for this clinician -->
+<tr>
+	<td>assertTextPresent</td>
+	<td>Information for Clinician #</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>Abraham</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>${lastnamevar}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>abe@example.com</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>123 Anywhere Lane</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>PA</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>${clinic}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>declined</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>Surgery</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>No notes</td>
+	<td></td>
+</tr>
+<!--- try adding a clinician with the same name and e-mail address -->
+<tr>
+	<td>clickAndWait</td>
+	<td>link=New Clinician</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>ClinicianFirstName</td>
+	<td>Abraham</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>ClinicianLastName</td>
+	<td>${lastnamevar}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>ClinicianEmail</td>
+	<td>abe@example.com</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//input[@value='Submit']</td>
+	<td></td>
+</tr>
+<tr>
+        <td>assertTextPresent</td>
+        <td>glob:Clinician * already exists with same first name, last name and e-mail</td>
+        <td></td>
+</tr>
+<tr>
+        <td>clickAndWait</td>
+        <td>link=Logout</td>
+        <td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

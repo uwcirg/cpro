@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="" />
+<title>Test Clinician Priorities</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">selenium</td></tr>
+</thead><tbody>
+<!-- Test that clinician priorities work on the view all page -->
+<tr>
+	<td>open</td>
+	<td>users/login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>UserUsername</td>
+	<td>${researchstaffer_id_var}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>UserPassword</td>
+	<td>${researchstaffer_pw_var}</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//input[@value='Log in']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Admin</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=View Clinicians</td>
+	<td></td>
+</tr>
+<!-- Currently clinician 1 is priority low -->
+<tr>
+	<td>assertAttribute</td>
+        <td>//td[@class='High'][1]@style</td>
+	<td>display: none;</td>
+</tr>
+<tr>
+	<td>assertAttribute</td>
+        <td>//td[@class='Med'][1]@style</td>
+	<td>display: none;</td>
+</tr>
+<!-- raise clinician 1's priority -->
+<tr>
+	<td>click</td>
+        <td>//td[@class='Low']/img[@id='1'][@alt='Raise']</td>
+	<td></td>
+</tr>
+<!-- strange goings-on may occur if you don't wait a bit for the application to check up -->
+<tr>
+	<td>pause</td>
+        <td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertAttribute</td>
+        <td>//td[@class='High'][1]@style</td>
+	<td>display: none;</td>
+</tr>
+<tr>
+	<td>assertAttribute</td>
+        <td>//td[@class='Low'][1]@style</td>
+	<td>display: none;</td>
+</tr>
+<!-- raise clinician 1's priority again -->
+<tr>
+	<td>click</td>
+        <td>//td[@class='Med']/img[@id='1'][@alt='Raise']</td>
+	<td></td>
+</tr>
+<!-- wait again -->
+<tr>
+	<td>pause</td>
+        <td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertAttribute</td>
+        <td>//td[@class='Med'][1]@style</td>
+	<td>display: none;</td>
+</tr>
+<tr>
+	<td>assertAttribute</td>
+        <td>//td[@class='Low'][1]@style</td>
+	<td>display: none;</td>
+</tr>
+<!-- Reload page to make sure things were changed in the database -->
+<tr>
+	<td>clickAndWait</td>
+	<td>link=View Clinicians</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertAttribute</td>
+        <td>//td[@class='Med'][1]@style</td>
+	<td>display: none;</td>
+</tr>
+<tr>
+	<td>assertAttribute</td>
+        <td>//td[@class='Low'][1]@style</td>
+	<td>display: none;</td>
+</tr>
+<!-- now raise, then lower -->
+<tr>
+	<td>click</td>
+        <td>//td[@class='High']/img[@id='1'][@alt='Lower']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+        <td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertAttribute</td>
+        <td>//td[@class='High'][1]@style</td>
+	<td>display: none;</td>
+</tr>
+<tr>
+	<td>assertAttribute</td>
+        <td>//td[@class='Low'][1]@style</td>
+	<td>display: none;</td>
+</tr>
+<tr>
+	<td>click</td>
+        <td>//td[@class='Med']/img[@id='1'][@alt='Raise']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+        <td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertAttribute</td>
+        <td>//td[@class='Med'][1]@style</td>
+	<td>display: none;</td>
+</tr>
+<tr>
+	<td>assertAttribute</td>
+        <td>//td[@class='Low'][1]@style</td>
+	<td>display: none;</td>
+</tr>
+<!-- now lower twice -->
+<tr>
+	<td>click</td>
+        <td>//td[@class='High']/img[@id='1'][@alt='Lower']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+        <td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertAttribute</td>
+        <td>//td[@class='High'][1]@style</td>
+	<td>display: none;</td>
+</tr>
+<tr>
+	<td>assertAttribute</td>
+        <td>//td[@class='Low'][1]@style</td>
+	<td>display: none;</td>
+</tr>
+<tr>
+	<td>click</td>
+        <td>//td[@class='Med']/img[@id='1'][@alt='Lower']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+        <td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertAttribute</td>
+        <td>//td[@class='High'][1]@style</td>
+	<td>display: none;</td>
+</tr>
+<tr>
+	<td>assertAttribute</td>
+        <td>//td[@class='Med'][1]@style</td>
+	<td>display: none;</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

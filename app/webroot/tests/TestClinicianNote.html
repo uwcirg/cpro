@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="" />
+<title>Test Clinician Access</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">selenium</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>users/login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>UserUsername</td>
+	<td>${researchstaffer_id_var}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>UserPassword</td>
+	<td>${researchstaffer_pw_var}</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//input[@value='Log in']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>clinicians/view/1</td>
+	<td></td>
+</tr>
+<!-- Currently note 4 is unflagged -->
+<tr>
+	<td>assertAttribute</td>
+        <td>//tr[@id='4']//td[@class='flaggednote']@style</td>
+	<td>display: none;</td>
+</tr>
+<!-- Flag note 4 -->
+<tr>
+	<td>click</td>
+        <td>//tr[@id='4']</td>
+	<td></td>
+</tr>
+<!-- strange goings-on may occur if you don't wait a bit for the application to check up -->
+<tr>
+	<td>pause</td>
+        <td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertAttribute</td>
+        <td>//tr[@id='4']//td[@class='unflaggednote']@style</td>
+	<td>display: none;</td>
+</tr>
+<!-- Unflag note 4 -->
+<tr>
+	<td>click</td>
+        <td>//tr[@id='4']</td>
+	<td></td>
+</tr>
+<!-- strange goings-on may occur if you don't wait a bit for the application to check up -->
+<tr>
+	<td>pause</td>
+        <td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertAttribute</td>
+        <td>//tr[@id='4']//td[@class='flaggednote']@style</td>
+	<td>display: none;</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

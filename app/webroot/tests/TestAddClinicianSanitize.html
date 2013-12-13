@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="" />
+<title>selenium</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">selenium</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>users/login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>UserUsername</td>
+	<td>${researchstaffer_id_var}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>UserPassword</td>
+	<td>${researchstaffer_pw_var}</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//input[@value='Log in']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Admin</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=New Clinician</td>
+	<td></td>
+</tr>
+<!-- add fields that must be sanitized -->
+<tr>
+	<td>type</td>
+	<td>ClinicianFirstName</td>
+	<td>&lt;b&gt;Abraham2</td>
+</tr>
+<!-- Generate what is hopefully a unique last name -->
+<tr>
+        <td>store</td>
+        <td>javascript{'Lincoln' + (new Date()).getTime()}</td>
+        <td>lastnamevar</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>ClinicianLastName</td>
+	<td>&lt;b&gt;${lastnamevar}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>ClinicianMailAddress</td>
+	<td>&lt;b&gt;1232 Anywhere Lane</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//input[@value='Submit']</td>
+	<td></td>
+</tr>
+<!-- Should go to view page for this clinician -->
+<tr>
+	<td>assertTextPresent</td>
+	<td>Information for Clinician #</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>Abraham2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>${lastnamevar}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>1232 Anywhere Lane</td>
+	<td></td>
+</tr>
+<tr>
+        <td>clickAndWait</td>
+        <td>link=Logout</td>
+        <td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

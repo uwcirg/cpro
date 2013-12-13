@@ -1,0 +1,12 @@
+compare dev & prod config 
+back up config files (config/core.php, config/dhair/dhair_[instance name].php)
+update db schema (changes detailed in db/schema.log)
+update db (app/system_tools/dBDeploymentWBackups.sh)
+update code (svn up)
+update config 
+app/system/tools/clearCaches.sh
+smoke test w/ debug = 2
+set debug = 0
+svn tag (increment version #): 
+    svn copy svn+ssh://mcjustin@svn.cirg.washington.edu/svnroot/dhair2/trunk svn+ssh://mcjustin@svn.cirg.washington.edu/svnroot/dhair2/tags/esrac-sme-1.0.29 -m "ESRA-C SME 1.0.29 to production 9/4/2012 16:30 Pacific"
+email staff users

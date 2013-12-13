@@ -1,0 +1,632 @@
+# LANGUAGE translation of CakePHP Application
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2012-11-09 16:43-0800\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: /config/dhair/dhair_p3pmazzone_ignore.php:109
+msgid "My Home"
+msgstr ""
+
+#: /config/dhair/dhair_p3pmazzone_ignore.php:112
+msgid "Build My P3P"
+msgstr ""
+
+#: /config/dhair/dhair_p3pmazzone_ignore.php:114
+#: /views/p3p/index.ctp:12
+msgid "View My P3P"
+msgstr ""
+
+#: /config/dhair/dhair_p3pmazzone_ignore.php:117
+msgid "Statistics"
+msgstr ""
+
+#: /config/dhair/dhair_p3pmazzone_ignore.php:120
+#: /views/p3p/factors.ctp:204
+msgid "Important Factors"
+msgstr ""
+
+#: /config/dhair/dhair_p3pmazzone_ignore.php:123
+msgid "My Decision Role"
+msgstr ""
+
+#: /config/dhair/dhair_p3pmazzone_ignore.php:126
+msgid "Next Steps"
+msgstr ""
+
+#: /config/dhair/dhair_p3pmazzone_ignore.php:129
+msgid "Data Access"
+msgstr ""
+
+#: /config/dhair/dhair_p3pmazzone_ignore.php:132
+msgid "Survey Editor"
+msgstr ""
+
+#: /config/dhair/dhair_p3pmazzone_ignore.php:135
+msgid "Patients"
+msgstr ""
+
+#: /controllers/p3p_teachings_controller.php:13;35
+msgid "Invalid p3p teaching"
+msgstr ""
+
+#: /controllers/p3p_teachings_controller.php:23;40
+msgid "The p3p teaching has been saved"
+msgstr ""
+
+#: /controllers/p3p_teachings_controller.php:26;43
+msgid "The p3p teaching could not be saved. Please, try again."
+msgstr ""
+
+#: /controllers/p3p_teachings_controller.php:55
+msgid "Invalid id for p3p teaching"
+msgstr ""
+
+#: /controllers/p3p_teachings_controller.php:59
+msgid "P3p teaching deleted"
+msgstr ""
+
+#: /controllers/p3p_teachings_controller.php:62
+msgid "P3p teaching was not deleted"
+msgstr ""
+
+#: /controllers/users_controller.php:82
+msgid "Welcome, "
+msgstr ""
+
+#: /controllers/users_controller.php:90
+msgid " patient(s) have given you permission to view their symptom charts. Please use the \"View Reports\" tab to view their charts or use the ‘Quick Links’ on this page."
+msgstr ""
+
+#: /controllers/users_controller.php:218
+msgid "New password is the same as the old."
+msgstr ""
+
+#: /controllers/users_controller.php:220
+msgid "New password is too short."
+msgstr ""
+
+#: /controllers/users_controller.php:223
+msgid "New password does not contain enough different types of characters."
+msgstr ""
+
+#: /controllers/users_controller.php:226
+msgid "New password must contain a letter and a number."
+msgstr ""
+
+#: /controllers/users_controller.php:231
+msgid "Your passwords did not match."
+msgstr ""
+
+#: /controllers/users_controller.php:239
+msgid "Your password was successfully changed."
+msgstr ""
+
+#: /controllers/users_controller.php:249
+msgid "Sorry, your password was not successfully changed"
+msgstr ""
+
+#: /views/elements/intro_p3pmazzone.ctp:15
+msgid "You are logged in to P3P - your personal patient profile for prostate cancer. This site allows you to build a profile by answering questions, and then view personalized information about prostate cancer care options."
+msgstr ""
+
+#: /views/elements/intro_p3pmazzone.ctp:20
+msgid "Click the button below to build your P3P profile:"
+msgstr ""
+
+#: /views/elements/intro_p3pmazzone.ctp:27
+msgid "Build your P3P Profile"
+msgstr ""
+
+#: /views/elements/intro_p3pmazzone.ctp:40
+msgid "Click the button below to view your P3P profile:"
+msgstr ""
+
+#: /views/elements/intro_p3pmazzone.ctp:46
+msgid "Next: View My P3P Profile"
+msgstr ""
+
+#: /views/elements/intro_p3pmazzone.ctp:53
+msgid "Please talk with clinic staff about building and viewing your P3P"
+msgstr ""
+
+#: /views/elements/intro_p3pmazzone.ctp:70
+msgid "You are logged in as an administrator. Use the tabs above to view patient records, set appointments and access the data."
+msgstr ""
+
+#: /views/layouts/survey.ctp:78
+#: /views/users/help.ctp:11
+#: /views/users/help_p3pmazzone.ctp:15
+#: /views/users/help_paintracker.ctp:18
+#: /views/users/help_paintrackerrural.ctp:18
+#: /views/users/help_paintrackeruwmc.ctp:18
+msgid "Help"
+msgstr ""
+
+#: /views/p3p/control.ctp:67
+msgid "<i class='icon icon-ok icon-blue'></i> Decision Is Yours"
+msgstr ""
+
+#: /views/p3p/control.ctp:70
+msgid "<i class='icon icon-ok' style='display: none'></i> Decision Is Yours"
+msgstr ""
+
+#: /views/p3p/control.ctp:76
+msgid "<i class='icon icon-ok icon-blue'></i> Decision Is Shared"
+msgstr ""
+
+#: /views/p3p/control.ctp:79
+msgid "<i class='icon icon-ok' style='display: none'></i> Decision Is Shared"
+msgstr ""
+
+#: /views/p3p/control.ctp:85
+msgid "<i class='icon icon-ok icon-blue'></i> Decision Is Doctor's"
+msgstr ""
+
+#: /views/p3p/control.ctp:88
+msgid "<i class='icon icon-ok' style='display: none'></i> Decision Is Doctor's"
+msgstr ""
+
+#: /views/p3p/control.ctp:100
+msgid "My Role in Making a Decision"
+msgstr ""
+
+#: /views/p3p/control.ctp:101
+msgid "It may be helpful to tell your doctor how you prefer to make your decision about prostate cancer care."
+msgstr ""
+
+#: /views/p3p/control.ctp:102
+msgid "Based on what you told us earlier, your preferred role in making your prostate cancer care decision is shown below. You can also learn about other approaches by clicking on the left tabs to view other videos."
+msgstr ""
+
+#: /views/p3p/control.ctp:121
+msgid "Based on your answers, <strong>your preferred approach is</strong>:"
+msgstr ""
+
+#: /views/p3p/control.ctp:125
+msgid "\"I prefer to make the final treatment decision.\""
+msgstr ""
+
+#: /views/p3p/control.ctp:127
+msgid "\"I prefer to make the final treatment decision after seriously considering my doctor's opinion.\""
+msgstr ""
+
+#: /views/p3p/control.ctp:129
+msgid "Another approach to making a decision would be: \"I prefer to make the final treatment decision after serioiusly considering my doctor's opinion.\""
+msgstr ""
+
+#: /views/p3p/control.ctp:134
+msgid "\"I prefer that my doctor and I share responsibility for deciding which treatment is best.\""
+msgstr ""
+
+#: /views/p3p/control.ctp:136
+msgid "Another approach to making a decision would be: \"I prefer that my doctor and I share responsibility for deciding which treatment is best.\""
+msgstr ""
+
+#: /views/p3p/control.ctp:141
+msgid "\"I prefer that my doctor makes the final treament decision, but seriously considers my opinion.\""
+msgstr ""
+
+#: /views/p3p/control.ctp:143
+msgid "\"I prefer to leave all treatment decisions to my doctor.\""
+msgstr ""
+
+#: /views/p3p/control.ctp:145
+msgid "Another approach to making a decision would be: \"I prefer that my doctor makes the final treament decision, but seriously considers my opinion.\""
+msgstr ""
+
+#: /views/p3p/factors.ctp:206
+msgid "Based on your answers, we've calculated which factors are most important to you. Start with the one below and use the links on the left to explore other areas."
+msgstr ""
+
+#: /views/p3p/factors.ctp:257
+msgid "Next Section: Statistics"
+msgstr ""
+
+#: /views/p3p/factors.ctp:262
+msgid "Skip to Next Section: Statistics"
+msgstr ""
+
+#: /views/p3p/index.ctp:14
+msgid "The P3P program is now ready to give you information <strong>matched to your answers</strong>. You also will have a chance to see short videos about topics important to you. At the end, you can print out information to keep. Here is a list of the types of information you will be able to see on the screen."
+msgstr ""
+
+#: /views/p3p/index.ctp:18
+msgid "What might happen to your bladder, bowels, and ability to work and play."
+msgstr ""
+
+#: /views/p3p/index.ctp:21
+msgid "People who might influence your decision."
+msgstr ""
+
+#: /views/p3p/index.ctp:24
+msgid "Health conditions or symptoms you have right now."
+msgstr ""
+
+#: /views/p3p/index.ctp:27
+msgid "How to understand statistics."
+msgstr ""
+
+#: /views/p3p/index.ctp:30
+msgid "Taking part in the treatment decision."
+msgstr ""
+
+#: /views/p3p/index.ctp:33
+msgid "Other websites with prostate cancer information."
+msgstr ""
+
+#: /views/p3p/index.ctp:49
+msgid "Next Section:"
+msgstr ""
+
+#: /views/p3p/next_steps.ctp:97;136
+msgid "Print This Information"
+msgstr ""
+
+#: /views/p3p/next_steps.ctp:101
+msgid "Read through the resources below to learn more about the next steps in making your decision. Use the Print button to print out all these tips so you can refer to them later."
+msgstr ""
+
+#: /views/p3p/next_steps.ctp:159
+msgid "<p><strong>We will now print your P3P resources.</strong><br />\n        Below are a few more topics that you may want to know about. Check any you want and then click \"Print Now\" below.</p>"
+msgstr ""
+
+#: /views/p3p/next_steps.ctp:162
+#: /views/p3p/priorities.ctp:41
+msgid " Home Care After Treatment (Information for your recovery time)"
+msgstr ""
+
+#: /views/p3p/next_steps.ctp:165
+#: /views/p3p/priorities.ctp:44
+msgid " Impact on Family (How your prostate cancer diagnosis affects your family)"
+msgstr ""
+
+#: /views/p3p/next_steps.ctp:168
+#: /views/p3p/priorities.ctp:47
+msgid " Family Risk (The risk of family members having prostate cancer)"
+msgstr ""
+
+#: /views/p3p/print_links.ctp:24
+msgid "This has been printed especially for "
+msgstr ""
+
+#: /views/p3p/print_links.ctp:29
+msgid "Read through the resources below to learn more about the next steps in making your decision on prostate cancer treatment."
+msgstr ""
+
+#: /views/p3p/priorities.ctp:17
+msgid "Information Priorities"
+msgstr ""
+
+#: /views/p3p/priorities.ctp:21
+msgid "Many men with prostate cancer have questions about the following topics:"
+msgstr ""
+
+#: /views/p3p/priorities.ctp:24
+msgid "Stage of disease (where your prostate cancer is)"
+msgstr ""
+
+#: /views/p3p/priorities.ctp:25
+msgid "Prognosis (factors that predict the chance of cure)"
+msgstr ""
+
+#: /views/p3p/priorities.ctp:26
+msgid "Treatment options - from watchful waiting to surgery to radiation or hormone therapy"
+msgstr ""
+
+#: /views/p3p/priorities.ctp:27
+msgid "Side effects of treatments"
+msgstr ""
+
+#: /views/p3p/priorities.ctp:28
+msgid "Sexual activity (possible changes)"
+msgstr ""
+
+#: /views/p3p/priorities.ctp:31
+msgid "This program will provide you with written printouts on these common topics."
+msgstr ""
+
+#: /views/p3p/priorities.ctp:33
+msgid "<strong>Get More Information</strong><br />In addition to those handouts, would you like to find out more about any of these topics:"
+msgstr ""
+
+#: /views/p3p/statistics.ctp:105
+msgid "Understanding statistics"
+msgstr ""
+
+#: /views/p3p/statistics.ctp:106
+msgid "While you think about care options, it is important to understand the numbers you will read and hear. Statistics from large numbers of men with prostate cancer can tell you <strong>how likely</strong> different outcomes are for you. But no one can know for certain exactly what will happen for <strong>you</strong>."
+msgstr ""
+
+#: /views/p3p/statistics.ctp:107
+msgid "You can ask your doctor to explain how the statistics you will read apply to you or men like you. You can also see examples below that explain how to read statistics about prostate cancer. Click the links on the left to view different examples."
+msgstr ""
+
+#: /views/p3p/statistics.ctp:151
+msgid "Skip to Next Section: My Decision Role"
+msgstr ""
+
+#: /views/surveys/complete.ctp:32;36
+msgid "Previous Page"
+msgstr ""
+
+#: /views/surveys/show.ctp:54
+msgid "Administering assessment for %s"
+msgstr ""
+
+#: /views/surveys/show.ctp:59
+msgid "Warning: this portion of the survey is no longer editable. Though you may view answers, they cannot be changed."
+msgstr ""
+
+#: /views/surveys/show.ctp:151
+msgid "results page"
+msgstr ""
+
+#: /views/surveys/show.ctp:154
+msgid "results for this question"
+msgstr ""
+
+#: /views/surveys/show.ctp:164
+msgid "Return to skipped questions page"
+msgstr ""
+
+#: /views/surveys/teaching_tips.ctp:21
+msgid "Next Page"
+msgstr ""
+
+#: /views/teaching/export.ctp:9
+msgid "Teaching Tips"
+msgstr ""
+
+#: /views/teaching/index.ctp:11
+msgid "Expand all tips?"
+msgstr ""
+
+#: /views/teaching/index.ctp:20
+msgid "Skip to a symptom"
+msgstr ""
+
+#: /views/users/about.ctp:12
+msgid "About DHAIR"
+msgstr ""
+
+#: /views/users/about.ctp:14
+msgid "DHAIR stands for Distributed Health Assessment and Intervention Research. Efforts in this area have led to the development of flexible web assessment/intervention platform that is unique in meeting the needs of both patients and researchers."
+msgstr ""
+
+#: /views/users/about.ctp:16
+msgid "To learn more about DHAIR, see"
+msgstr ""
+
+#: /views/users/about.ctp:16
+msgid "the DHAIR project website"
+msgstr ""
+
+#: /views/users/about.ctp:18
+#: /views/users/about_p3pmazzone.ctp:21
+#: /views/users/about_paintrackerrural.ctp:18
+#: /views/users/about_paintrackeruwmc.ctp:18
+#: /views/users/about_sme.ctp:17
+msgid "Project Team"
+msgstr ""
+
+#: /views/users/about.ctp:20
+#: /views/users/about_p3pmazzone.ctp:27
+#: /views/users/about_paintrackerrural.ctp:20
+#: /views/users/about_paintrackeruwmc.ctp:20
+#: /views/users/about_sme.ctp:23
+#: /views/users/contact.ctp:20
+msgid "University of Washington"
+msgstr ""
+
+#: /views/users/about_p3pmazzone.ctp:15
+msgid "About P3P"
+msgstr ""
+
+#: /views/users/about_p3pmazzone.ctp:17
+msgid "P3P is a web-based program that men can use to prepare for making a decision about how to manage a diagnosis of prostate cancer. A recent study showed that using P3P reduced the amount of decisional conflict experienced by men while making a decision. We are pleased to make this program available to you today."
+msgstr ""
+
+#: /views/users/about_p3pmazzone.ctp:19
+msgid "This newest version of P3P has been developed in collaboration between the Dana-Farber Cancer Institute in Boston and the Clinical Informatics Research Group at the University of Washington."
+msgstr ""
+
+#: /views/users/about_p3pmazzone.ctp:23
+msgid "Dana-Farber Cancer Institute"
+msgstr ""
+
+#: /views/users/about_paintrackerrural.ctp:12
+#: /views/users/about_paintrackeruwmc.ctp:12
+msgid "About cPRO"
+msgstr ""
+
+#: /views/users/about_paintrackerrural.ctp:14
+#: /views/users/about_paintrackeruwmc.ctp:14
+msgid "\"cPRO\" (http://cprohealth.org)  is an open-source \"computerized patient-reported outcome\" implementation. cPRO projects comprise a series of flexible web-based interactive health assessments and interventions, built on a common platform developed for funded research activities over the last decade. Efforts in this area have led to the development of a platform that is unique in meeting the needs of both patients and researchers. Dozens of cPRO systems have been deployed for use by clinical and research teams domestically and internationally."
+msgstr ""
+
+#: /views/users/about_paintrackerrural.ctp:16
+#: /views/users/about_paintrackeruwmc.ctp:16
+msgid "To learn more about cPRO, see"
+msgstr ""
+
+#: /views/users/about_paintrackerrural.ctp:16
+#: /views/users/about_paintrackeruwmc.ctp:16
+msgid "the cPRO project website"
+msgstr ""
+
+#: /views/users/change_password_of_authd_user.ctp:27
+msgid "Your password must be at least"
+msgstr ""
+
+#: /views/users/change_password_of_authd_user.ctp:29
+msgid "characters long; it must contain"
+msgstr ""
+
+#: /views/users/contact.ctp:11
+msgid "Contact"
+msgstr ""
+
+#: /views/users/contact.ctp:12
+msgid "Research Center"
+msgstr ""
+
+#: /views/users/contact.ctp:13
+msgid "For general questions please call our main research center:"
+msgstr ""
+
+#: /views/users/contact.ctp:15
+msgid "Phone:"
+msgstr ""
+
+#: /views/users/contact.ctp:17
+msgid "Email:"
+msgstr ""
+
+#: /views/users/contact.ctp:19
+msgid "Address:"
+msgstr ""
+
+#: /views/users/help.ctp:13
+#: /views/users/help_p3pmazzone.ctp:17
+#: /views/users/help_paintracker.ctp:20
+#: /views/users/help_paintrackerrural.ctp:20
+#: /views/users/help_paintrackeruwmc.ctp:20
+msgid "For help with the application, please contact"
+msgstr ""
+
+#: /views/users/help.ctp:17
+#: /views/users/help_p3pmazzone.ctp:21
+#: /views/users/help_paintracker.ctp:24
+#: /views/users/help_paintrackerrural.ctp:24
+#: /views/users/help_paintrackeruwmc.ctp:24
+msgid "Clinic"
+msgstr ""
+
+#: /views/users/help.ctp:17
+#: /views/users/help_p3pmazzone.ctp:21
+#: /views/users/help_paintracker.ctp:24
+#: /views/users/help_paintrackerrural.ctp:24
+#: /views/users/help_paintrackeruwmc.ctp:24
+msgid "Email"
+msgstr ""
+
+#: /views/users/help.ctp:17
+#: /views/users/help_p3pmazzone.ctp:21
+#: /views/users/help_paintracker.ctp:24
+#: /views/users/help_paintrackerrural.ctp:24
+#: /views/users/help_paintrackeruwmc.ctp:24
+msgid "Phone"
+msgstr ""
+
+#: /views/users/help.ctp:37
+#: /views/users/help_paintracker.ctp:44
+#: /views/users/help_paintrackerrural.ctp:44
+#: /views/users/help_paintrackeruwmc.ctp:44
+msgid "Change Password"
+msgstr ""
+
+#: /views/users/help.ctp:42
+#: /views/users/help_p3pmazzone.ctp:45
+#: /views/users/help_paintracker.ctp:49
+#: /views/users/help_paintrackerrural.ctp:49
+#: /views/users/help_paintrackeruwmc.ctp:49
+msgid "Compatible browsers and operating systems"
+msgstr ""
+
+#: /views/users/help.ctp:45
+#: /views/users/help_p3pmazzone.ctp:48
+#: /views/users/help_paintracker.ctp:52
+#: /views/users/help_paintrackerrural.ctp:52
+#: /views/users/help_paintrackeruwmc.ctp:52
+msgid "version 2 and above"
+msgstr ""
+
+#: /views/users/help.ctp:46
+#: /views/users/help_p3pmazzone.ctp:49
+#: /views/users/help_paintracker.ctp:53
+#: /views/users/help_paintrackerrural.ctp:53
+#: /views/users/help_paintrackeruwmc.ctp:53
+msgid "version 7 and above"
+msgstr ""
+
+#: /views/users/help.ctp:47;51
+#: /views/users/help_p3pmazzone.ctp:50;54
+#: /views/users/help_paintracker.ctp:54;58
+#: /views/users/help_paintrackerrural.ctp:54;58
+#: /views/users/help_paintrackeruwmc.ctp:54;58
+msgid "all versions"
+msgstr ""
+
+#: /views/users/help.ctp:49;50
+#: /views/users/help_p3pmazzone.ctp:52;53
+#: /views/users/help_paintracker.ctp:56;57
+#: /views/users/help_paintrackerrural.ctp:56;57
+#: /views/users/help_paintrackeruwmc.ctp:56;57
+msgid "version 3 and above"
+msgstr ""
+
+#: /views/users/help.ctp:53
+#: /views/users/help_p3pmazzone.ctp:56
+#: /views/users/help_paintracker.ctp:60
+#: /views/users/help_paintrackerrural.ctp:60
+#: /views/users/help_paintrackeruwmc.ctp:60
+msgid "Standard iPad web browser (Safari 5 and above)"
+msgstr ""
+
+#: /views/users/help_p3pmazzone.ctp:37
+msgid "Password"
+msgstr ""
+
+#: /views/users/help_p3pmazzone.ctp:40
+msgid "Change Your Password"
+msgstr ""
+
+#: /views/users/help_paintracker.ctp:11
+#: /views/users/help_paintrackerrural.ctp:11
+#: /views/users/help_paintrackeruwmc.ctp:11
+msgid "User Guide"
+msgstr ""
+
+#: /views/users/index.ctp:34
+msgid "Please speak with the clinic about scheduling an assessment.<br><br>"
+msgstr ""
+
+#: /views/users/login.ctp:36
+msgid "Welcome to "
+msgstr ""
+
+#: /views/users/login.ctp:38
+msgid "about "
+msgstr ""
+
+#: /views/users/login.ctp:40
+msgid "Sign In"
+msgstr ""
+
+#: /views/users/login.ctp:78
+msgid "Login assistance"
+msgstr ""
+
+#: /views/users/must_be_logged_in.ctp:9
+msgid "You made it to the must be logged in page"
+msgstr ""
+
+#: /views/users/settings.ctp:26
+msgid "Use the \"Quick Links\" menu on the right to change your personal settings."
+msgstr ""
+
+#: /webroot/test.php:88
+msgid "Debug setting does not allow access to this url."
+msgstr ""
+

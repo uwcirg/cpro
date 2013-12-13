@@ -1,0 +1,36 @@
+/*
+body {
+    background:#eee;
+    margin:2em;
+    text-align:center
+}
+*/
+svg {
+    display:block;
+    border:1px solid grey;
+    background:white;
+    margin:auto;
+
+    // Make SVG unselectable
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+path {
+    fill:green;
+    stroke:black;
+    stroke-width:1;
+}
+.pain {
+    fill:yellow;
+}
+.severe_pain {
+    fill:red;
+}
+
+/* Hide questions */
+div.q-box {
+    display:none;
+}

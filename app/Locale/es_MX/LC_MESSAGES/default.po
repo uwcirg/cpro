@@ -1,0 +1,1318 @@
+# #-#-#-#-#  default.pot (PROJECT VERSION)  #-#-#-#-#
+# LANGUAGE translation of CakePHP Application
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+#
+# #-#-#-#-#  manual.pot (PROJECT VERSION)  #-#-#-#-#
+# LANGUAGE translation of CakePHP Application
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+#
+# #-#-#-#-#  obsolete.pot (P3P II R01)  #-#-#-#-#
+# LANGUAGE translation of CakePHP Application
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+#
+# Translators:
+# Translators:
+# halpenny <barbara_halpenny@dfci.harvard.edu>, 2013
+# ivan_c <ivanc+transifex1@uw.edu>, 2013
+# ivan_c <ivanc+transifex1@uw.edu>, 2013
+# mcjustin <mcjustin@uw.edu>, 2013
+# pp795 <patricia_pedreira@dfci.harvard.edu>, 2013
+msgid ""
+msgstr ""
+"Project-Id-Version: P3P II R01\n"
+"POT-Creation-Date: 2013-09-11 16:46-0700\n"
+"PO-Revision-Date: 2013-12-06 18:58+0000\n"
+"Last-Translator: ivan_c <ivanc+transifex1@uw.edu>\n"
+"Language-Team: Spanish (Mexico) (http://www.transifex.com/projects/p/p3p-ii-r01/language/es_MX/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: es_MX\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 1.5.4\n"
+
+#: Console/Command/EmailRegistrationShell.php:69
+#: Controller/PatientsController.php:1116
+msgid "Registration for %s"
+msgstr ""
+
+#: Controller/SurveysController.php:1602
+msgid "Thank you for finishing the report."
+msgstr ""
+
+#: Controller/UsersController.php:75
+msgid "First Name: "
+msgstr "Nombre: "
+
+#: Controller/UsersController.php:76
+msgid "Last Name: "
+msgstr "Apellido: "
+
+#: Controller/UsersController.php:77
+msgid "User Name: "
+msgstr "Nombre de usario: "
+
+#: Controller/UsersController.php:101
+msgid "Welcome, :first_name"
+msgstr ""
+
+#: Controller/UsersController.php:103
+msgid "Welcome"
+msgstr ""
+
+#: Controller/UsersController.php:113
+msgid " :patient_count patient(s) have given you permission to view their symptom charts. Please use the \"View Reports\" tab to view their charts or use the \"Quick Links\" on this page."
+msgstr ""
+
+#: Controller/UsersController.php:213
+msgid "The username and password did not match."
+msgstr ""
+
+#: Controller/UsersController.php:278
+msgid "Sorry, your password was not successfully changed"
+msgstr "Lo siento, la contraseña no fue cambiada exitosamente."
+
+#: Controller/UsersController.php:288
+msgid "Your password was successfully changed."
+msgstr "La contraseña fue cambiada exitosamente."
+
+#: Controller/UsersController.php:349
+msgid "New password is the same as the old."
+msgstr "Nueva contraseña es la misma que la previa."
+
+#: Controller/UsersController.php:351
+msgid "New password is too short."
+msgstr "Nueva contraseña es demasiado corta."
+
+#: Controller/UsersController.php:354
+msgid "New password does not contain enough different types of characters."
+msgstr "Nueva contraseña no contiene suficientes caracteres diferentes."
+
+#: Controller/UsersController.php:357
+msgid "New password must contain a letter and a number."
+msgstr "Nueva contraseña debe tener al menos una letra y un número."
+
+#: Controller/UsersController.php:362
+msgid "Your passwords did not match."
+msgstr "Las contraseñas no coinciden."
+
+#: Controller/UsersController.php:718
+msgid "Not a valid URL"
+msgstr "No es un URL válido."
+
+#: Controller/UsersController.php:723
+msgid "You are already logged in"
+msgstr ""
+
+#: Controller/UsersController.php:728
+msgid "You are already registered"
+msgstr ""
+
+#: Controller/UsersController.php:733
+msgid "This login request has already been used"
+msgstr ""
+
+#: Controller/UsersController.php:745
+msgid "You're responding to a login assistance email that was sent more than 24 hours ago, and is therefore no longer valid. Please submit your request for login assistance again."
+msgstr "Let's test this out..."
+
+#: Controller/UsersController.php:756
+msgid "Please log in with your username and password. If you have forgotten or lost either, please click the \"Help\" button"
+msgstr ""
+
+#: Controller/Component/Auth/OAuthAuthenticate.php:82
+msgid "not a valid user"
+msgstr ""
+
+#: View/Elements/about.ctp:1
+msgid "DHAIR stands for Distributed Health Assessment and Intervention Research. Efforts in this area have led to the development of flexible web assessment/intervention platform that is unique in meeting the needs of both patients and researchers."
+msgstr "Hola"
+
+#: View/Elements/about.ctp:3
+msgid "To learn more about DHAIR, see"
+msgstr "Hola"
+
+#: View/Elements/about.ctp:3
+msgid "the DHAIR project website"
+msgstr "Hola"
+
+#: View/Elements/about.ctp:5 View/Elements/about_p3p.ctp:6
+#: View/Elements/about_p3pmazzone.ctp:6 View/Elements/about_sme.ctp:6
+msgid "Project Team"
+msgstr "Equipo del proyecto"
+
+#: View/Elements/about.ctp:8 View/Elements/about_p3p.ctp:9
+#: View/Elements/about_p3pmazzone.ctp:9 View/Elements/about_sme.ctp:9
+msgid "Dana-Farber Cancer Institute"
+msgstr "Instituto de Cáncer Dana-Farber"
+
+#: View/Elements/about.ctp:10 View/Elements/about_p3p.ctp:11
+#: View/Elements/about_p3pmazzone.ctp:11 View/Elements/about_sme.ctp:11
+#: View/Users/contact.ctp:20
+msgid "University of Washington"
+msgstr "Universidad de Washington"
+
+#: View/Elements/about_p3p.ctp:2
+msgid "P3P is a web-based program that men can use to prepare for making a decision about how to manage a diagnosis of prostate cancer. A recent study showed that using P3P reduced the amount of conflict experienced by men while making a decision. We now are testing a new version of the P3P."
+msgstr "El P3P es un programa en Internet que los hombres pueden usar para prepararse para tomar una decisión acerca de qué hacer ante un diagnóstico de cáncer de próstata.  De acuerdo a un estudio reciente, el uso del programa P3P disminuyó la cantidad de conflicto interno que sienten los hombres cuando están tomando una decisión.  Ahora estamos probando una nueva versión del programa P3P."
+
+#: View/Elements/about_p3p.ctp:4
+msgid "This newest version of P3P (2013) has been developed in collaboration between the Dana-Farber Cancer Institute in Boston and the Clinical Informatics Research Group at the University of Washington."
+msgstr "Esta nueva versión del P3P (2013) ha sido desarrollada en colaboración entre el Instituto de Cáncer Dana-Farber en Boston y el Grupo de Investigación en Informática Clínica en la Universidad de Washington."
+
+#: View/Elements/about_p3pmazzone.ctp:2
+msgid "P3P is a web-based program that men can use to prepare for making a decision about how to manage a diagnosis of prostate cancer. A recent study showed that using P3P reduced the amount of decisional conflict experienced by men while making a decision. We are pleased to make this program available to you today."
+msgstr "El P3P es un programa en Internet que los hombres pueden usar para prepararse para tomar una decisión acerca de qué hacer ante un diagnóstico de cáncer de próstata.  De acuerdo a un estudio reciente, el uso del programa P3P disminuyó la cantidad de conflicto interno que sienten los hombres cuando están tomando una decisión. Nos da mucho gusto que podamos darle la oportunidad de utilizar este programa hoy. "
+
+#: View/Elements/about_p3pmazzone.ctp:4
+msgid "This newest version of P3P has been developed in collaboration between the Dana-Farber Cancer Institute in Boston and the Clinical Informatics Research Group at the University of Washington."
+msgstr "Esta nueva versión del P3P (2013) ha sido desarrollada en colaboración entre el Instituto de Cáncer Dana-Farber en Boston y el Grupo de Investigación en Informática Clínica en la Universidad de Washington."
+
+#: View/Elements/about_sme.ctp:2
+msgid "Electronic Self-Report Assessment for Cancer (ESRA-C) is a web-based program that patients can use to report health information to their care team and receive information on how to manage symptoms and side effects at home. A recent study showed that using ESRA-C helps patients and their doctors and nurses discuss symptoms and quality of life issues during clinic visits. We are pleased to make this program available to you today."
+msgstr ""
+
+#: View/Elements/about_sme.ctp:4
+msgid "This newest version of ESRA-C, with a special section on cancer-related fatigue, has been developed for the Dana-Farber Cancer Institute in Boston with our team at the University of Washington."
+msgstr ""
+
+#: View/Elements/assessment_complete.ctp:11
+msgid "Thank you for reporting your experiences for your upcoming appointment."
+msgstr "Gracias por reportar sus experiencias para su próxima cita."
+
+#: View/Elements/assessment_complete_p3p.ctp:13
+msgid "Thank you for answering the P3P questions."
+msgstr ""
+
+#: View/Elements/assessment_complete_p3p.ctp:27
+msgid "Use the link below to go on."
+msgstr "Use el enlace abajo para acceder."
+
+#: View/Elements/assessment_complete_p3p.ctp:41
+msgid "Get Started"
+msgstr "Comience"
+
+#: View/Elements/assessment_complete_p3p.ctp:41 View/P3p/control.ctp:190
+#: View/P3p/factors.ctp:268 View/P3p/index.ctp:49 View/P3p/next_steps.ctp33;34
+#: View/P3p/statistics.ctp22;23
+msgid "Next Section"
+msgstr "Próxima Sección: "
+
+#: View/Elements/assessment_resume.ctp:16
+msgid "Continue your session"
+msgstr "Continúe su sesión"
+
+#: View/Elements/assessment_resume.ctp:18
+msgid "Use the link below to continue where you left off."
+msgstr "Use el enlace abajo para continuar desde donde dejó la última vez."
+
+#: View/Elements/assessment_start.ctp:23
+msgid "Get started"
+msgstr "Comience"
+
+#: View/Elements/assessment_start.ctp:26
+msgid "You have indicated that you have a clinic appointment scheduled soon; please report your experiences before the appointment."
+msgstr "Usted ha indicado que pronto tiene una cita médica; por favor reporte sus experiencias antes de su cita."
+
+#: View/Elements/assessment_start.ctp:28
+msgid "Thank you for agreeing to take part in the "
+msgstr "Gracias por asentir a tomar parte en el"
+
+#: View/Elements/assessment_start.ctp:63
+msgid "Whoops, I don't have an appointment scheduled with the clinic"
+msgstr "Ups, no tengo una cita médica programada."
+
+#: View/Elements/help_button.ctp:4
+#: View/Elements/help_button_paintrackerrural.ctp:4 View/Users/help.ctp:45
+msgid "Help"
+msgstr "Ayuda"
+
+#: View/Elements/intro.ctp:10
+msgid "A Message for You:"
+msgstr "Un mensaje para usted:"
+
+#: View/Elements/intro_paintrackerrural.ctp:66
+#: View/Users/index_p3pmazzone.ctp:55
+msgid "You are logged in as an administrator. Use the tabs above to view patient records, set appointments and access the data."
+msgstr "Hola"
+
+#: View/Elements/radio_question.ctp97;143 View/Surveys/show.ctp:85
+msgid "Please Specify"
+msgstr ""
+
+#: View/Elements/select_question.ctp:98
+msgid "Month..."
+msgstr ""
+
+#: View/Elements/select_question.ctp:99
+msgid "Day..."
+msgstr ""
+
+#: View/Elements/select_question.ctp:100
+msgid "Year..."
+msgstr ""
+
+#: View/Elements/session_appt_links.ctp:77
+msgid "Do you have an appointment in the next"
+msgstr "Hola"
+
+#: View/Elements/session_appt_links.ctp:102
+msgid " is not available for you at this time."
+msgstr "Hola"
+
+#: View/Elements/session_appt_links.ctp:103
+msgid "Please talk with the clinic staff about reporting your experiences"
+msgstr "Para crear su P3P perfil, por favor hable con los empleados clínicos"
+
+#: View/Elements/session_appt_links.ctp:108
+msgid "help page"
+msgstr "Ayuda"
+
+#: View/Elements/session_appt_links.ctp:108
+msgid "Go to the Help Page"
+msgstr "Va a ver su perfil P3P"
+
+#: View/Elements/session_appt_links.ctp:139
+msgid "Please contact the help staff so they can update your records"
+msgstr ""
+
+#: View/Elements/session_complete_gate.ctp:51
+msgid "Calculating Your Answers"
+msgstr "Calculamos sus respuestas"
+
+#: View/Elements/session_complete_gate.ctp:54
+msgid "One moment please while the system saves your answers."
+msgstr "Uno momento por favor ... guardamos sus respuestas."
+
+#: View/Elements/survey_index_p3pmazzone.ctp:17
+msgid "Click or touch the button below to build your profile. You'll be asked a series of questions about your health."
+msgstr "Toque o clic en el botón más abajo para crear su perfil. "
+
+#: View/Elements/survey_index_p3pmazzone.ctp:22
+msgid "Go to the P3P Survey."
+msgstr "Va a ver su perfil P3P"
+
+#: View/Emails/html/login_assist.ctp:3
+msgid "Hello"
+msgstr ""
+
+#: View/Emails/html/login_assist.ctp:5
+msgid "This email will help you log in to "
+msgstr ""
+
+#: View/Emails/html/login_assist.ctp:10
+msgid "Retrieve your login name and password now"
+msgstr ""
+
+#: View/Emails/html/login_assist.ctp:21
+msgid " by clicking on the button here:"
+msgstr ""
+
+#: View/Emails/html/login_assist.ctp:36
+msgid "Retrieve login name and password for "
+msgstr ""
+
+#: View/Emails/html/login_assist.ctp:55
+msgid "Note: this email will expire in %d hours; if you don't use it in time, simply go to the help page and request login assistance again."
+msgstr ""
+
+#: View/Emails/html/login_assist.ctp:60
+msgid "Thank you."
+msgstr ""
+
+#: View/Emails/html/one_month_reminder_p3p.ctp:18
+#: View/Emails/html/registration_reminder_p3p.ctp:4
+#: View/Emails/html/self_register_p3p.ctp:4
+#: View/Emails/html/six_month_reminder_p3p.ctp:18
+msgid "Dear Mr. :last_name"
+msgstr ""
+
+#: View/Emails/html/one_month_reminder_p3p.ctp:26
+msgid "About 1 month ago, you joined the P3P program. We are contacting you now for the 1-month follow-up, which is an important part of our understanding the P3P results."
+msgstr ""
+
+#: View/Emails/html/one_month_reminder_p3p.ctp:32
+msgid "We hope you can take a short time to answer the 1-month follow-up questionnaire. Please :link_startvisit the P3P website for your 1-month follow-up now:link_end, or before :end_date"
+msgstr ""
+
+#: View/Emails/html/one_month_reminder_p3p.ctp:48
+#: View/Emails/html/six_month_reminder_p3p.ctp:48
+msgid "You will be asked to register for the website, if you have not already done so. This is for security of any information that you may put into the website."
+msgstr ""
+
+#: View/Emails/html/one_month_reminder_p3p.ctp:66
+#: View/Emails/html/registration_reminder_p3p.ctp:49
+#: View/Emails/html/six_month_reminder_p3p.ctp:66
+msgid "Go To P3P"
+msgstr ""
+
+#: View/Emails/html/one_month_reminder_p3p.ctp:80
+#: View/Emails/html/registration_reminder_p3p.ctp:67
+#: View/Emails/html/self_register_p3p.ctp:67
+#: View/Emails/html/six_month_reminder_p3p.ctp:80
+msgid "Click on the button above or follow this link (or copy the address into your Web browser) to enter the P3P site:"
+msgstr ""
+
+#: View/Emails/html/one_month_reminder_p3p.ctp:94
+#: View/Emails/html/registration_reminder_p3p.ctp:85
+#: View/Emails/html/self_register_p3p.ctp:85
+#: View/Emails/html/six_month_reminder_p3p.ctp:94
+msgid "If you have any questions, please contact:"
+msgstr ""
+
+#: View/Emails/html/one_month_reminder_p3p.ctp:101
+#: View/Emails/html/registration_reminder_p3p.ctp:92
+#: View/Emails/html/self_register_p3p.ctp:92
+#: View/Emails/html/six_month_reminder_p3p.ctp:101
+msgid "P3P Support Question"
+msgstr ""
+
+#: View/Emails/html/one_month_reminder_p3p.ctp:106
+#: View/Emails/html/registration_reminder_p3p.ctp:97
+#: View/Emails/html/self_register_p3p.ctp:97
+#: View/Emails/html/six_month_reminder_p3p.ctp:106
+msgid "Please use this contact information <strong>only for the P3P program</strong>, and do not send private medical information by email."
+msgstr ""
+
+#: View/Emails/html/registration_reminder_p3p.ctp:12
+#: View/Emails/html/self_register_p3p.ctp:12
+msgid "Thank you for agreeing to take part in the P3P program. As promised, this email provides the Web address for you to :link_start start using the program.:link_end"
+msgstr ""
+
+#: View/Emails/html/registration_reminder_p3p.ctp:32
+msgid "<strong>You can only participate in the program if you use the website before your appointment on :appointment_date at :appointment_time</strong>, so please go to P3P now:"
+msgstr ""
+
+#: View/Emails/html/self_register_p3p.ctp:32
+msgid "<strong>You can only participate in the program if you use the website before your appointment on :appointment_date at :appointment_time</strong>, so please register now:"
+msgstr ""
+
+#: View/Emails/html/self_register_p3p.ctp:49
+msgid "Register for P3P"
+msgstr ""
+
+#: View/Emails/html/six_month_reminder_p3p.ctp:26
+msgid "About 6 months ago, you joined the P3P program. We are contacting you now for the 6-month follow-up, which is an important part of our understanding the P3P results."
+msgstr ""
+
+#: View/Emails/html/six_month_reminder_p3p.ctp:32
+msgid "We hope you can take a short time to answer the 6-month follow-up questionnaire. Please :link_startvisit the P3P website for your 6-month follow-up now:link_end, or before :end_date"
+msgstr ""
+
+#: View/Layouts/default.ctp:282
+msgid "Log Out"
+msgstr "Cerrá sesión"
+
+#: View/Layouts/survey.ctp:160
+msgid "Take a break"
+msgstr "Haga una pausa"
+
+#: View/P3p/control.ctp:53
+msgid "Click to see other approaches:"
+msgstr "Haga clic para ver las otras maneras"
+
+#: View/P3p/control.ctp59;63;65;115
+msgid "Decision Is Yours"
+msgstr "Decisión Personal"
+
+#: View/P3p/control.ctp72;76;78;117
+msgid "Decision Is Shared"
+msgstr "Decisión Compartida"
+
+#: View/P3p/control.ctp85;89;91;119
+msgid "Decision Is Doctor's"
+msgstr "Decisión  es del doctor(a)"
+
+#: View/P3p/control.ctp:104
+msgid "My Role in Making a Decision"
+msgstr "Mi Parte para Decidir"
+
+#: View/P3p/control.ctp:105
+msgid "Talk to your doctor about the role you feel comfortable taking in making a decision about your care. This will help your doctor understand what you want."
+msgstr "Hable con su doctor/a sobre el papel que usted prefiere tener en la decisión sobre su atención médica. Esto le ayudará a su doctor/a a comprender lo que usted desea. "
+
+#: View/P3p/control.ctp:106
+msgid "Based on your answers, your preferred way to make a decision about prostate cancer care is shown below. You can also learn about other ways of making a decision by clicking on the links to the left to watch other videos."
+msgstr "Según sus respuestas, el modo en que usted prefiere tomar una decisión sobre la atención médica para su cáncer de próstata se muestra a continuación. Usted también puede informarse sobre otros modos de tomar una decisión haciendo clic en los enlaces a la izquierda para mirar otros videos."
+
+#: View/P3p/control.ctp:128
+msgid "<strong>Your preferred way</strong> to make a decision about prostate cancer care:"
+msgstr "<strong>El modo en que usted prefiere</strong> tomar una decisión sobre la atención médica para el cáncer de próstata es:"
+
+#: View/P3p/control.ctp:131
+msgid "<strong>Another way</strong> to make a decision about prostate cancer care would be:"
+msgstr "<strong>Otro modo</strong> de tomar una decisión sobre la atención médica para el cáncer de próstata sería:"
+
+#: View/P3p/control.ctp:134
+msgid "One possible approach to making a decision would be:"
+msgstr "Una otra manera para tomar un decisión sería: "
+
+#: View/P3p/control.ctp:142
+msgid "I prefer to make the final care decision."
+msgstr "Hola"
+
+#: View/P3p/control.ctp:144
+msgid "I prefer to make the final decision myself after thinking about my doctor(s)' opinion."
+msgstr "Yo prefiero hacer la decisión final y mismo, despues de pensar en la opinión de mis medicó(s)."
+
+#: View/P3p/control.ctp:148
+msgid "I prefer that my doctor(s) and I share the decision about which option is best."
+msgstr "Yo prefiero que mi médico(s) y yo compartamos la decisión de cual opción es mejor."
+
+#: View/P3p/control.ctp:152
+msgid "I prefer to leave all care decisions to my doctor."
+msgstr "Yo prefiero hacer la decisión final y mismo, despues de pensar en la opinión de mis medicó(s)."
+
+#: View/P3p/control.ctp:154
+msgid "I prefer that my doctor(s) make the final care decision, but think about my opinion."
+msgstr "Yo prefiero que mi médico(s) hagan la decisión final, pero pensar en mi opinión."
+
+#: View/P3p/factors.ctp137;139 View/P3p/next_steps.ctp29;30;240
+#: View/P3p/statistics.ctp18;19;195
+msgid "Next Topic"
+msgstr ""
+
+#: View/P3p/factors.ctp150;151
+msgid "Skip Ahead to"
+msgstr "Pase a la "
+
+#: View/P3p/factors.ctp:164 View/P3p/next_steps.ctp:144
+#: View/P3p/statistics.ctp:122
+msgid "Click to see other topics"
+msgstr "Haga clic para ver las otras temas"
+
+#: View/P3p/factors.ctp:209
+msgid "My Top Concerns"
+msgstr ""
+
+#: View/P3p/factors.ctp:210
+msgid "Based on your answers, we've calculated which factors are most important to you. Start with the one below and use the links on the left to explore other areas."
+msgstr "En base a sus respuestas, calculamos factores que más importantes para usted. Ha iniciado abajo y use los enlaces de la izquierda para ver las otras temas. "
+
+#: View/P3p/factors.ctp268;273 View/P3p/statistics.ctp:154
+msgid "Statistics"
+msgstr "Estadística"
+
+#: View/P3p/factors.ctp:271 View/P3p/next_steps.ctp:243
+#: View/P3p/statistics.ctp:198
+msgid "or"
+msgstr "o"
+
+#: View/P3p/factors.ctp:273 View/P3p/next_steps.ctp:245
+#: View/P3p/statistics.ctp:200
+msgid "Skip to Next Section"
+msgstr "Pase a la Próxima sección: "
+
+#: View/P3p/index.ctp:12
+msgid "View My P3P"
+msgstr "Ver mi P3P"
+
+#: View/P3p/index.ctp:14
+msgid "The P3P program is now ready to give you information <strong>matched to your answers</strong>. You also will have a chance to see short videos about topics important to you. At the end, you can print out information to keep. Here is a list of the types of information you will be able to see on the screen."
+msgstr "El programa P3P está listo para darle la información adaptada a sus respuestas. Usted también tendrá la oportunidad de ver videos cortos sobre temas importantes para usted. Al final, puede imprimir información para mantenerla. Aquí está una lista de los tipos de información que podrá ver en la pantalla. "
+
+#: View/P3p/index.ctp:18
+msgid "What might happen to your bladder, bowels, and ability to work and play."
+msgstr "Que puede pasar al su vejiga, intestinos, y su capacidad de trabajar y disfrutar."
+
+#: View/P3p/index.ctp:21
+msgid "People who might influence your decision."
+msgstr "Las personas que pueden influir en su decisión."
+
+#: View/P3p/index.ctp:24
+msgid "Health conditions or symptoms you have right now."
+msgstr "Las condiciones de salud o síntomas que usted tiene en este momento."
+
+#: View/P3p/index.ctp:27
+msgid "How to understand statistics."
+msgstr "Cómo entender las estadísticas."
+
+#: View/P3p/index.ctp:30
+msgid "Taking part in the treatment decision."
+msgstr "Tomar parte en su decisión para manejar."
+
+#: View/P3p/index.ctp:33
+msgid "Other websites with prostate cancer information."
+msgstr "Otros sitios web con información sobre el cáncer de próstata."
+
+#: View/P3p/next_steps.ctp33;34 View/P3p/statistics.ctp22;23;200
+msgid "My Decision Role"
+msgstr "Mi Parte para Decidir"
+
+#: View/P3p/next_steps.ctp:119
+msgid "A printout of these resources is available at the staff desk."
+msgstr "La copia impresa de los recursos está en el mostrador."
+
+#: View/P3p/next_steps.ctp:177
+msgid "More About Prostate Cancer"
+msgstr ""
+
+#: View/P3p/next_steps.ctp:180
+msgid "Print This Information"
+msgstr "Aprende esa Información"
+
+#: View/P3p/next_steps.ctp:185
+msgid "Read through the resources below to learn more about the next steps in making your decision. Use the Print button to print out all these  so you can refer to them later."
+msgstr ""
+
+#: View/P3p/next_steps.ctp:187
+msgid "The websites listed below can help you learn more about the next steps in making your decision. Use the Print button the list of links so you can refer to them later."
+msgstr ""
+
+#: View/P3p/next_steps.ctp:245 View/P3p/whatdoyouthink.ctp:15
+msgid "What Do You Think?"
+msgstr ""
+
+#: View/P3p/next_steps.ctp:256
+msgid "Where are you printing?"
+msgstr ""
+
+#: View/P3p/next_steps.ctp:259
+msgid "Choose your location:"
+msgstr ""
+
+#: View/P3p/next_steps.ctp:262
+msgid "I'm in the clinic"
+msgstr ""
+
+#: View/P3p/next_steps.ctp:267
+msgid "I'm at home"
+msgstr ""
+
+#: View/P3p/next_steps.ctp:275
+msgid "Great! We have a packet already printed for you. Please go to the front desk and pick up the"
+msgstr ""
+
+#: View/P3p/next_steps.ctp:276
+msgid "Yellow Package 1"
+msgstr ""
+
+#: View/P3p/next_steps.ctp:276
+msgid "Blue Package 2"
+msgstr ""
+
+#: View/P3p/next_steps.ctp:285
+msgid "Close"
+msgstr ""
+
+#: View/P3p/print_links.ctp:13
+msgid "Read through the resources below to learn more about the next steps in making your decision on prostate cancer treatment."
+msgstr "Lea las fuentes abajo para aprender más sobre los próximos pasos en cómo tomar su decisión de manejar su cáncer de próstata."
+
+#: View/P3p/statistics.ctp:155
+msgid "It may help you think about your care decision to understand prostate cancer statistics, the numbers that tell what happens to men with prostate cancer. You will probably read or hear many of these numbers. Statistics based on large numbers of men with prostate cancer can say <strong>how likely</strong> you are to experience things in the future. But no one can know for sure <strong>exactly</strong> what will happen for <strong>you</strong>."
+msgstr ""
+
+#: View/P3p/statistics.ctp:156
+msgid "You can always ask your doctor to explain how the statistics you see may apply to you or men like you. Below are some real statistics about prostate cancer that also explain in general how to read statistics. If you see links on the left, you can use them to see statistics about other prostate cancer topics, too."
+msgstr "Puede pedirle a su médico que le explique cómo las estadísticas que van a leer se aplican a usted o hombres como tú. También puede ver ejemplos más abajo que explica cómo leer las estadísticas sobre el cáncer de próstata. Haga clic en los enlaces de la izquierda para ver diferentes ejemplos."
+
+#: View/P3p/whatdoyouthink.ctp:18
+msgid "Thanks for your participation. Please tell us what you think about the P3P program."
+msgstr ""
+
+#: View/P3p/whatdoyouthink.ctp:36
+msgid "If you have more questions/feedback, please %s contact the research staff"
+msgstr ""
+
+#: View/Patients/edit.ctp:610
+msgid "Success - TODO include any directives for changing enabled state or other attributes. Heres responseTxt.data: "
+msgstr ""
+
+#: View/Surveys/complete.ctp:9
+msgid "Thank you"
+msgstr "Gracias"
+
+#: View/Surveys/complete.ctp:11
+msgid "Touch or click 'Complete' below to record your answers and finish your report. "
+msgstr ""
+
+#: View/Surveys/complete.ctp:16
+msgid "Following this, you may be presented with teaching materials about areas where your answers indicate you may be having problems"
+msgstr "Hola"
+
+#: View/Surveys/complete.ctp:23
+msgid "Complete"
+msgstr "Enviar"
+
+#: View/Surveys/complete.ctp:32 View/Surveys/show.ctp:183
+#: View/Surveys/skipped_questions.ctp:45
+msgid "Previous"
+msgstr "Anterior"
+
+#: View/Surveys/complete.ctp:32 View/Surveys/show.ctp:184
+#: View/Surveys/skipped_questions.ctp:46
+msgid "Previous Page"
+msgstr "Página anterior"
+
+#: View/Surveys/show.ctp101;106
+msgid "Administering assessment for <strong>%s</strong>"
+msgstr ""
+
+#: View/Surveys/show.ctp:114
+msgid "Warning: this portion of the survey is no longer editable. Though you may view answers, they cannot be changed."
+msgstr "Cuidado: ya no puede cambiar esa parte de la encuesta. Aunque usted pueda ver sus respuestas, ellas no pueden ser cambiadas."
+
+#: View/Surveys/show.ctp:153
+msgid "Add another: "
+msgstr ""
+
+#: View/Surveys/show.ctp:188 View/Surveys/skipped_questions.ctp:50
+msgid "Your progress"
+msgstr ""
+
+#: View/Surveys/show.ctp:197 View/Users/identify.ctp:79
+msgid "Next"
+msgstr "Próximo"
+
+#: View/Surveys/show.ctp:197 View/Surveys/teaching_tips.ctp:21
+msgid "Next Page"
+msgstr "Próxima página"
+
+#: View/Surveys/show.ctp:222
+msgid "results page"
+msgstr ""
+
+#: View/Surveys/show.ctp:225
+msgid "results for this question"
+msgstr ""
+
+#: View/Surveys/show.ctp:235
+msgid "Save answer and return to skipped questions page"
+msgstr ""
+
+#: View/Surveys/skipped_questions.ctp:13
+msgid "Skipped Questions"
+msgstr "Las preguntas pases"
+
+#: View/Surveys/skipped_questions.ctp:16
+msgid "Below is a list of sections in which you did not answer at least one of the questions. If you would like to add an answer, click on the question."
+msgstr ""
+
+#: View/Surveys/skipped_questions.ctp:17
+msgid "When you have finished all the questions you wish to answer, click the 'Finish' button at the bottom of the list. You will not be able to change your answers after clicking the 'Finish' button."
+msgstr ""
+
+#: View/Surveys/skipped_questions.ctp:37
+msgid "You do not have any skipped questions. If you're satisfied with your answers, touch or click 'Next' below. After doing so, you won't be able to change any of your answers."
+msgstr "Usted no ha tenido los preguntas pases. Si usted esté satisfecho con sus respuestas, toque o clic en el botón \"Próximo\" más abajo. Usted no podrá cambiar sus respuestas."
+
+#: View/Surveys/skipped_questions.ctp:57
+msgid "Finish"
+msgstr ""
+
+#: View/Surveys/skipped_questions.ctp:57
+msgid "Click to finish answering questions"
+msgstr ""
+
+#: View/Teaching/export.ctp:9
+msgid "Teaching Tips"
+msgstr "Hola"
+
+#: View/Teaching/index.ctp:12
+msgid "Skip to a symptom"
+msgstr "Hola"
+
+#: View/Teaching/index.ctp:29
+msgid "Expand all tips?"
+msgstr "Hola"
+
+#: View/Teaching/manage_fatigue.ctp:11
+msgid "Manage My Fatigue"
+msgstr "Hola"
+
+#: View/Teaching/manage_fatigue.ctp:44
+msgid "Studies have shown that a walking or low impact activity may help reduce the severity of fatigue you experience. To help you manage your fatigue, browse the tips below:"
+msgstr "Hola"
+
+#: View/Teaching/manage_fatigue.ctp49;57
+msgid "Activity Tips"
+msgstr "Hola"
+
+#: View/Teaching/manage_fatigue.ctp50;77
+msgid "Keeping an Activity Diary"
+msgstr "Hola"
+
+#: View/Teaching/manage_fatigue.ctp51;98
+msgid "Using the Pedometer"
+msgstr "Hola"
+
+#: View/Teaching/manage_fatigue.ctp52;115
+msgid "When Should I Call?"
+msgstr "Hola"
+
+#: View/Teaching/manage_fatigue.ctp:60
+msgid "What activity should I consider?"
+msgstr "Hola"
+
+#: View/Teaching/manage_fatigue.ctp:61
+msgid "When beginning any activity, is important that it is simple enough to fit into your lifestyle and that you enjoy the activity. Planning this out ahead of time will help you decide which activities to consider."
+msgstr "Hola"
+
+#: View/Teaching/manage_fatigue.ctp:63
+msgid "How often should I do these low-impact activities?"
+msgstr "Hola"
+
+#: View/Teaching/manage_fatigue.ctp:64
+msgid "Our goal is for you to participate by performing this activity during each week. We encourage you to walk or be active 30 minutes a day 3-5 times a week at a speed that you can tolerate."
+msgstr ""
+
+#: View/Teaching/manage_fatigue.ctp:66
+msgid "How do I follow-up about my activity?"
+msgstr ""
+
+#: View/Teaching/manage_fatigue.ctp:67
+msgid "We will be following up with you either in person at your clinic visit or on the telephone every two weeks about your activity and fatigue. Please have your daily diary available when we talk at those times so that we can review together how you are doing and how we can help you best remain active and manage your fatigue."
+msgstr ""
+
+#: View/Teaching/manage_fatigue.ctp69;90;106 View/Users/login.ctp:138
+msgid "Learn more"
+msgstr ""
+
+#: View/Teaching/manage_fatigue.ctp:70
+msgid "Get more detailed "
+msgstr "Hola"
+
+#: View/Teaching/manage_fatigue.ctp:80
+msgid "Why do I keep a diary of my daily activities"
+msgstr "Hola"
+
+#: View/Teaching/manage_fatigue.ctp:81
+msgid "Keeping a diary is a way to monitor your activity and how you feel regarding fatigue while doing activities on a daily basis."
+msgstr "Hola"
+
+#: View/Teaching/manage_fatigue.ctp:83
+msgid "Where do I find my daily activity diary?"
+msgstr "Hola"
+
+#: View/Teaching/manage_fatigue.ctp:84
+msgid "Click on the <a href=\"\">Activity Diary</a> tab that appears at the top of all the pages."
+msgstr "Hola"
+
+#: View/Teaching/manage_fatigue.ctp:86
+msgid "How do I keep an activity diary?"
+msgstr "Hola"
+
+#: View/Teaching/manage_fatigue.ctp:87
+msgid "You will be asked to keep track of the type of activity, number of minutes you were active, and number of steps that you take based on your pedometer and fatigue level. Also, there will be space for you to keep notes about any additional information you would like to record. We encourage you to record your activity daily using the online activity diary.  You may also record your activity on the paper diary daily if you prefer.  Please be sure to enter your daily activity into the online diary at least once a week."
+msgstr "Hola"
+
+#: View/Teaching/manage_fatigue.ctp91;107
+msgid "Get further "
+msgstr "Hola"
+
+#: View/Teaching/manage_fatigue.ctp:92
+msgid "instructions on keeping an activity diary"
+msgstr "Hola"
+
+#: View/Teaching/manage_fatigue.ctp:100
+msgid "What is a pedometer?"
+msgstr "Hola"
+
+#: View/Teaching/manage_fatigue.ctp:101
+msgid "A pedometer is a small device that measures the number of steps that you take each day."
+msgstr "Hola"
+
+#: View/Teaching/manage_fatigue.ctp:103
+msgid "How do I wear a pedometer?"
+msgstr "Hola"
+
+#: View/Teaching/manage_fatigue.ctp:104
+msgid "Please start by wearing the pedometer each day while you are awake for one week and record the number of steps taken daily in the exercise journal.  Do not do anything to change your normal activity routine, this information will allow you to see how many steps you take daily before starting the intervention. Please bring the log with you when you meet with the research nurse to discuss your activity plan. Once you get started with your activity plan, please continue to wear your pedometer while you are awake and write down how many steps that you take each day."
+msgstr "Hola"
+
+#: View/Teaching/manage_fatigue.ctp:108
+msgid "instructions on using your pedometer"
+msgstr "Hola"
+
+#: View/Teaching/manage_fatigue.ctp:117
+msgid "Please report symptoms such as shortness of breath, chest discomfort or difficulty walking to your provider or nurse."
+msgstr "Hola"
+
+#: View/Teaching/manage_fatigue.ctp:118
+msgid "If you have any questions or concerns please call the DFCI operator at 617-632-3352 to contact your provider"
+msgstr "Hola 617-632-3352"
+
+#: View/Users/change_password_of_authd_user.ctp:21 View/Users/help.ctp:95
+msgid "Change Your Password"
+msgstr "Cambia la Contraseña"
+
+#: View/Users/change_password_of_authd_user.ctp:60
+msgid "Password"
+msgstr "Contraseña"
+
+#: View/Users/change_password_of_authd_user.ctp:61
+msgid "Enter password here"
+msgstr "Creer una contraseña"
+
+#: View/Users/change_password_of_authd_user.ctp:70
+msgid "Type your password again"
+msgstr "Su contraseña otra vez"
+
+#: View/Users/change_password_of_authd_user.ctp:77
+msgid "Change Password"
+msgstr "Cambia la Contraseña"
+
+#: View/Users/contact.ctp:11 View/Users/help.ctp:36
+msgid "Contact"
+msgstr "Póngase en contacto"
+
+#: View/Users/contact.ctp:12
+msgid "Research Center"
+msgstr "Centro de Investigaciones"
+
+#: View/Users/contact.ctp:13
+msgid "For general questions please call our main research center:"
+msgstr "Por favor llame el centro principal de investigación para hacer preguntas generales:"
+
+#: View/Users/contact.ctp:15
+msgid "Phone:"
+msgstr ""
+
+#: View/Users/contact.ctp:17
+msgid "Email:"
+msgstr ""
+
+#: View/Users/contact.ctp:19
+msgid "Address:"
+msgstr ""
+
+#: View/Users/help.ctp:23
+msgid "Help topics"
+msgstr ""
+
+#: View/Users/help.ctp34;113
+msgid "Staff guide"
+msgstr ""
+
+#: View/Users/help.ctp:37
+msgid "Browser help"
+msgstr ""
+
+#: View/Users/help.ctp38;159
+msgid "About "
+msgstr ""
+
+#: View/Users/help.ctp:55 View/Users/login.ctp:61
+msgid "Login help"
+msgstr ""
+
+#: View/Users/help.ctp:57
+msgid "If you've forgotten your username or password, type your email address here:"
+msgstr ""
+
+#: View/Users/help.ctp:70
+msgid "E-mail address:"
+msgstr ""
+
+#: View/Users/help.ctp:72
+msgid "Enter e-mail address here"
+msgstr ""
+
+#: View/Users/help.ctp:92
+msgid "contact us"
+msgstr "Póngase en contacto"
+
+#: View/Users/help.ctp:93
+msgid "If any of these need to be updated, please "
+msgstr "De cambiar, por favor "
+
+#: View/Users/help.ctp:95
+msgid "Click here to change your password"
+msgstr ""
+
+#: View/Users/help.ctp:123
+msgid "Contact us"
+msgstr ""
+
+#: View/Users/help.ctp:137
+msgid "Operating systems and web browsers that work with "
+msgstr ""
+
+#: View/Users/help.ctp141;142;145;146
+msgid "version %d and above"
+msgstr ""
+
+#: View/Users/help.ctp143;147
+msgid "all versions"
+msgstr "todas versiones"
+
+#: View/Users/help.ctp:149
+msgid "Standard iPad web browser (Safari 5 and above)"
+msgstr "El navegador web (browser) estándar para el iPad (Safari 5 y superiores)"
+
+#: View/Users/help.ctp:192
+msgid "Thank you. You will receive an email with instructions soon."
+msgstr ""
+
+#: View/Users/help.ctp:199
+msgid "Sorry, we can't find you in the system. If you continue to have trouble, contact us via the help e-mail address listed on this page."
+msgstr ""
+
+#: View/Users/identify.ctp:15
+msgid "Login Help"
+msgstr ""
+
+#: View/Users/identify.ctp:16
+msgid "To retrieve your username and reset your password, please fill in these fields."
+msgstr ""
+
+#: View/Users/identify.ctp18;22 View/Users/self_register.ctp:16
+msgid "Registration"
+msgstr ""
+
+#: View/Users/identify.ctp19;23
+msgid "Step 1 - Match Your Record"
+msgstr ""
+
+#: View/Users/identify.ctp:20
+msgid "It looks like you're ready to create an account for "
+msgstr ""
+
+#: View/Users/identify.ctp:24
+msgid "Get started by filling in this form so we can match your record."
+msgstr ""
+
+#: View/Users/identify.ctp:48
+msgid "First name:"
+msgstr ""
+
+#: View/Users/identify.ctp:50
+msgid "Enter your first name here"
+msgstr ""
+
+#: View/Users/identify.ctp:59
+msgid "Last name:"
+msgstr ""
+
+#: View/Users/identify.ctp:61
+msgid "Enter your last name here"
+msgstr ""
+
+#: View/Users/identify.ctp:92
+msgid "Matching your information"
+msgstr ""
+
+#: View/Users/identify.ctp:95
+msgid "One moment please while the system looks for your name."
+msgstr ""
+
+#: View/Users/identify.ctp:141
+msgid "<strong>Sorry, we can't find you in the system</strong>. Please try again. If you continue to have trouble, please visit the "
+msgstr ""
+
+#: View/Users/identify.ctp:142 View/Users/self_register.ctp:134
+msgid "Help page"
+msgstr ""
+
+#: View/Users/index_p3p.ctp:24
+msgid "%s research study."
+msgstr ""
+
+#: View/Users/index_p3pmazzone.ctp:31
+msgid "You are logged in to P3P - your personal patient profile for prostate cancer. This site allows you to build a profile by answering questions, and then view personalized information about prostate cancer care options."
+msgstr "Ha iniciado una sesión de P3P- su perfil personal para el cáncer de próstata. Este sitio le permite hacer un perfil al contestar preguntas, y luego ver información personalizada sobre sus opciones de manejar su cáncer de prostata. "
+
+#: View/Users/login.ctp:32
+msgid "Welcome to "
+msgstr "Bienvenido a"
+
+#: View/Users/login.ctp:54
+msgid "Please sign in below."
+msgstr ""
+
+#: View/Users/login.ctp:63
+msgid "Sign In"
+msgstr "Iniciar sesión"
+
+#: View/Users/login.ctp:85
+msgid "Username:"
+msgstr ""
+
+#: View/Users/login.ctp:93
+msgid "Password:"
+msgstr ""
+
+#: View/Users/login.ctp:112
+msgid "Log in with UW NetID"
+msgstr "Hola"
+
+#: View/Users/login.ctp:124
+msgid "Log in with Google"
+msgstr ""
+
+#: View/Users/login.ctp:128
+msgid "Log in with Windows Live"
+msgstr ""
+
+#: View/Users/login.ctp:138
+msgid "about "
+msgstr "sobre"
+
+#: View/Users/must_be_logged_in.ctp:9
+msgid "You made it to the must be logged in page"
+msgstr "NO TRANSLATION NEEDED"
+
+#: View/Users/self_register.ctp:18
+msgid "Step 2 - Select username and password"
+msgstr ""
+
+#: View/Users/self_register.ctp:19
+msgid "OK, we found you in our system. Finish registration by picking a username and password below."
+msgstr ""
+
+#: View/Users/self_register.ctp:57
+msgid "Your password must be at least %d letters or numbers long. It must contain at least 1 letter and at least 1 number. For example, speedy79 or My2dogs."
+msgstr ""
+
+#: View/Users/self_register.ctp:87
+msgid "Checking your information"
+msgstr ""
+
+#: View/Users/self_register.ctp:90
+msgid "One moment please while the system sets up your account."
+msgstr ""
+
+#: View/Users/self_register.ctp:133
+msgid "Please try again. If you continue to have trouble, please visit the "
+msgstr ""
+
+#: View/Users/settings.ctp:26
+msgid "Use the \"Quick Links\" menu on the right to change your personal settings."
+msgstr "Hola"
+
+#: Config/dhair/dhair_p3p.php
+msgid "Welcome to the Personal Patient Profile for Prostate (P3P)"
+msgstr ""
+
+#: projects table SQL
+msgid "Start P3P"
+msgstr ""
+
+#: projects table SQL
+msgid "The P3P Questions"
+msgstr ""
+
+#: projects table SQL
+msgid "You've taken a break from the report. Please come back to finish P3P before your next doctor visit."
+msgstr ""
+
+#: projects table SQL
+msgid "Continue"
+msgstr ""
+
+#: projects table SQL
+msgid "The following questions ask you what you think about the P3P program you have just viewed. The first questions ask what you think about P3P overall."
+msgstr ""
+
+#: projects table SQL
+msgid "Tell us what you think about P3P"
+msgstr ""
+
+#: projects table SQL
+msgid "Finish telling us what you think about P3P"
+msgstr ""
+
+#: projects table SQL
+msgid "Thank you for your input."
+msgstr ""
+
+#: projects table SQL
+msgid "Start your 1-month follow-up"
+msgstr ""
+
+#: projects table SQL
+msgid "You've taken a break from your 1-month follow-up report. Please come back soon."
+msgstr ""
+
+#: projects table SQL
+msgid "Continue your 1-month follow-up"
+msgstr ""
+
+#: projects table SQL
+msgid "Thank you for completing your 1-month follow-up"
+msgstr ""
+
+#: projects table SQL
+msgid "6-month follow-up"
+msgstr ""
+
+#: projects table SQL
+msgid "Start your 6-month follow-up"
+msgstr ""
+
+#: projects table SQL
+msgid "You've taken a break from your 6-month follow-up report. Please come back it soon."
+msgstr ""
+
+#: projects table SQL
+msgid "Continue your 6-month follow-up"
+msgstr ""
+
+#: projects table SQL
+msgid "Thank you for completing your 6-month follow-up"
+msgstr ""
+
+#: projects table SQL
+msgid "P3P Eligibility"
+msgstr ""
+
+#: projects table SQL
+msgid "Eligibility assessment complete."
+msgstr ""
+
+#: projects table SQL
+msgid "P3P Baseline Clinical Data"
+msgstr ""
+
+msgid "You've taken a break from the report. You have one day to return to complete it."
+msgstr "Usted ha hecho. "
+
+msgid "Survey data have been saved."
+msgstr "Datos de la encuesta se han guardado."
+
+msgid "Click the button below to build your P3P profile:"
+msgstr "Haga clic en el botón abajo para hacer su perfil de P3P:"
+
+msgid "Build your P3P Profile"
+msgstr "Cree su perfil P3P"
+
+msgid "Click the button below to view your P3P profile:"
+msgstr "Haga clic en el botón abajo para ver su perfil de P3P:"
+
+msgid "Next: View My P3P Profile"
+msgstr "Ve su perfil P3P"
+
+msgid "Go to View My P3P Profile"
+msgstr "Va a ver su perfil P3P"
+
+msgid "My Account"
+msgstr "Mi Cuenta"
+
+msgid "Next Approach: "
+msgstr "Próxima Manera: "
+
+msgid "Prostate Cancer Information"
+msgstr "Información de Cáncer de próstata"
+
+msgid "Based on your answers, <strong>your preferred approach is</strong>:"
+msgstr "Basado en sus respuestas, <strong>su manera preferida es</strong>:"
+
+msgid "Another approach to making a decision would be: \"I prefer to make the final treatment decision after serioiusly considering my doctor's opinion.\""
+msgstr "Una otra manera para tomar un decisión sería:  \"Yo prefiero hacer la decisión final yo mismo, después de pensar en la opinión de mis medicó(s).\" "
+
+msgid "Important Factors"
+msgstr "Factores Importantes"
+
+msgid "Print This Information."
+msgstr "Aprende esa Información"
+
+# May be OLD
+msgid "Print P3P Resources"
+msgstr "Imprima los recursos de P3P"
+
+# May be OLD
+msgid "We will now print your P3P resources."
+msgstr "Ahora imprimiremos sus recursos de P3P."
+
+msgid "Below are a few more topics that you may want to know about. Check any you want and then click \"Print Now\" below.</p>"
+msgstr "Abajo hay más tópicos sobre los tal vez desea aprender. Selecciona cuales quiero y luego haga clic en\"Imprímalo\" abajo.</p>"
+
+msgid "Print Now"
+msgstr "Imprima ahora"
+
+msgid "This has been printed especially for"
+msgstr "Imprimido para"
+
+msgid " on "
+msgstr "en la fecha de"
+
+msgid "Understanding statistics"
+msgstr "Cómo entender las estadísticas."
+
+# Would need more context to translate. Is this on the skipped q's page
+# showing questions that are completed/answered? Is it a place where the user
+# submits answers to questions, so the phrase is imperative?
+# It is translated here to mean, e.g., a list of the questions that have been
+# answered.
+msgid "Complete Questions"
+msgstr "Las preguntas contestados"
+
+# Not used, no need to translate
+msgid "About DHAIR"
+msgstr "No Translation"
+
+msgid "About P3P"
+msgstr "¿Qué es P3P?"
+
+msgid "About cPRO"
+msgstr "¿Qué es cPRO?"
+
+msgid "Account Settings"
+msgstr "Posiciónes de Cuenta"
+
+msgid "Your account is listed as:"
+msgstr "Su cuenta es:"
+
+msgid "Use the form below to enter a new password (you'll have to enter it twice)."
+msgstr "Utiliza la forma en bajos para creer una contraseña (necesitará hacer dos veces)."
+
+msgid "letters and numbers"
+msgstr "letras y los numeros"
+
+msgid "For help with the application, please contact"
+msgstr "Para ayuda con el programa, favor de contactar"
+
+msgid "Compatible browsers and operating systems"
+msgstr "Navegadores web (browsers) y sistemas operativas compatibles:"
+
+msgid "version 7 and above"
+msgstr "versión 7 y superiores"
+
+msgid "Login assistance"
+msgstr "Ayuda con iniciar sesión"
+
+msgid "My Home"
+msgstr "Inicio"
+
+msgid "Build My P3P"
+msgstr "Crear mi P3P"
+
+msgid "Build My P3P Profile"
+msgstr "Crear mi P3P perfil"
+
+msgid "Outcomes"
+msgstr "Resultados"
+
+msgid "Lifestyle"
+msgstr "Actividades"
+
+msgid "People"
+msgstr "Personas"
+
+msgid "Current Symptoms"
+msgstr "Síntomas Corrientes"
+
+msgid "Continue building your P3P Profile"
+msgstr "Continúe crear su P3P perfil"
+
+msgid "Start building your P3P Profile"
+msgstr "Empiece crear su P3P perfil"
+
+msgid "Another approach to making a decision would be: \"I prefer that my doctor and I share responsibility for deciding which treatment is best.\""
+msgstr "Una otra manera para tomar un decisión sería:  \"Yo prefiero que mi médico(s) y yo compartamos la decisión de cual opción es mejor.\""
+
+msgid "Another approach to making a decision would be: \"I prefer that my doctor makes the final treament decision, but seriously considers my opinion.\""
+msgstr "Una otra manera para tomar un decisó sería: \"Yo prefiero que mi médico(s) hagan la decisión final, pero pensar en mi opinión.\""
+
+msgid "<span>Skip to Next Section: Prostate Cancer Information</span> <i class='icon-forward'></i>"
+msgstr "<span>Pase a la Próxima sección: Información de Cáncer de próstata</span> <i class='icon-forward'></i>"
+
+msgid "Next Section: Statistics"
+msgstr "Próxima Sección: Estadística"
+
+msgid "<span>Next Section: "
+msgstr "<span>Próxima Sección"
+
+msgid "<span>Skip to Next Section: My Decision Role</span> <i class='icon-forward'></i>"
+msgstr "<span>Pase a la Próxima sección: Mi Parte para decidir</span> <i class='icon-forward'></i>"

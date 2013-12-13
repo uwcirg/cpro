@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="" />
+<title>Test Clinician Access</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">selenium</td></tr>
+</thead><tbody>
+<!-- Verify that clinical staff can't access clinician function -->
+<tr>
+	<td>open</td>
+	<td>users/login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>UserUsername</td>
+	<td>${clinicstaffer_id_var}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>UserPassword</td>
+	<td>${clinicstaffer_pw_var}</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//input[@value='Log in']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>clinicians/add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>Welcome ${clinicstaffer_id_var}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>clinicians/viewAll</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>Welcome ${clinicstaffer_id_var}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>clinicians/edit/1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>Welcome ${clinicstaffer_id_var}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>clinicians/toggleNoteFlag</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>Welcome ${clinicstaffer_id_var}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<!-- Verify that research staff can only access clinicians from the same site -->
+<tr>
+	<td>open</td>
+	<td>users/login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>UserUsername</td>
+	<td>${researchstaffer_id_var}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>UserPassword</td>
+	<td>${researchstaffer_pw_var}</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//input[@value='Log in']</td>
+	<td></td>
+</tr>
+<!-- Non-existent clinician -->
+<tr>
+	<td>open</td>
+	<td>clinicians/edit/0</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>Not a valid clinician id</td>
+	<td></td>
+</tr>
+<!-- clinician at another site -->
+<tr>
+	<td>open</td>
+	<td>clinicians/edit/3</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>Not a valid clinician id</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<!-- Verify that admin user cannot access non-existent clinicians -->
+<tr>
+	<td>open</td>
+	<td>users/login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>UserUsername</td>
+	<td>${centralsupport_id_var}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>UserPassword</td>
+	<td>${centralsupport_pw_var}</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//input[@value='Log in']</td>
+	<td></td>
+</tr>
+<!-- Non-existent clinician -->
+<tr>
+	<td>open</td>
+	<td>clinicians/edit/0</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>Not a valid clinician id</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

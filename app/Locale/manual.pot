@@ -1,0 +1,101 @@
+# LANGUAGE translation of CakePHP Application
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2013-09-10 17:26-0700\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: Config/dhair/dhair_p3p.php
+msgid "Welcome to the Personal Patient Profile for Prostate (P3P)"
+msgstr ""
+
+#: projects table SQL
+msgid "Start P3P"
+msgstr ""
+
+#: projects table SQL
+msgid "The P3P Questions"
+msgstr ""
+
+#: projects table SQL
+msgid "You've taken a break from the report. Please come back to finish P3P before your next doctor visit."
+msgstr ""
+
+#: projects table SQL
+msgid "Continue"
+msgstr ""
+
+#: projects table SQL
+msgid "The following questions ask you what you think about the P3P program you have just viewed. The first questions ask what you think about P3P overall."
+msgstr ""
+
+#: projects table SQL
+msgid "Tell us what you think about P3P"
+msgstr ""
+
+#: projects table SQL
+msgid "Finish telling us what you think about P3P"
+msgstr ""
+
+#: projects table SQL
+msgid "Thank you for your input."
+msgstr ""
+
+#: projects table SQL
+msgid "Start your 1-month follow-up"
+msgstr ""
+
+#: projects table SQL
+msgid "You've taken a break from your 1-month follow-up report. Please come back soon."
+msgstr ""
+
+#: projects table SQL
+msgid "Continue your 1-month follow-up"
+msgstr ""
+
+#: projects table SQL
+msgid "Thank you for completing your 1-month follow-up"
+msgstr ""
+
+#: projects table SQL
+msgid "6-month follow-up"
+msgstr ""
+
+#: projects table SQL
+msgid "Start your 6-month follow-up"
+msgstr ""
+
+#: projects table SQL
+msgid "You've taken a break from your 6-month follow-up report. Please come back it soon."
+msgstr ""
+
+#: projects table SQL
+msgid "Continue your 6-month follow-up"
+msgstr ""
+
+#: projects table SQL
+msgid "Thank you for completing your 6-month follow-up"
+msgstr ""
+
+#: projects table SQL
+msgid "P3P Eligibility"
+msgstr ""
+
+#: projects table SQL
+msgid "Eligibility assessment complete."
+msgstr ""
+
+#: projects table SQL
+msgid "P3P Baseline Clinical Data"
+msgstr ""
+
+

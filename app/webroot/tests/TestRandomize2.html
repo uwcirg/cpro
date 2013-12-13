@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="" />
+<title>selenium</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">selenium</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>users/login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>UserUsername</td>
+	<td>${researchstaffer_id_var}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>UserPassword</td>
+	<td>${researchstaffer_pw_var}</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//input[@value='Log in']</td>
+	<td></td>
+</tr>
+<!--- Clinic/Assisted currently has 6 Treatment, 7 control, so next 
+      can go either way.  The following part uses the Selenium 
+      flow control extensions (see 
+      http://51elliot.blogspot.com/2008/02/selenium-ide-goto.html
+         (to download)
+      http://wiki.openqa.org/display/SEL/flowControl
+         (for documentation) -->
+<tr>
+	<td>open</td>
+	<td>patients/edit/${patient_115_to_edit_for_randomize}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>PatientUserType</td>
+	<td>label=Clinic/Assisted</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>PatientConsentStatus</td>
+	<td>label=consented</td>
+</tr>
+<!--  Ignoring the calendar popup, and typing directly into the field-->
+<tr>
+	<td>click</td>
+	<td>data[t1][date]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>data[t1][date]</td>
+	<td>2009-02-10</td>
+</tr>
+
+<tr>
+	<td>click</td>
+	<td>data[t1][hour][hour]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>data[t1][hour][hour]</td>
+	<td>10</td>
+</tr>
+
+<tr>
+	<td>click</td>
+	<td>data[t1][minute][min]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>data[t1][minute][min]</td>
+	<td>45</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//input[@value='Submit']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeText</td>
+	<td>id=usertype</td>
+	<td>usertypevar</td>
+</tr>
+<!--- if user type = control, jump -->
+<tr>
+	<td>gotoIf</td>
+	<td>${usertypevar} = 'ParticipantControl'</td>
+	<td>twoTreatmentNeeded</td>
+</tr>
+<!-- else, have 7 treatment and 7 control; next two should be one of each -->
+<tr>
+	<td>open</td>
+	<td>patients/edit/${patient_195_to_edit_for_randomize}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>PatientUserType</td>
+	<td>label=Home/Independent</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>PatientConsentStatus</td>
+	<td>label=consented</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>PatientMRN</td>
+	<td>444444</td>
+</tr>
+<!--  Ignoring the calendar popup, and typing directly into the field-->
+<tr>
+	<td>click</td>
+	<td>data[t1][date]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>data[t1][date]</td>
+	<td>2009-02-10</td>
+</tr>
+
+<tr>
+	<td>click</td>
+	<td>data[t1][hour][hour]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>data[t1][hour][hour]</td>
+	<td>10</td>
+</tr>
+
+<tr>
+	<td>click</td>
+	<td>data[t1][minute][min]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>data[t1][minute][min]</td>
+	<td>45</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//input[@value='Submit']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeText</td>
+	<td>id=usertype</td>
+	<td>usertypevar1</td>
+</tr>
+<!-- if user type = control, jump -->
+<tr>
+	<td>gotoIf</td>
+	<td>${usertypevar1} = 'ParticipantControl'</td>
+	<td>oneTreatmentNeeded</td>
+</tr>
+<!-- else, previous was Treatment, so this should be control -->
+<tr>
+	<td>open</td>
+	<td>patients/edit/${patient_238_to_edit_for_randomize}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>PatientUserType</td>
+	<td>label=Home/Independent</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>PatientConsentStatus</td>
+	<td>label=consented</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>PatientMRN</td>
+	<td>444444</td>
+</tr>
+<!--  Ignoring the calendar popup, and typing directly into the field-->
+<tr>
+	<td>click</td>
+	<td>data[t1][date]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>data[t1][date]</td>
+	<td>2009-02-10</td>
+</tr>
+
+<tr>
+	<td>click</td>
+	<td>data[t1][hour][hour]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>data[t1][hour][hour]</td>
+	<td>10</td>
+</tr>
+
+<tr>
+	<td>click</td>
+	<td>data[t1][minute][min]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>data[t1][minute][min]</td>
+	<td>45</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//input[@value='Submit']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>ParticipantControl</td>
+	<td></td>
+</tr>
+<!-- finished; jump to end -->
+<tr>
+	<td>gotolabel</td>
+	<td>endLabel</td>
+	<td></td>
+</tr>
+<!-- Now have 6 treatment and 8 control; next two should be treatment -->
+<tr>
+	<td>label</td>
+	<td>twoTreatmentNeeded</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>patients/edit/${patient_195_to_edit_for_randomize}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>PatientUserType</td>
+	<td>label=Home/Independent</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>PatientConsentStatus</td>
+	<td>label=consented</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>PatientMRN</td>
+	<td>444444</td>
+</tr>
+<!--  Ignoring the calendar popup, and typing directly into the field-->
+<tr>
+	<td>click</td>
+	<td>data[t1][date]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>data[t1][date]</td>
+	<td>2009-02-10</td>
+</tr>
+
+<tr>
+	<td>click</td>
+	<td>data[t1][hour][hour]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>data[t1][hour][hour]</td>
+	<td>10</td>
+</tr>
+
+<tr>
+	<td>click</td>
+	<td>data[t1][minute][min]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>data[t1][minute][min]</td>
+	<td>45</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//input[@value='Submit']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>ParticipantTreatment</td>
+	<td></td>
+</tr>
+<!-- Have 7 treatment and 8 control, next should be treatment -->
+<tr>
+	<td>label</td>
+	<td>oneTreatmentNeeded</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>patients/edit/${patient_238_to_edit_for_randomize}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>PatientUserType</td>
+	<td>label=Home/Independent</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>PatientConsentStatus</td>
+	<td>label=consented</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>PatientMRN</td>
+	<td>444444</td>
+</tr>
+<!--  Ignoring the calendar popup, and typing directly into the field-->
+<tr>
+	<td>click</td>
+	<td>data[t1][date]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>data[t1][date]</td>
+	<td>2009-02-10</td>
+</tr>
+
+<tr>
+	<td>click</td>
+	<td>data[t1][hour][hour]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>data[t1][hour][hour]</td>
+	<td>10</td>
+</tr>
+
+<tr>
+	<td>click</td>
+	<td>data[t1][minute][min]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>data[t1][minute][min]</td>
+	<td>45</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//input[@value='Submit']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>ParticipantTreatment</td>
+	<td></td>
+</tr>
+<!-- The End -->
+<tr>
+	<td>label</td>
+	<td>endLabel</td>
+	<td></td>
+</tr>
+<tr>
+        <td>clickAndWait</td>
+        <td>link=Logout</td>
+        <td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

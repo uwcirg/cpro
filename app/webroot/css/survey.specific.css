@@ -1,0 +1,146 @@
+/**
+    * 
+    * Copyright 2013 University of Washington, School of Nursing.
+    * http://opensource.org/licenses/BSD-3-Clause 
+    *
+*/
+
+/*** General sytles for question layout. Can be changed with survey-layout
+    below ***/
+.q-text b, .q-text strong { font-size: 18px }
+.survey-page-box { min-height:93%; padding: 1em; font-size: 16px }
+.q-box { padding-left:2em; line-height: 1.5em; min-height: 80px }
+.q-box p { margin-bottom: 1em }
+.q-box ul { margin-bottom: 0 }
+
+
+/*** New (2013-09) layout styles that use bootstrap/font-awesome icons to replace
+    the generic radio and checkbox inputs. No longer rely on tables for layout.
+    Default layouts are for survey-layout-regular. Overrides below. ***/
+.q-container { margin-left: 20px; }
+.q-container .q-row .q-option { display: inline-block; position: relative; margin-bottom: .5em; min-width: 200px; vertical-align: top; padding: 0 1.5em 0 0; } 
+.q-container.multi-col .q-row .q-option { max-width: 400px }
+.q-container .q-row .q-option.radio-horizontal,
+.survey-layout-small .q-container .q-row .q-option.radio-horizontal { min-width: inherit; padding: 0; text-align: center; }    
+.q-container .q-row .q-option:last-child, .q-container .q-row label:last-child { padding-right: 0; }
+/* Make the default radio and checkbox inputs hidden - display none works for all
+    but IE8 - that's handled in ie.css */
+.q-container input[type="radio"], .q-container input[type="checkbox"] { display: none }
+.q-container input[type="radio"]:focus, .q-container input[type="checkbox"]:focus { outline: 0 }
+/* Position the font-awesome icons over the default input */
+.q-container label i { position: absolute; left: 0; color: #297DBF; text-shadow: 1px 1px 1px #888; background-color: #fff; }
+.q-container .radio-horizontal label i { position: inherit; }
+.q-option label:hover { cursor: pointer }
+
+/*** Survey layout - default is regular. small is triggered when
+    project['ui_small'] is set to true. Used for tighter, smaller layout ***/
+.survey-layout-regular { padding: 1em 0 }
+.survey-layout-regular.question-page-text { padding: 1em 0 0; border-bottom: 1px solid #ccc; margin-bottom: 1em; line-height: 24px }
+.survey-layout-regular.question-page-text p { max-width: 50em; }
+.survey-layout-regular.question-page-text.no-question { padding-bottom: 1em; border-bottom: none; margin-bottom: 1em }
+.survey-layout-regular .q-text { font-size: 18px; margin-bottom: 2em }
+/* label line-height should match size of label icons (ie - 2em = icon-2x)*/
+.q-container .q-row label { font-size: 18px; line-height: 3em; margin: 0 }
+/* span margin will need to be updated if icon size changes */
+.q-container label span { margin-left: 3.5em; }
+.q-container .radio-horizontal label div { font-size: 16px; line-height: 20px; padding: 0px 0.5em; }
+.q-container span { font-size: 16px; line-height: 20px; display: inline-block; }
+
+/*** survey-layout-small styles ***/
+.survey-layout-small { padding-bottom: 1.5em; position: relative; min-height: 0 }
+.survey-layout-small, .survey-layout-small strong, .survey-layout-small b, 
+.survey-layout-small p, .survey-layout-small div, .survey-layout-small label,
+.survey-layout-small .q-container .radio-horizontal label div,
+.survey-layout-small .q-container span { font-size: 12px; line-height: 1.5em }
+.survey-layout-small h2, .survey-layout-small p { margin-bottom: 6px }
+.survey-layout-small h2 { font-size: 16px }
+.survey-layout-small .q-container.multi-col .q-row .q-option,
+.survey-layout-small .q-container.multi-col .q-row label,
+.q-container.a-matrix .radio-horizontal,
+.q-container.a-matrix .radio-horizontal label { margin-bottom: 0; } 
+.survey-layout-small .q-container .q-row .q-option { min-width: 160px; }
+.survey-layout-small .q-container .q-row label { line-height: 18px; }
+.survey-layout-small .q-container label span,
+.survey-layout-small .comboTextHolder { margin-left: 24px; }
+.survey-layout-small .q-container label i { line-height: 22px; text-shadow: none }
+.survey-layout-small.matrix-container.matrix-striped, .survey-layout-small.matrix-container.matrix-striped label i  {
+    background-color: #f9f9f9;
+}
+/*** Specific question type styles ***/
+
+/** Combo boxes **/
+/* Tweaks to layout of combo boxes based on layout and question type */
+.q-container .q-option .comboTextHolder input.comboText.combo-check { margin: 0 0 0 10px }
+input.comboText.combo-radio { margin: 0; }
+/* Used for checkbox/input combos where input appears if box is checked */
+.comboTextHolder { margin-left: 54px; }
+
+/** Matrix questions - used for multiple questions with the same scales **/
+.matrix-container { padding: .5em 0 .5em 0em; margin-left: 2em; min-height: 1.5em; border-top: 1px solid #ccc; clear: both; overflow: auto }
+.matrix-first { margin-top: -2em; border-top: none }
+.matrix-first h2 { margin-left: -1em; margin-top: 1em }
+.matrix-last { margin-bottom: 2em }
+/* Set max-width to avoid having long questions force the answers off the right 
+    of the page at smaller window widths */
+.survey-layout-small .q-matrix-top, .survey-layout-small .q-matrix { max-width: 500px; }
+/*.survey-layout-small .q-matrix-top { position: absolute; bottom: .5em; left: 0 }*/
+.survey-layout-small .q-matrix-top, .survey-layout-small .q-matrix { float: left; width: 50% }
+.survey-layout-small.matrix-first { overflow: auto }
+.survey-layout-small.matrix-first .q-matrix-top { position: relative }
+.survey-layout-small.matrix-first .q-pos-bot { position: absolute; left: 0; bottom: 0 }
+.survey-layout-small .a-matrix { float: left; width: 50% }
+.matrix-container .q-container.a-matrix { display: inline-block; margin-left: 0 }
+.matrix-container .q-container.a-matrix,
+.q-container.a-matrix .radio-horizontal label i { display: block; }
+.q-container.a-matrix .radio-horizontal label span { margin: 0; }
+
+/*** text_box questions ***/
+.textbox-question { margin: 0 0 10px 10px; padding: 5px }
+/* used to display hint in text inputs */
+.textbox-background { background-image:url("../img/textbox_background_hint.jpg"); background-repeat: no-repeat; background-position: 5px 0px }
+/* uses Spanish version of image if class="lang-sp" is set */
+.textbox-background.lang-sp { background-image:url("../img/textbox_background_hintSpanish.jpg"); }
+.survey-layout-small .textbox-question { height: 60px }
+
+/*** End - Specific question type styles ***/
+
+/*** Next/prev buttons and progress bar ***/
+.survey .progress-prev { margin-top: 7px }
+.survey .progress-next { float: right }
+/* If ProgressType is graphical, these styles are used for the progress bar and
+   related layout */
+.survey .progress-container .progress-prev { vertical-align: top }
+.survey .progress-container .progress-next { vertical-align: top; float: none }
+.progress-container { width: 100% }
+.progress-container > div { float: none; display: inline-block; width: 40% }
+.progress { height: 28px; border: 2px solid #ccc; margin: 6px 6px 0 }
+
+/*** Misc ***/
+.q-container label { -webkit-tap-highlight-color: rgba(0,0,0,0); }
+#calculating-box { text-align:center; display: none; padding: 40px }
+.pageHeader { font-size: 1.2em; font-weight: bold; font-style: italic }
+.print-button { margin: 0 0 1em 1em }
+.consent-box, .consent-box label { font-size: inherit }
+
+/*** Responsive elements ***/
+
+/** Desktop large **/
+@media (min-width: 1200px) {
+    /* Prevents horizontal list from being too gigantic */
+    .horizontal-container { max-width: 90%;}
+}
+/** Landscape tablet/small desktop and smaller **/
+@media (max-width: 979px) {
+    .survey-page-box{ padding: 0.5em }
+    .q-container .q-row .q-option { padding-right: 1em; }
+    .q-container label i { text-shadow: none }
+    /* Tweaks for ui-small */
+    .survey-layout-small.matrix-container { margin-left: 0 }
+    .survey-layout-small.q-box { padding-left: 0 }
+}
+/** Landscape phones and down **/
+@media (max-width: 480px) {
+    .progress-container > div { width: 30% }
+}
+
+/*** End - Responsive elements ***/

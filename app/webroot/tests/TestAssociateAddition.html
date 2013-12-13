@@ -1,0 +1,250 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="" />
+<title>selenium</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Test Associate Addition</td></tr>
+</thead><tbody>
+<!--  Test associate creation--->
+<!-- TODO see whether the approp scales are now displayed as checked for the new assoc...-->
+<!-- TODO test the associate registration also...-->
+<tr>
+	<td>open</td>
+	<td>users/login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>UserUsername</td>
+	<td>${ptesta_id_var}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>UserPassword</td>
+	<td>${ptesta_pw_var}</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//input[@value='Log in']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Share My Reports</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=invite more people</td>
+	<td></td>
+</tr>
+<!-- liberal use of pauses becuase the div tags are flashed visible rather unpredictably on this page...-->
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>invite-to-share-0</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>javascript{(new Date()).getTime() + '@esrac2assoc.edu'}</td>
+	<td>emailaddressvar</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${emailaddressvar}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>data[User][email]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>data[User][email]</td>
+	<td>${emailaddressvar}</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>data[User][email_confirm]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>data[User][email_confirm]</td>
+	<td>${emailaddressvar}</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=0-next</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>invite-to-share-1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=1-next</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>invite-to-share-2</td>
+	<td></td>
+</tr>
+<!--- Symptom Distress / Nausea Intensity-->
+<tr>
+	<td>click</td>
+	<td>id=02</td>
+	<td></td>
+</tr>
+<!--- Symptom Distress / Fatigue-->
+<tr>
+	<td>click</td>
+	<td>id=03</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=015</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=024</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=028</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=0journal</td>
+	<td></td>
+</tr>
+<!-- Don't really need pause here, checkboxes don't appear checked anyways....-->
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=2-next</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>invite-to-share-3</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>data[Associate][invitationSubject]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>setCursorPosition</td>
+	<td>data[Associate][invitationSubject]</td>
+	<td>-1</td>
+</tr>
+<!-- For some reason, the period in the address is not typed...-->
+<tr>
+	<td>typeKeys</td>
+	<td>data[Associate][invitationSubject]</td>
+	<td> from test user ${emailaddressvar}</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${emailaddressvar}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>data[Associate][invitationBody]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>setCursorPosition</td>
+	<td>data[Associate][invitationBody]</td>
+	<td>-1</td>
+</tr>
+<!-- For some reason, the period in the address is not typed...-->
+<tr>
+	<td>typeKeys</td>
+	<td>data[Associate][invitationBody]</td>
+	<td> Thanks, from test user ${emailaddressvar}</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${emailaddressvar}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//input[@value='Send invitation']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>You are now sharing charts with ${emailaddressvar}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${emailaddressvar}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

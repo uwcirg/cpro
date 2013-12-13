@@ -1,0 +1,6 @@
+<p>
+Javascript is required for this application to work, and your browser does 
+not have Javascript enabled.  Please enable
+Javascript and 
+<? echo '<a href="' . Router::url("/") . '">try again</a>.' ?>
+</p>

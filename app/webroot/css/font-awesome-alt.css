@@ -1,0 +1,73 @@
+/*
+ *  Hacks to make our icons work with IE9 computers that have issues with
+ *  font-awesome font loading. This happened to UW Nursing TIER computers.
+ *  Unclear how this extends, but playing it safe by handling IE9 with this
+ *  method. Makes maintenance a bit of a pain so would be nice to figure out
+ *  an alternate method.
+ *
+ * Copyright 2013 University of Washington, School of Nursing.
+    * http://opensource.org/licenses/BSD-3-Clause 
+ *
+ */
+
+/* use icon-off instead - could switch to an image to be more consistent */
+.icon-signout {
+    background-position: -384px 0;
+}
+
+/* replace with actual background images */
+.icon-check {
+  margin-top: 4px;
+  width: 17px;
+  height: 14px;
+  background: url(../img/icon-check.png) left center no-repeat;
+  display: inline-block;
+}
+.icon-check.icon-3x {
+  margin-top: 2px;
+  width: 51px;
+  height: 48px;
+  background: url(../img/icon-check-3x.png) left center no-repeat;
+}
+
+.icon-check-empty {
+  margin-top: 4px;
+  width: 17px;
+  height: 14px;
+  background: url(../img/icon-check-empty.png) left center no-repeat;
+  display: inline-block;
+}
+.icon-check-empty.icon-3x {
+  margin-top: 2px;
+  width: 51px;
+  height: 48px;
+  background: url(../img/icon-check-empty-3x.png) left center no-repeat;
+}
+
+.icon-circle {
+  margin-top: 4px;
+  width: 16px;
+  height: 15px;
+  background: url(../img/icon-circle.png) left center no-repeat;
+  display: inline-block;
+}
+.icon-circle.icon-3x {
+  margin-top: 3px;
+  width: 49px;
+  height: 50px;
+  background: url(../img/icon-circle-3x.png) left center no-repeat;
+}
+
+.icon-circle-blank {
+  margin: 4px 0 4px;
+  width: 16px;
+  height: 15px;
+  background: url(../img/icon-circle-blank.png) left center no-repeat;
+  display: inline-block;
+}
+.icon-circle-blank.icon-3x {
+  margin-top: 3px;
+  width: 49px;
+  height: 50px;
+  background: url(../img/icon-circle-blank-3x.png) left center no-repeat;
+}

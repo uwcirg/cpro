@@ -1,0 +1,184 @@
+# LANGUAGE translation of CakePHP Application
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+#
+# Translators:
+# ivan_c <ivanc+transifex1@uw.edu>, 2013
+# ivan_c <ivanc+transifex1@uw.edu>, 2013
+msgid ""
+msgstr ""
+"Project-Id-Version: P3P II R01\n"
+"POT-Creation-Date: 2013-09-11 16:46-0700\n"
+"PO-Revision-Date: 2013-09-12 14:50-0800\n"
+"Last-Translator: Ivan Cvitkovic <ivanc+gettext@uw.edu>\n"
+"Language-Team: Spanish (Mexico) (http://www.transifex.com/projects/p/p3p-ii-"
+"r01/language/es_MX/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: es_MX\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 1.5.4\n"
+
+msgid ""
+"You've taken a break from the report. You have one day to return to complete "
+"it."
+msgstr ""
+
+msgid "Survey data have been saved."
+msgstr ""
+
+msgid "Click the button below to build your P3P profile:"
+msgstr ""
+
+msgid "Build your P3P Profile"
+msgstr ""
+
+msgid "Click the button below to view your P3P profile:"
+msgstr ""
+
+msgid "Next: View My P3P Profile"
+msgstr ""
+
+msgid "Go to View My P3P Profile"
+msgstr ""
+
+msgid "My Account"
+msgstr ""
+
+msgid "Next Approach: "
+msgstr ""
+
+msgid "Prostate Cancer Information"
+msgstr ""
+
+msgid "Based on your answers, <strong>your preferred approach is</strong>:"
+msgstr ""
+
+msgid ""
+"Another approach to making a decision would be: \"I prefer to make the final "
+"treatment decision after serioiusly considering my doctor's opinion.\""
+msgstr ""
+
+msgid "Important Factors"
+msgstr ""
+
+msgid "Print This Information."
+msgstr ""
+
+# May be OLD
+msgid "Print P3P Resources"
+msgstr ""
+
+# May be OLD
+msgid "We will now print your P3P resources."
+msgstr ""
+
+msgid ""
+"Below are a few more topics that you may want to know about. Check any you "
+"want and then click \"Print Now\" below.</p>"
+msgstr ""
+
+msgid "Print Now"
+msgstr ""
+
+msgid "This has been printed especially for"
+msgstr ""
+
+msgid " on "
+msgstr ""
+
+msgid "Understanding statistics"
+msgstr ""
+
+# Would need more context to translate. Is this on the skipped q's page showing questions that are completed/answered? Is it a place where the user submits answers to questions, so the phrase is imperative?
+# It is translated here to mean, e.g., a list of the questions that have been answered.
+msgid "Complete Questions"
+msgstr ""
+
+# Not used, no need to translate
+msgid "About DHAIR"
+msgstr ""
+
+msgid "About P3P"
+msgstr ""
+
+msgid "About cPRO"
+msgstr ""
+
+msgid "Account Settings"
+msgstr ""
+
+msgid "Your account is listed as:"
+msgstr ""
+
+msgid ""
+"Use the form below to enter a new password (you'll have to enter it twice)."
+msgstr ""
+
+msgid "letters and numbers"
+msgstr ""
+
+msgid "For help with the application, please contact"
+msgstr ""
+
+msgid "Compatible browsers and operating systems"
+msgstr ""
+
+msgid "version 7 and above"
+msgstr ""
+
+msgid "Login assistance"
+msgstr ""
+
+msgid "My Home"
+msgstr ""
+
+msgid "Build My P3P"
+msgstr ""
+
+msgid "Build My P3P Profile"
+msgstr ""
+
+msgid "Outcomes"
+msgstr ""
+
+msgid "Lifestyle"
+msgstr ""
+
+msgid "People"
+msgstr ""
+
+msgid "Current Symptoms"
+msgstr ""
+
+msgid "Continue building your P3P Profile"
+msgstr ""
+
+msgid "Start building your P3P Profile"
+msgstr ""
+
+msgid ""
+"Another approach to making a decision would be: \"I prefer that my doctor "
+"and I share responsibility for deciding which treatment is best.\""
+msgstr ""
+
+msgid ""
+"Another approach to making a decision would be: \"I prefer that my doctor "
+"makes the final treament decision, but seriously considers my opinion.\""
+msgstr ""
+
+msgid ""
+"<span>Skip to Next Section: Prostate Cancer Information</span> <i "
+"class='icon-forward'></i>"
+msgstr ""
+
+msgid "Next Section: Statistics"
+msgstr ""
+
+msgid "<span>Next Section: "
+msgstr ""
+
+msgid ""
+"<span>Skip to Next Section: My Decision Role</span> <i class='icon-"
+"forward'></i>"
+msgstr ""

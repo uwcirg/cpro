@@ -1,0 +1,140 @@
+cpro schema change log
+
+-- 11/12/13: Added meddays_other_medications table for recording medications and their type
+CREATE  TABLE  `paintracker_rural_dev`.`meddays_other_medications` (  `id` int( 11  )  NOT  NULL  AUTO_INCREMENT ,
+`medday_id` int( 11  )  NOT  NULL  COMMENT  'foreign key from meddays table',
+`name` varchar( 100  )  COLLATE utf8_unicode_ci NOT  NULL ,
+`type` ENUM('anxiety', 'depression', 'sleep', 'constipation', 'other') NULL DEFAULT NULL,
+`dose` varchar( 100  )  COLLATE utf8_unicode_ci NOT  NULL ,
+`take_as` enum(  'Scheduled',  'PRN'  )  COLLATE utf8_unicode_ci NOT  NULL ,
+`frequency` varchar( 128  )  COLLATE utf8_unicode_ci  DEFAULT NULL ,
+PRIMARY  KEY (  `id`  ) ,
+KEY  `medday_id` (  `medday_id`  )  ) ENGINE  =  MyISAM  DEFAULT CHARSET  = utf8 COLLATE  = utf8_unicode_ci;
+
+-- 11/8/13: P3P patient_extensions  additions
+ALTER TABLE `patient_extensions` ADD `one_month_wont_complete` TINYINT( 1 ) NOT NULL AFTER `one_month_mode_pref`;
+ALTER TABLE `patient_extensions` ADD `one_month_wont_complete_reason` VARCHAR( 55 ) NULL DEFAULT NULL AFTER `one_month_wont_complete`;
+ALTER TABLE `patient_extensions` ADD `six_month_wont_complete` TINYINT( 1 ) NOT NULL AFTER `six_month_mode_pref`;
+ALTER TABLE `patient_extensions` ADD `six_month_wont_complete_reason` VARCHAR( 55 ) NULL DEFAULT NULL AFTER `six_month_wont_complete`;
+
+
+-- 11/6/13: patient_extensions is now a required table for all systems.
+Note that the relationship needs to be created as well 
+Also note that earlier log entries adding fields to it are specific to P3P.
+CREATE TABLE IF NOT EXISTS `patient_extensions` (
+  `patient_id` int(11) NOT NULL,
+  PRIMARY KEY (`patient_id`)
+)
+
+--
+-- RELATIONS FOR TABLE `patient_extensions`:
+--   `patient_id`
+--       `patients` -> `id`
+--
+
+-- 11/5/13: Added anonymous_access to purpose field in webkeys table
+ALTER TABLE `webkeys` CHANGE `purpose` `purpose` ENUM('self-register','login_assist','anonymous_access') CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL
+
+-- 11/5/13: Added external_study_id to patients table
+ALTER TABLE `patients`  ADD `external_study_id` VARCHAR(10) NULL DEFAULT NULL AFTER `MRN`
+
+-- 10/29/13
+#somehow month, day, year options had been removed from the p3p schema...
+ALTER TABLE `options` CHANGE `OptionType` `OptionType` ENUM( 'radio', 'checkbox', 'dropdown', 'text', 'textbox', 'combo-radio', 'combo-check', 'button-yes', 'button-no', 'imagemap', 'none', 'image', 'month', 'day', 'year' ) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL DEFAULT 'radio'; 
+
+ALTER TABLE `patient_extensions` ADD `one_month_mode_pref` ENUM( 'online', 'mail' ) NULL DEFAULT NULL AFTER `wtp_study_group` ;
+ALTER TABLE `patient_extensions`  ADD `six_month_mode_pref` ENUM('online','mail') NULL DEFAULT NULL AFTER `one_month_fax_recd_on`;
+
+-- 10/25/13: Added "image" option type to options table
+ALTER TABLE `options` CHANGE `OptionType` `OptionType` ENUM('radio','checkbox','dropdown','text','textbox','combo-radio','combo-check','button-yes','button-no','imagemap','none','image') CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL DEFAULT 'radio'
+
+-- 10/25/13 Added index to patient_id in logs table
+ALTER TABLE `logs` ADD INDEX(`patient_id`)
+
+-- 10/25/13
+ALTER TABLE `logs` CHANGE `ip_address` `ip_address` VARCHAR( 55 );
+
+-- 10/24/13 (P3P only)
+ALTER TABLE `patient_extensions` ADD `one_month_first_mailing` DATE NULL DEFAULT NULL,
+ADD `one_month_second_mailing` DATE NULL DEFAULT NULL AFTER `one_month_first_mailing`,
+ADD `one_month_received_on` DATE NULL DEFAULT NULL AFTER `one_month_second_mailing`,
+ADD `one_month_postmarked_on` DATE NULL DEFAULT NULL AFTER `one_month_received_on`,
+ADD `one_month_faxed_on` DATE NULL DEFAULT NULL AFTER `one_month_postmarked_on`,
+ADD `one_month_fax_recd_on` DATE NULL DEFAULT NULL AFTER `one_month_faxed_on`;
+ALTER TABLE `patient_extensions` ADD `six_month_first_mailing` DATE NULL DEFAULT NULL,
+ADD `six_month_second_mailing` DATE NULL DEFAULT NULL AFTER `six_month_first_mailing`,
+ADD `six_month_received_on` DATE NULL DEFAULT NULL AFTER `six_month_second_mailing`,
+ADD `six_month_postmarked_on` DATE NULL DEFAULT NULL AFTER `six_month_received_on`,
+ADD `six_month_faxed_on` DATE NULL DEFAULT NULL AFTER `six_month_postmarked_on`,
+ADD `six_month_fax_recd_on` DATE NULL DEFAULT NULL AFTER `six_month_faxed_on`;
+
+-- 10/17/13: This change should have been made a week ago...
+ALTER TABLE `patients` CHANGE `eligible_flag` `eligible_flag` TINYINT( 2 ) NULL DEFAULT NULL 
+
+-- 10/16/13: Added "frequency" field to meddays_nonopioids
+ALTER TABLE `meddays_nonopioids`  ADD `frequency` VARCHAR(128) NULL DEFAULT NULL
+8/8/13: log created.
+
+-- 10/16/13: Added images table for mPOWEr
+CREATE TABLE IF NOT EXISTS `images` (
+  `id` varchar(36) COLLATE utf8_unicode_ci NOT NULL DEFAULT '' COMMENT 'uuid',
+  `answer_id` int(11) NOT NULL,
+  `patient_id` int(11) NOT NULL,
+  `created` datetime NOT NULL,
+  `filename` varchar(64) COLLATE utf8_unicode_ci NOT NULL COMMENT 'original filename as uploaded',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+10/11/13:
+ALTER TABLE `projects` ADD `email_reminder` varchar(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL COMMENT 'Name of email template file; if null, none sent.',
+
+-- 10/7/13: Changed `account_id` column to `patient_id` for use in email logging
+ALTER TABLE `logs` CHANGE `account_id` `patient_id` INT(11) UNSIGNED NULL DEFAULT NULL
+
+-- 10/3/13: survey_sessions_deleted to match survey_sessions
+alter table survey_sessions_deleted modify column `type` varchar(30) COLLATE utf8_unicode_ci DEFAULT NULL;
+alter table survey_sessions_deleted add column `reportable_datetime` datetime DEFAULT NULL;
+
+9/24/13: 
+CREATE TABLE IF NOT EXISTS `patient_extensions_deleted` (
+  `patient_id` int(11) NOT NULL,
+  `primary_randomization_date` datetime DEFAULT NULL,
+  `wtp_status` enum('Completed','Unable to reach','Patient refused') COLLATE utf8_unicode_ci DEFAULT NULL,
+  `wtp_randomization_date` datetime DEFAULT NULL COMMENT 'Willingness to pay randomization date',
+  `wtp_study_group` enum('Control','Treatment') COLLATE utf8_unicode_ci DEFAULT NULL,
+  PRIMARY KEY (`patient_id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+9/24/13: Added new enum options to options.type: month, day, year
+
+-- 9/24/13: Changed flag_type to varchar 255 to allow for multiple notes
+ALTER TABLE `notes` CHANGE `flag_type` `flag_type` VARCHAR(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci NULL DEFAULT NULL COMMENT 'comma-separated list'
+
+9/11/13: obsolete p3p fields:
+ALTER TABLE `patients` DROP `requestedTopicHomeCare` ,
+DROP `requestedTopicFamilyImpact` ,
+DROP `requestedTopicFamilyRisk` ;
+
+-- 9/4/13: Added flag_type to notes for the flagging of notes by clinicians
+ALTER TABLE `notes`  ADD `flag_type` ENUM('Identifiers in note', 'Participant distress', 'Participant feedback', 'Provider feedback', 'Technical issue', 'Data integrity', 'Report to IRB') NULL DEFAULT NULL
+
+-- 9/3/13: Added alternative contact fields (alt_contact_name, alt_contact_relation, alt_contact_phone, alt_contact_email) to patients table
+ALTER TABLE `patients`  ADD `alt_contact_name` VARCHAR(128) NULL DEFAULT NULL COMMENT 'alternative contact name' AFTER `no_more_check_agains`,  ADD `alt_contact_relation` VARCHAR(128) NULL DEFAULT NULL COMMENT 'alternative contact''s relationship to patient' AFTER `alt_contact_name`,  ADD `alt_contact_phone` VARCHAR(20) NULL DEFAULT NULL COMMENT 'alternative contact phone number' AFTER `alt_contact_relation`,  ADD `alt_contact_email` VARCHAR(40) NULL DEFAULT NULL COMMENT 'alternative contact email address' AFTER `alt_contact_phone`
+
+-- 8/27/13: Added AncillaryText field to questions. This field is meant to store extra text and was originally added to help the body diagram implementation.
+ALTER TABLE `questions`  ADD `AncillaryText` TEXT NULL DEFAULT NULL COMMENT 'extra text a question might need' AFTER `BodyTextPosition`
+
+-- 8/20/13: Added AncillaryText field to options. This field is meant to contain extra text used for combo-radio and combo-checkbox
+ALTER TABLE `options`  ADD `AncillaryText` TEXT NULL DEFAULT NULL COMMENT 'extra text used for combo-radio and combo-checkbox' AFTER `BodyTextType`
+
+8/9/13: Changed Clinics.irb_contact to varchar 256 from 128, may need to split this into separate fields
+ALTER TABLE  `clinics` CHANGE  `irb_contact`  `irb_contact` VARCHAR( 256 ) CHARACTER SET utf8 COLLATE utf8_unicode_ci NULL DEFAULT NULL
+
+8/9/13: Added friendly_name to sites table:
+ALTER TABLE  `sites` ADD  `friendly_name` VARCHAR( 128 ) NULL DEFAULT NULL AFTER  `name`
+
+8/8/13: These aren't necessary, just helpful. This replaces patients_clinics_view:
+CREATE ALGORITHM=UNDEFINED DEFINER=`mcjustin`@`localhost` SQL SECURITY DEFINER VIEW `patients_clinics_vw` AS select `clinics`.`name` AS `name`,`patients`.`id` AS `id`,`patients`.`MRN` AS `MRN`,`patients`.`test_flag` AS `test_flag`,`patients`.`phone1` AS `phone1`,`patients`.`phone2` AS `phone2`,`patients`.`mailing_address` AS `mailing_address`,`patients`.`study_participation_flag` AS `study_participation_flag`,`patients`.`user_type` AS `user_type`,`patients`.`consent_status` AS `consent_status`,`patients`.`consent_date` AS `consent_date`,`patients`.`consenter_id` AS `consenter_id`,`patients`.`consent_checked` AS `consent_checked`,`patients`.`hipaa_consent_checked` AS `hipaa_consent_checked`,`patients`.`clinical_service` AS `clinical_service`,`patients`.`treatment_start_date` AS `treatment_start_date`,`patients`.`birthdate` AS `birthdate`,`patients`.`gender` AS `gender`,`patients`.`ethnicity` AS `ethnicity`,`patients`.`eligible_flag` AS `eligible_flag`,`patients`.`study_group` AS `study_group`,`patients`.`check_again_date` AS `check_again_date`,`patients`.`no_more_check_agains` AS `no_more_check_agains`,`patients`.`off_study_status` AS `off_study_status`,`patients`.`off_study_reason` AS `off_study_reason`,`patients`.`off_study_timestamp` AS `off_study_timestamp` from ((`patients` join `users` on((`patients`.`id` = `users`.`id`))) join `clinics` on((`users`.`clinic_id` = `clinics`.`id`)));
+CREATE ALGORITHM=UNDEFINED DEFINER=`mcjustin`@`localhost` SQL SECURITY DEFINER VIEW `patients_clinics_vw_count` AS select count(0) AS `COUNT(*)` from `patients_clinics_vw`;
+
+

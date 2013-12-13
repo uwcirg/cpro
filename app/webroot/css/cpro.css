@@ -1,0 +1,966 @@
+/*
+ * Main cpro stylesheet. Builds off bootstrap framework. 
+ *
+ * Copyright 2013 University of Washington, School of Nursing.
+    * http://opensource.org/licenses/BSD-3-Clause 
+ *
+*/
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+/* Subtle shadow at top of page */
+body:before {
+    content: "";
+    position: fixed;
+    top: -8px;
+    left: 0;
+    width: 100%;
+    height: 8px;
+    -webkit-box-shadow: 0px 0px 8px rgba(0,0,0,.6);
+    -moz-box-shadow: 0px 0px 8px rgba(0,0,0,.6);
+    box-shadow: 0px 0px 8px rgba(0,0,0,.6);
+    z-index: 100;
+}
+h1, h2, h3, h4 {
+    font-weight: 700;
+    color: #965571;
+}
+h1, h2 {
+    border-bottom: 1px solid #965571;
+    padding-bottom: 3px;
+}
+h4 {
+    margin-bottom: 0px;
+}
+/* make h tags all caps and add underline */
+.headline-cap {
+    text-transform: uppercase;
+    border-bottom: 1px solid #965571;
+    padding-bottom: 3px;
+}
+.container > .row > .span2 {
+    background-color: #779cce;
+}
+/*** Styles to make two columns equal height
+ * Currently used on flash message only. Using jquery resizeSize function to
+ * handle other elements b/c of problem with overflow: hidden & anchor links
+***/
+.message-container > div {
+    overflow: hidden;
+}
+.message-container > .row > [class*="span"]  {
+    margin-bottom: -99999px;
+    padding-bottom: 99999px;
+}
+/* End - styles for equal columns */
+
+/* Bug in Bootrstap affix for Chrome */
+.affix,.navbar-fixed-top{
+-webkit-transform: scale3d(1,1,1);
+}
+#video.affix {
+  top: 20px;
+}
+.basic-sidebar.affix {
+    top: 20px;
+    margin-top: 0
+}
+.intervention-sidebar.affix {
+  top: 20px;
+  width: 130px;
+  margin-top: 0;
+}
+.intervention-container > div {
+  /*padding-bottom: 20px;*/
+}
+.intervention-segment {
+  /*padding-left: 10px;
+  padding-right: 10px;*/
+}
+.intervention-sidebar {
+  background-color: #ffffff;
+  margin: 60px 4px 12px;
+  padding: 0;
+  font-size: 12px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  -webkit-border-radius:  6px;
+    -moz-border-radius: 6px;
+      border-radius: 6px;
+  /*border-left: none;
+  -webkit-border-radius:  0 6px 6px 0;
+    -moz-border-radius: 0 6px 6px 0;
+      border-radius: 0 6px 6px 0;
+  */
+  -webkit-box-shadow: 0 1px 4px rgba(0,0,0,.065);
+    -moz-box-shadow: 0 1px 4px rgba(0,0,0,.065);
+        box-shadow: 0 1px 4px rgba(0,0,0,.065);
+
+}
+.intervention-sidebar li > a {
+  border-bottom: 1px solid #E5E5E5;
+}
+.intervention-sidebar div {
+  line-height: 16px;
+}
+.intervention-sidebar div.section {
+  font-weight: bold;
+  margin: 6px 4px 0;
+}
+.intervention-sidebar .current {
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
+  background-color: #eeeeee;
+}
+.intervention-sidebar i {
+  margin-left: -14px;
+}
+.white-background {
+  background-color: #fff;
+}
+.esrac-header .span2 .header-logo {
+  padding-bottom: 16px
+}
+.paintracker-logo {
+  margin-left: -9px;
+  width: 187px;
+}
+.header-middle img {
+    margin-left: -30px
+}
+.nav-list {
+  padding: 0;
+}
+.nav-list > li > a, .nav-list .nav-header {
+  margin: 0
+}
+.nav-list > li > a {
+  padding: 3px 6px 3px 16px;
+}
+/* Used for logo in footer of pages */
+.bottom-logo {
+    margin-bottom: 2em;
+}
+/* Styles for alerts that appear at top of page. Uses bootstrap alerts */
+.flash-message {
+    margin-top: 10px;
+}
+#nextButtons .btn {
+    font-family: 'Open Sans Condensed',sans-serif;
+}
+/* Use larger font on buttons with .big-text (currently for what do you think) */
+#nextButtons.big-text .btn {
+    font-family: inherit;
+}
+/*** Decorate bootstrap blockquote style ***/
+.well.yellow-background {
+    background-color: #f7f1af;
+    border-color: #e5e0a3;
+    margin-bottom: 0;
+}
+/* Decrease padding for video well */
+#video.well.yellow-background {
+    padding: 9px;
+}
+.well.yellow-background h4 {
+    border-bottom: 1px solid #965571;
+    padding-bottom: 3px;
+    margin-bottom: 3px;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-left: -19px;
+}
+.well.yellow-background h4 span {
+    width: 19px;
+    display: inline-block;
+    color: #F7F1AF;
+}
+.well .quote {
+    margin: 1em 2em;
+    font-weight: bold;
+}
+.language-login {
+    width: auto;
+    margin: -0.25em 0 0 1em;
+    font-size: 0.9em;
+    line-height: 1.2em;
+    padding: 0.5em;
+}
+/** Not in use **/
+/* Larger text, different font and spacing */
+/* Add large quote mark 
+blockquote.quote:before {
+  display: block;
+  content: "\201C";
+  font-size: 80px;
+  position: absolute;
+  left: -20px;
+  top: -20px;
+  color: #7a7a7a;
+}
+If adding citation for reference
+blockquote.quote cite {
+  color: #999999;
+  font-size: 14px;
+  display: block;
+  margin-top: 5px;
+}
+blockquote.quote cite:before {
+  content: "\2014 \2009";
+}*/
+
+/*** Dev site warning at top of page ***/
+.left-attach {
+    position: fixed;
+    left: 0;
+    top: 10px;
+    padding: 0.5em;
+    -webkit-border-radius:0 10px 10px 0;
+    -moz-border-radius:0 10px 10px 0;
+    border-radius:0 10px 10px 0;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-left: none;
+}
+.left-attach a {
+    display: block;
+    margin-top: 0.5em;
+}
+.left-attach a:first-child {
+    margin-top: 0;
+}
+.dev-warning {
+    background-color:#470016;
+    color:#fff;
+}
+.dev-warning span {
+    display: inline-block;
+    vertical-align: middle;
+}
+.admin-table th {
+    width: 30%;
+    text-align: right;
+    background-color: #ccc;
+    font-weight: normal;
+    padding-right: 12px;
+}
+
+/* TODO - Replace ID with class for style */
+#video.affix {
+    width: 280px;
+}
+.video-container {
+    position: relative;
+    padding-top: 25px;
+    padding-bottom: 67.5%;
+    height: 0;
+    overflow: hidden;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+/*
+*/
+/* Hide debug info */
+/*
+table.cake-sql-log { display:none }
+.cake-sql-log { display: none;}
+.cake-debug   { display: none;} 
+*/
+/* Changes to Bootstrap defaults
+ * TODO: Incorporate these via less
+ */
+
+ .navbar {
+     margin: 8px 0;
+ }
+.navbar .nav > li > a {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+  color: #08C;
+  text-shadow: 0 1px 0 #ffffff;
+}
+
+.navbar .nav > li > a:focus,
+.navbar .nav > li > a:hover {
+  color: #005580;
+}
+
+.navbar .nav > .active > a,
+.navbar .nav > .active > a:hover,
+.navbar .nav > .active > a:focus {
+  color: #005580;
+  background-color: #e5e5e5;
+  -webkit-box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.125);
+     -moz-box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.125);
+          box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.125);
+}
+
+.patient-info tr td:first-child {
+    font-weight: bold;
+    text-align: right;
+    width: 160px;
+}
+/* Making disable work properly in main nav */
+.navbar .nav > li.disabled > a {
+  text-decoration: none;
+  cursor: default;
+  background-color: transparent;
+  color: #999999;
+}
+
+/* Patient notes */
+.notefooter,.pvnotefooter {
+    padding:8px 0;
+    color:#666;
+    font-style:italic
+}
+.note.well {
+    padding: 0.5em 2em 0.5em 1em;
+    margin-bottom: 1em;
+}
+.note label {
+    font-size: 12px;
+    margin-right: 0.5em;
+}
+
+
+/*** Styles used with Datables ***/
+.datatable-edit-column {
+    width: 59px;
+}
+.patient-datatable {
+    font-size: 13px;
+}
+.patient-datatable tbody tr td {
+    font-size: 13px;
+}
+/* Used with jquery for making <tr> clickable */
+.patient-datatable tr td:hover {
+    cursor: pointer;
+}
+/* Row striping and hover styles */
+.dataTable .sorting_asc, .dataTable .sorting_desc {
+    background-color: rgba(141, 192, 219, 0.25);
+}
+.dataTable .sorting_1 {
+  background-color: #f7f7f7
+}
+.table-striped tbody tr:nth-child(odd) td.sorting_1 {
+  background-color: #f2f2f2
+}
+.table-hover tbody tr:hover td,
+.table-hover tbody tr:hover td.sorting_1, 
+.table-hover tbody tr:hover th {
+  background-color: #e5e5e5;
+}
+
+/*** Form validation style ***/
+label.valid {
+  width: 24px;
+  height: 24px;
+  background: url(../img/valid.png) center center no-repeat;
+  display: inline-block;
+  text-indent: -9999px;
+}
+label.error {
+  display: inline-block;
+  color: #B94A48;
+  padding: 2px 8px;
+  margin-top: 2px;
+}
+
+.table-small-text th, .table-small-text td  {
+    font-size: 13px;
+    line-height: 18px;
+}
+.table-smaller-text th, .table-smaller-text td  {
+    font-size: 11px;
+    line-height: 18px;
+}
+/* Used in PainTracker patient dashboard
+ * Variation on the std bootstrap table - smaller text, diff th background
+ */
+.table-dashboard th {
+    text-align: center;
+    background-color: #C7C7C7;
+}
+.table-dashboard td span {
+    font-weight: bold;
+    font-style: italic;
+}
+.alert-warning-bright, .table-hover tbody tr:hover td.alert-warning-bright  {
+    background-color: #FFD9D9;
+    font-weight: bold;
+    color: red;
+}
+.alert-yellow, .table-hover tbody tr:hover .alert-yellow {
+    background-color: #FCFFC5
+}
+/* jQuery UI Autocomplete - used in PainTracker to allow for typing in or 
+ * selecting from dropdown. TODO - make consistent with new look */
+.med-edit {
+    position: relative /* Needed for error message */
+}
+.select-combo {
+    width: 26px;
+    background-image: url(../img/select-combo.jpg);
+    height: 23px;
+    display: inline-block;
+}
+.select-combo:hover, .select-combo:active {
+    background-image: url(../img/select-combo-hover.jpg);
+}
+.med-amount {
+    vertical-align: top;
+    font-size: 12px;
+    line-height: 17px;
+    padding-left: 4px;
+}
+.med-amount-select {
+    font-size: 12px;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+.form-error-message {
+    position: absolute;
+    left: 101%;
+    margin-left: 4px;
+    width: 120px;
+    display: none;
+    padding: 4px 8px;
+}
+.med-edit tbody tr td.form-error-box, .med-edit tbody tr:hover td.form-error-box {
+    background-color: #F2DEDE;
+}
+/*** Activity Diary Tables ***/
+.diary-table th {
+    text-align: center;
+    font-weight: normal;
+}
+.diary-table td {
+    text-align: center;
+    font-size: 13px;
+}
+td.diary-category {
+    text-align: right;
+    font-weight: bold;
+}
+/* For patient-facing entry */
+.diary-edit tr.odd td.to-add {
+    background-color:#ffd9d9
+}
+.diary-edit tr.even td.to-add {
+    background-color:#fff2f2
+}
+.diary-edit tr.odd td.today {
+    background-color:#fffa99
+}
+.diary-edit tr.even td.today {
+    background-color:#fffccc
+}
+.diary-edit tr td.edit-entry:hover {
+    background-color:#DFF0D8; /* Match Bootstrap success color */
+    cursor: pointer;
+}
+form.diary-edit {
+    margin: 0;
+}
+td.edit-entry {
+    line-height:20px;
+    padding:6px 5px;
+    overflow:hidden;
+    text-align:center;
+    font-size:13px;
+    width:84px
+}
+.diary-edit select {
+    width: auto;
+    padding: 0;
+    margin: 0;
+    font-size: 13px;
+    height: 20px;
+}
+.diary-edit input {
+    width: 60px;
+    line-height: 18px;
+    font-size: 13px;
+    text-align: center;
+    padding: 0;
+    margin: -3px 0 0 0;
+}
+.diary-notes-box {
+    min-height: 200px;
+}
+.notes-dialog-edit {
+    min-height: 140px;
+}
+
+/* Styles for results and teaching tips including charts
+----------------------------------*/
+
+/* Stats charts used in P3P intervention */
+.stat-container {
+	clear: both;
+	margin: 1em 0 2em 2em;
+	overflow: auto;
+}
+.stat-border-good {
+	border: 1px solid #61c1ee;
+}
+.stat-border-bad {
+	border: 1px solid #e66b54;
+}
+.stat-background-good {
+	background-color: #61c1ee
+}
+.stat-background-bad {
+	background-color: #e66b54
+}
+.stat-text {
+	padding: 5px;
+	width: 200px;
+	float: left;
+}
+.stat-box {
+	margin-bottom: 0.5em; overflow: auto
+}
+.stat-line {
+	float: right;
+	height: 1px;
+	margin-top: 12px;
+	width: 20px;
+}
+.stat-line-right {
+	margin: 3px 0 4px; height: 17px; width: 10px; border-right: none;	
+}
+.stat-graph-container {
+	height: 240px; width: 250px; float: left; margin-left: 2px
+}
+/* End - Stat charts used in P3P intervention */
+
+/* Patient results sparkline-style charts generated by Highcharts */
+.sparkline {
+    margin: 0 20px 10px 0
+}
+.sparkline > div { /* Sets height for sparkline chart */
+    height: 100px
+}
+/* Teaching tips */
+.teaching-tips .stem {
+  margin: 24px 0 10px 0;
+}
+.teaching-tips .response {
+  margin-left: 2em;
+  display: none;
+}
+.teaching-tips .response li {
+  margin-bottom: 0.5em
+}
+/* If the subscale has a critical value, expand the tips. */
+#critical-value .response {
+  display: block
+}
+.form-horizontal.form-condensed {
+    margin-bottom: 0px;
+}
+.form-horizontal.form-condensed .control-group  {
+    margin-bottom: 10px;
+}
+.form-horizontal.form-condensed .control-group > label, .form-horizontal.form-condensed div.admin-edit-section .control-label {
+  width: 140px;
+}
+.form-horizontal.form-condensed .controls {
+  margin-left: 160px;
+}
+/* Change default Bootstrap look for uneditable to make them just look like
+    inline text */
+.admin-edit-section.well {
+    margin-bottom: 10px;
+    padding: 14px 9px 0px;
+}
+.admin-edit-section.well > div:last-child {
+    margin-bottom: 5px;
+}
+.admin-edit-section .uneditable-input {
+    border: none;
+    cursor: default;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    background-color: inherit;
+    color: inherit;
+    margin: 1px 0 0 -6px;
+}
+.admin-edit-section h4 {
+    margin-top: 0;
+    font-size: 16px;
+}
+.admin-edit-section legend {
+    margin: 1.5em 0 0.5em;
+    font-size: 16px;
+    line-height: 1.5em;
+    padding-bottom: 0.5em;
+    font-weight: bold;
+}
+.admin-edit-section legend:first-child {
+    margin-top: 0px;
+}
+
+.minimize-section {
+    margin-left: 2em;
+}
+td.v-center {
+    vertical-align: middle;
+}
+
+/* Styles for survey editor in admin
+----------------------------------*/
+.admin-editor-wrapper .editable:hover {
+    cursor: pointer;
+}
+.admin-editor-wrapper .editable:hover form {
+    cursor: default;
+}
+.admin-editor-wrapper .editable form {
+    margin-bottom: 0;
+}
+.admin-editor-wrapper .editable form button {
+    margin-left: 5px;
+}
+.admin-editor-wrapper .editable.edit-page.edit-BodyText, .admin-editor-wrapper .editable.edit-question.edit-BodyText, .admin-editor-wrapper .editable.edit-P3pTeaching {
+    display: block;
+    width: 780px;
+    margin: 4px 0 0 20px;
+}
+.admin-editor-wrapper .editable form textarea {
+    padding-bottom: 40px;
+}
+.admin-editor-wrapper .editable.edit-page.edit-Title input, .admin-editor-wrapper .editable.edit-P3pTeaching.edit-label input {
+    width: 500px;
+}
+.admin-editor-wrapper .editable.edit-option.edit-BodyText input {
+    width: 300px;
+}
+.admin-editor-wrapper > h2, .admin-editor-wrapper > h3, .admin-editor-wrapper > h4 {
+    color: #333;
+}
+/* We don't edit the item_name, so make cursor normal */
+.editable.edit-item_name:hover {
+    cursor: default;
+}
+.editor-preview {
+    margin-left: 10px;
+}
+#editorPreviewModal {
+    width: 860px;
+}
+#editorPreviewModal .modal-body {
+    padding: 120px 100px;
+}
+/* End styles for survey editor in admin */
+
+.inline-glossary {
+    white-space: nowrap;
+    text-decoration: none;
+    border-bottom:1px dotted;
+}
+.inline-glossary:hover, .inline-glossary:active, .inline-glossary:focus {
+    cursor: help;
+    text-decoration: none;
+}
+.inline-glossary i {
+    margin-left: 4px;
+    color: #0088CC;
+}
+a.inline-glossary:hover i {
+  color: #005580;
+}
+/* Icons - larger versions and misc
+----------------------------------*/
+
+/* Add pdf icon to links. Called by jquery */
+a.pdf { 
+    background-image:url(../img/pdf.gif);
+    background-repeat:no-repeat;
+    background-position:right;
+    padding-right:20px
+}
+/* Define add'l icon colors for use with FontAwesome */
+.icon-blue {
+  color: #0088CC;
+}
+.icon-blue-hover, a:hover i.icon-blue {
+  color: #005580;
+}
+.icon-gray {
+  color: #999;
+}
+.icon-green {
+  color: #136313;
+}
+.link-with-icon i {
+  color: #333;
+}
+.link-with-icon:hover i {
+  color: #005580;
+}
+.link-with-icon:hover, .link-with-icon:focus, .link-with-icon:active {
+  text-decoration: none;
+  color: #005580;
+}
+
+/* Align dropdown menu at smaller sizes (works with responsive) */
+.header-links .dropdown-menu {
+    right: 0;
+    left: auto;
+}
+.header-links {
+/*    margin-bottom: 28px;*/
+}
+
+/* Testing chevrons in main nav */
+.navbar-inner {
+    overflow: hidden;
+    padding-left: 0;
+}
+.navbar .nav > li.chevron-link > a {
+    position: relative;
+    padding: 10px 6px 10px 22px;
+}
+.navbar .nav > li.chevron-link > a:before {
+    width: 0;
+    height: 0;
+    border-bottom: 24px inset transparent;
+    border-left: 14px solid #D4D4D4;
+    border-top: 24px inset transparent;
+    position: absolute;
+    content: "";
+    top: -4px;
+    left: 0px;
+}
+.navbar .nav > li.chevron-link > a:after {
+    width: 0;
+    height: 0;
+    border-bottom: 20px inset transparent;
+    border-left: 12px solid #FAFAFA;
+    border-top: 20px inset transparent;
+    background-image: linear-gradient(to bottom, #ffffff, #f2f2f2);
+    background-repeat: repeat-x;
+    position: absolute;
+    content: "";
+    top: 0;
+    right: -12px;
+    z-index: 2;
+}
+.navbar .nav > li.active.chevron-link > a, .navbar .nav > li.active.chevron-link > a:hover {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+.navbar .nav > li.active.chevron-link > a:after {
+    border-left: 12px solid #e5e5e5;
+    background-image: linear-gradient(to bottom, #ffffff, #f2f2f2);
+}
+.nav li.chevron-link:first-child a {
+
+}
+.nav li.chevron-link.active:last-child a {
+    padding-right: 20px;
+    border-right: 2px solid #d4d4d4;
+}
+.nav li.chevron-link:first-child a:before,
+.nav li.chevron-link:last-child a:after {
+    border: none;
+}
+
+.calculating-box {
+    text-align:center;
+    display: none;
+    padding: 40px
+}
+
+/* Responsive
+-------------------------------------------------- */
+
+/* Desktop large
+------------------------- */
+@media (min-width: 1200px) {
+    .intervention-sidebar.affix {
+      width: 160px;
+    }
+    #video.affix {
+      width: 350px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .header-middle img {
+        margin-left: -20px
+    }
+    .paintracker-logo {
+        margin-left: -7px;
+        width: 153px;
+    }
+}
+
+@media (max-width: 979px) {
+     .left-attach-responsive {
+        position: inherit;
+        padding: 0.5em;
+        -webkit-border-radius: 0 0 5px 5px;
+        -moz-border-radius: 0 0 5px 5px;
+        border-radius: 0 0 5px 5px;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        border-top: none;       
+    }
+    .left-attach-responsive a {
+        display: inline-block;
+        margin: 0 2em 0 0;
+    }
+    .paintracker-logo {
+        margin-left: -7px;
+        width: 187px;
+    }
+}
+/* Portrait tablet to landscape and desktop
+------------------------- */
+@media (min-width: 768px) and (max-width: 979px) {
+  body {
+    /* color: red; for testing */
+  }
+  .header-links > li > a {
+      padding: 4px 6px;
+  }
+  .intervention-sidebar {
+    margin-top: 1em;
+  }
+  .intervention-sidebar.affix {
+    width: 94px;
+  }
+  #video.affix {
+      width: 208px;
+  }
+  .navbar .nav {
+      margin: 0;
+  }
+  .navbar-inner {
+      padding: 0;
+  }
+  .navbar .nav > li > a {
+    padding: 10px 8px;
+    font-size: 90%;
+  }
+  .navbar .nav > li.chevron-link > a {
+    position: relative;
+    padding: 10px 4px 10px 17px;
+  }
+  .nav li.chevron-link:first-child a {
+    padding-left: 8px;
+  }
+  .form-horizontal .control-group > label {
+    width: 100px;
+  }
+  .form-horizontal .controls {
+    margin-left: 120px;
+  }
+  .left-attach-responsive {
+     width: 724px;
+     margin: 0 auto;
+  }
+}
+
+/* Landscape phone to portrait tablet
+------------------------- */
+@media (max-width: 767px) {
+    .intervention-container .row .span2 {
+        background-color: inherit;
+    }
+    .intervention-container .row input.span2, .intervention-container .row select.span2 {
+        background-color: #ffffff;
+    }
+    .intervention-container .row input[disabled].span2, .intervention-container .row input[readonly].span2, .intervention-container .row select[disabled].span2 {
+        background-color: #eeeeee;
+    }
+    .header-logo {
+        padding: 8px 0px 4px;
+    }
+    .header-links > li > a {
+        padding: 4px 6px;
+    }
+    .header-links {
+        margin-bottom: 10px;
+    }
+    .intervention-sidebar {
+        margin-top: 0;
+    }
+    .intervention-sidebar.affix {
+        position: static;
+        width: auto;
+        top: 0;
+        margin-top: 0;
+    }
+    #video.affix {
+        position: static;
+        width: auto;
+        top: 0;
+        margin-top: 0;
+    }
+    /* Remove chevron links at smaller size */
+    .navbar .nav > li.chevron-link > a {
+        position: inherit;
+        padding: 9px 15px;
+    }
+    .navbar .nav > li.chevron-link > a:before {
+        width: 0;
+        height: 0;
+        border-bottom: none;
+        border-left: none;
+        border-top: none;
+    }
+}
+
+/* Landscape phones and down
+------------------------- */
+@media (max-width: 480px) {
+    body {
+        padding: 0;
+    }
+    .intervention-container {
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+    .header-links > li > a {
+        padding: 4px 6px;
+    }
+}
+
+/*** Print styles - TODO: put in separate css? ***/
+/* Note - there is separate print.css used with the print layout view -- that
+ * is used when we are intentionally sending something to be printed. This is
+ * if user just uses the browser print functionality.
+*/
+@media print {
+    body {
+        font-family: sans-serif;
+        font-weight: normal;
+    }
+    /* Remove shadow at top of page */
+    body:before {
+        content: none;
+    }
+    /* Override bootstrap URL printing */
+    a[href]:after {
+        content: none;
+    }
+    abbr[title]:after {
+       content: none;
+    }
+    .print-hidden {
+        display: none;
+    }
+}

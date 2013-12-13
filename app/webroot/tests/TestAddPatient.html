@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="" />
+<title>selenium</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">selenium</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>users/login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>UserUsername</td>
+	<td>${clinicstaffer_id_var}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>UserPassword</td>
+	<td>${clinicstaffer_pw_var}</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//input[@value='Log in']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Admin</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=New Patient Record</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>UserFirstName</td>
+	<td>Abraham</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>UserLastName</td>
+	<td>Lincoln</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>PatientBirthdateMonth</td>
+	<td>label=February</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>PatientBirthdateDay</td>
+	<td>label=12</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>PatientBirthdateYear</td>
+	<td>label=1905</td>
+</tr>
+<!-- Generate what is hopefully a unique MRN-->
+<tr>
+        <td>store</td>
+        <td>javascript{(new Date()).getTime()}</td>
+        <td>mrnvar</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>PatientMRN</td>
+	<td>${mrnvar}</td>
+</tr>
+<!--  Ignoring the calendar popup, and typing directly into the field-->
+<tr>
+	<td>click</td>
+	<td>data[t1][date]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>data[t1][date]</td>
+	<td>2009-02-10</td>
+</tr>
+
+<tr>
+	<td>click</td>
+	<td>data[t1][hour][hour]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>data[t1][hour][hour]</td>
+	<td>10</td>
+</tr>
+
+<tr>
+	<td>click</td>
+	<td>data[t1][minute][min]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>data[t1][minute][min]</td>
+	<td>45</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//input[@value='Check Data']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>Edit the new username if you wish, or press the Submit button to accept.</td>
+	<td></td>
+</tr>
+<tr>
+        <td>storeValue</td>
+        <td>data[User][username]</td>
+        <td>username</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//input[@value='Submit']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>Patient ${username} added.</td>
+	<td></td>
+</tr>
+<!-- Try to add the same user again; should fail -->
+<tr>
+	<td>clickAndWait</td>
+	<td>link=New Patient Record</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>UserFirstName</td>
+	<td>Abraham</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>UserLastName</td>
+	<td>Lincoln</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>PatientBirthdateMonth</td>
+	<td>label=February</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>PatientBirthdateDay</td>
+	<td>label=12</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>PatientBirthdateYear</td>
+	<td>label=1905</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>PatientMRN</td>
+	<td>${mrnvar}</td>
+</tr>
+<!--  Ignoring the calendar popup, and typing directly into the field-->
+<tr>
+	<td>click</td>
+	<td>data[t1][date]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>data[t1][date]</td>
+	<td>2009-02-10</td>
+</tr>
+
+<tr>
+	<td>click</td>
+	<td>data[t1][hour][hour]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>data[t1][hour][hour]</td>
+	<td>10</td>
+</tr>
+
+<tr>
+	<td>click</td>
+	<td>data[t1][minute][min]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>data[t1][minute][min]</td>
+	<td>45</td>
+</tr>
+
+<tr>
+	<td>clickAndWait</td>
+	<td>//input[@value='Check Data']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>glob:Patient * already exists with same MRN at this site.</td>
+	<td></td>
+</tr>
+<!-- Try to add different user with same username; should fail -->
+<tr>
+	<td>clickAndWait</td>
+	<td>link=New Patient Record</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>UserFirstName</td>
+	<td>Abraham</td>
+</tr>
+<tr>
+        <td>store</td>
+        <td>javascript{(new Date()).getTime()}</td>
+        <td>newmrnvar</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>UserLastName</td>
+	<td>Lincoln</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>PatientBirthdateMonth</td>
+	<td>label=February</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>PatientBirthdateDay</td>
+	<td>label=12</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>PatientBirthdateYear</td>
+	<td>label=1905</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>PatientMRN</td>
+	<td>${newmrnvar}</td>
+</tr>
+<!--  Ignoring the calendar popup, and typing directly into the field-->
+<tr>
+	<td>click</td>
+	<td>data[t1][date]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>data[t1][date]</td>
+	<td>2009-02-10</td>
+</tr>
+
+<tr>
+	<td>click</td>
+	<td>data[t1][hour][hour]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>data[t1][hour][hour]</td>
+	<td>10</td>
+</tr>
+
+<tr>
+	<td>click</td>
+	<td>data[t1][minute][min]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>data[t1][minute][min]</td>
+	<td>45</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//input[@value='Check Data']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>Edit the new username if you wish, or press the Submit button to accept.</td>
+	<td></td>
+</tr>
+<tr>
+        <td>type</td>
+        <td>data[User][username]</td>
+        <td>${username}</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//input[@value='Submit']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>Username ${username} is already taken. Please pick another name.</td>
+	<td></td>
+</tr>
+<tr>
+        <td>store</td>
+        <td>javascript{storedVars['username'] + (new Date()).getTime()}</td>
+        <td>newusername</td>
+</tr>
+<tr>
+        <td>type</td>
+        <td>data[User][username]</td>
+        <td>${newusername}</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//input[@value='Submit']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>Patient ${newusername} added.</td>
+	<td></td>
+</tr>
+<tr>
+        <td>clickAndWait</td>
+        <td>link=Logout</td>
+        <td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

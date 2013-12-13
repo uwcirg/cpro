@@ -1,0 +1,19 @@
+<?php echo $html->formTag('/tests/filter', 'GET'); ?>    
+    <fieldset>
+        <legend>Filter your tests to run:</legend>   
+        <input id="tests-filter" value="<?php echo $filter; ?>" type="text" name="filter">
+        <input type="submit" value="Filter">
+    </fieldset>
+</form>
+<ul class="test-cases">
+<?php foreach ($testCases as $testCase): ?>
+    <li class="test-case test-<?php echo ($testCase['failed']==0) ? 'passed' : 'failed'; ?>">
+        <h2 class="<?php echo low($testCase['type']) ?>-test"><em><?php echo ($testCase['failed']==0) ? 'Passed' : 'Failed' ?></em> <span>[<?php echo $testCase['type'] ?>]:</span> <?php echo $testCase['name'] ?> (<?php echo $testCase['passed'] ?> passed, <?php echo $testCase['failed'] ?> failed, <?php echo $testCase['errors'] ?> errors)</h2>
+        <ul>
+        <?php foreach ($testCase['tests'] as $test): ?>
+            <li class="test-<?php echo $test['status'] ?>"><strong><?php echo Inflector::camelize($test['status']) ?>:</strong> <?php echo $test['message'] ?></li>
+        <?php endforeach; ?>
+        </ul>
+    </li>
+<?php endforeach; ?>
+</ul>

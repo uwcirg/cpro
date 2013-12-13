@@ -1,0 +1,2294 @@
+/***
+* DO LONGER IN USE as of Dec. 2012. Now use cpro.css
+* Kept for reference and possibly moving over old styles.
+***/
+
+/*****************
+*
+    * Copyright 2013 University of Washington, School of Nursing.
+    * http://opensource.org/licenses/BSD-3-Clause *
+*
+****************
+
+**** MISC ****
+** Hide Debug Info */
+/**
+table.cake-sql-log { display:none }
+.cake-sql-log { display: none;}
+.cake-debug   { display: none;} 
+*/
+
+/**** GLOBAL ****
+ Main html layout elements and global defaults
+*** Reset ***/
+body, div, dl, dt, dd, ul, ol, li,
+h1, h2, h3, h4, h5, h6,
+pre, form, fieldset, input, textarea,
+p, blockquote, th, td {
+margin: 0;
+padding: 0
+}
+table {
+border-collapse: collapse;
+border-spacing: 0
+}
+fieldset, img {
+border: 0
+}
+address, caption, cite, dfn, th, var {
+font-style: normal;
+font-weight: normal
+}
+caption, th {
+text-align: left
+}
+h1, h2, h3, h4, h5, h6 {
+font-size: 100%;
+font-weight: normal
+}
+q:before, q:after {
+content: ''
+}
+abbr, acronym {
+border: 0
+}
+a {
+outline:none
+}
+textarea { /* Removes default scrollbar in IE and resizable box in other browsers */
+overflow: auto;
+resize: none
+}
+input[type="submit"] {
+padding: 2px 4px
+}
+/*** Structure ***/
+html {
+font-family: "Helvetica Neue",Arial,Helvetica,sans-serif;
+color: #333
+}
+body {
+background:#e4ebf1;
+background-image:url('../img/background_texture.jpg');
+line-height: 1.5em
+}
+
+div.mainwrap {
+padding:10px;
+background-color:rgb(0,44,117);
+padding-top:15px
+}
+
+.hidden { display: none } /* Used to hide any content 
+/*.accessibility { display: none } /* hide elements intended for assistive devices */
+div#wrapper {
+min-width:960px;
+width:960px;
+text-align:left;
+margin:0 auto 20px
+}
+
+div.widerstill#wrapper {
+min-width:1050px;
+width:1050px
+}
+
+div.audiocode#wrapper {
+min-width:1180px;
+width:1180px
+}
+
+div.wider#wrapper {
+min-width:1024px;
+width:1400px
+}
+
+.section {
+background-color:#fff;
+padding:1em;
+margin:0
+}
+
+.section.bottom {
+margin-bottom:0;
+border-width:0;
+background-color:#FFF;
+color:#fff
+}
+
+div.section ul.symptoms li {
+margin-left:2em;
+padding-left:1em
+}
+
+div.section textarea {
+width:400px
+}
+
+.section-half {
+    width: 50%
+}
+
+/*** Typographic ***/
+
+ul, ol {
+padding-left: 48px;
+margin-bottom: 12px
+}
+ul li, ol li {
+list-style-type:  disc;
+margin-bottom: 12px
+}
+h1, h2, h3, h4, h5, h6 {
+margin-bottom: 24px;
+font-weight: bold;
+}
+p {
+margin-bottom: 24px;
+}
+
+h1 {
+font-size:1.5em;
+line-height:1em
+}
+
+h2 {
+font-size:1.375em;
+line-height:1.0909em
+}
+
+h3 {
+font-size: 1.25em;
+line-height: 1.2em
+}
+
+h4 {
+font-size: 1.125em;
+line-height: 1.33em
+}
+
+h5,h6 {
+font-size: 1em;
+line-height: 1.5em
+}
+
+a:link,a:visited {
+color:#5170A5;
+text-decoration:underline;
+-webkit-transition:all .1s linear; /* Adds subtle highlighting effect with CSS3 */
+-moz-transition:all .1s linear;
+-o-transition:all .1s linear;
+transition:all .1s linear
+}
+
+a:hover,a:active {
+color:#804040
+}
+
+div:focus,a:focus {
+outline:none
+}
+
+/* Specific Typography */
+div .subsection.right h3 {
+text-align:center;
+text-decoration:none;
+font-size:14px
+}
+
+#infopage h2,#fatigue-tips h2 {
+border-bottom:1px solid #ccc;
+padding-bottom:5px;
+margin-top:1.3em
+}
+
+#fatigue-tips h2 {
+border-bottom:1px solid #ccc;
+padding-bottom:5px;
+margin-top:2em
+}
+
+/**** HEADER ****/
+#header {
+padding:0.5em 0 1em;
+background:none
+}
+
+#header img {
+vertical-align:middle;
+position:relative;
+margin-top: 1em
+}
+
+#header-links {
+text-align:right;
+float:right;
+width:520px;
+padding:0;
+margin:0
+}
+
+#header-links a:visited,#header-links a:link {
+color:#5170a5;
+text-decoration:none;
+padding:0 5px
+}
+
+#header-links a:hover,#header-links a:active {
+background-color:#804040;
+color:#fff;
+padding:2px 5px;
+-webkit-border-radius:2px;
+-moz-border-radius:2px;
+border-radius:2px
+}
+
+#dev-warning {
+display:table;
+text-align:center;
+background-color:#470016;
+color:#fff;
+margin:0 auto;
+padding:0.5em 1em;
+white-space:nowrap;
+-webkit-border-radius:0 0 10px 10px;
+-moz-border-radius:0 0 10px 10px;
+border-radius:0 0 10px 10px
+}
+
+#dev-warning span {
+font-weight:bold
+}
+
+#dev-warning span:before {
+content: " \22C4 ";
+padding-right:10px
+}
+
+#dev-warning span:after {
+content: " \22C4 ";
+padding-left:10px
+}
+
+/**** NAVIGATION ****/
+.tabnav {
+padding:0;
+width:100%;
+background:transparent;
+overflow:hidden;
+clear:both;
+margin-bottom: -1px
+}
+
+.tabnav ul {
+margin:0;
+padding:0;
+list-style:none
+}
+
+.tabnav li {
+display:inline;
+margin:0 2px 0 0;
+padding:0
+}
+
+.tabnav li a {
+float:left;
+display:block;
+font:15px Arial;
+text-decoration:none;
+margin:0 4px 0 0;
+padding:4px 10px;
+color: #1c4257;
+background: #b9e0f5; /* Old browsers */
+background: -moz-linear-gradient(top, #b9e0f5 0%, #85b2cb 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#b9e0f5), color-stop(100%,#85b2cb)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, #b9e0f5 0%,#85b2cb 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, #b9e0f5 0%,#85b2cb 100%); /* Opera11.10+ */
+background: -ms-linear-gradient(top, #b9e0f5 0%,#85b2cb 100%); /* IE10+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b9e0f5', endColorstr='#85b2cb',GradientType=0 ); /* IE6-9 */
+background: linear-gradient(top, #b9e0f5 0%,#85b2cb 100%); /* W3C */
+border: 1px solid #759bb1;
+-webkit-border-top-left-radius:10px;
+-webkit-border-top-right-radius:10px;
+-moz-border-radius-topleft:10px;
+-moz-border-radius-topright:10px;
+border-top-left-radius:10px;
+border-top-right-radius:10px;
+text-shadow: 0 1px 3px #fff;
+}
+
+.tabnav li a:hover,.tabnav li a:active {
+text-shadow: 0 1px 3px #fff;
+background: #94d0f0; /* Old browsers */
+background: -moz-linear-gradient(top, #94d0f0 0%, #6da4c1 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#94d0f0), color-stop(100%,#6da4c1)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, #94d0f0 0%,#6da4c1 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, #94d0f0 0%,#6da4c1 100%); /* Opera11.10+ */
+background: -ms-linear-gradient(top, #94d0f0 0%,#6da4c1 100%); /* IE10+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#94d0f0', endColorstr='#6da4c1',GradientType=0 ); /* IE6-9 */
+background: linear-gradient(top, #94d0f0 0%,#6da4c1 100%); /* W3C */
+}
+
+/* Alternate hover color 
+.tabnav li a:hover,.tabnav li a:active {
+color: #fff;
+text-shadow: none;
+background: #b25959; 
+background: -moz-linear-gradient(top, #b25959 0%, #804040 100%); 
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#b25959), color-stop(100%,#804040)); 
+background: -webkit-linear-gradient(top, #b25959 0%,#804040 100%); 
+background: -o-linear-gradient(top, #b25959 0%,#804040 100%);
+background: -ms-linear-gradient(top, #b25959 0%,#804040 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b25959', endColorstr='#804040',GradientType=0 );
+background: linear-gradient(top, #b25959 0%,#804040 100%);
+}
+*/
+
+.tabnav li.selected a,.tabnav li.selected a:hover,.tabnav li.selected a:active {
+color: #1c4257;
+border-bottom: 1px solid #ffffff;
+background: #d2ebf9; /* Old browsers */
+background: -moz-linear-gradient(top, #d2ebf9 0%, #feffff 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#d2ebf9), color-stop(100%,#feffff)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, #d2ebf9 0%,#feffff 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, #d2ebf9 0%,#feffff 100%); /* Opera11.10+ */
+background: -ms-linear-gradient(top, #d2ebf9 0%,#feffff 100%); /* IE10+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d2ebf9', endColorstr='#feffff',GradientType=0 ); /* IE6-9 */
+background: linear-gradient(top, #d2ebf9 0%,#feffff 100%); /* W3C */
+}
+
+.tabnav li.disabled a {
+color: #999999;
+cursor: default;
+box-shadow: none;
+border: 1px solid #999999;
+border-bottom: 1px solid #759bb1;
+background: #f6f6f6; /* Old browsers */
+background: -moz-linear-gradient(top, #f6f6f6 0%, #ededed 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f6f6f6), color-stop(100%,#ededed)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, #f6f6f6 0%,#ededed 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, #f6f6f6 0%,#ededed 100%); /* Opera11.10+ */
+background: -ms-linear-gradient(top, #f6f6f6 0%,#ededed 100%); /* IE10+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f6f6', endColorstr='#ededed',GradientType=0 ); /* IE6-9 */
+background: linear-gradient(top, #f6f6f6 0%,#ededed 100%); /* W3C */
+}
+
+/*** Global nav tabs ***/
+ul#globalnav {
+list-style:none;
+clear:both;
+margin:0;
+padding:0
+}
+
+ul#globalnav li {
+position:relative;
+float:left;
+padding:2px 15px;
+background-color:#ddd;
+border-bottom:2px solid rgb(0,44,117);
+border-bottom-width:0;
+margin-right:4px;
+margin-bottom:0
+}
+
+ul#globalnav li.selected {
+background-color:#fff
+}
+
+ul#globalnav li a:link,ul#globalnav li a:visited {
+color:#000;
+text-decoration:none
+}
+
+body.home ul#globalnav li.home a:link,body.home ul#globalnav li.home a:visited {
+color:#000
+}
+
+body.home ul#globalnav li.home {
+background-color:#fff;
+color:#000
+}
+
+/*** Breadcrumb nav links (currently used in results & admin area (/patients/) ***/
+.breadcrumb {
+clear:both
+}
+
+.breadcrumb a,.breadcrumb a:visited {
+text-decoration:none;
+font-size:0.8em;
+color:#666
+}
+
+.breadcrumb a:hover,.breadcrumb a:active {
+text-decoration:underline;
+color:#804040
+}
+
+/**** CONTENT AREA ****/
+.main {
+padding:20px;
+overflow:hidden;
+-webkit-border-radius:10px;
+-webkit-border-top-left-radius:0;
+-moz-border-radius:10px;
+-moz-border-radius-topleft:0;
+border-radius:10px;
+border-top-left-radius:0;
+min-height:600px;
+border: 1px solid #759BB1
+}
+
+.main.ul {
+list-style-image:url('../img/bullet.gif')
+}
+
+.login-image {
+background-image:url('../img/path_gradient.jpg');
+background-position:bottom center;
+background-repeat:no-repeat
+}
+
+.subsection.left {
+width:62%;
+float:left
+}
+
+.subsection.left.admin {
+width:34%;
+float:left
+}
+
+.subsection.left.chartpage {
+width:470px;
+float:left
+}
+
+.subsection#dates {
+width:32%;
+float:right
+}
+
+.subsection#dates fieldset {
+background-color:#eee
+}
+
+.subsection.right {
+width:32%;
+float:right;
+margin-top:10px
+}
+
+.subsection.right.home {
+width:35%;
+float:right;
+margin-right:2%
+}
+
+.subsection.right.admin {
+width:62%;
+float:right;
+margin-right:2%
+}
+
+.subsection.right ul {
+margin:0;
+padding:0;
+margin-left:2em;
+list-style-image:url('../img/bullet.gif');
+text-decoration:none
+}
+
+.subsection.right ul li {
+margin:0 0 3px;
+text-decoration:none
+}
+
+.subsection.right ul a {
+text-decoration:none
+}
+
+.viewingInfoFor {
+width:32%;
+float:right
+}
+
+.spacer {
+clear:both;
+padding:0;
+border:0;
+margin:0;
+height:1em
+}
+
+fieldset {
+background-color:#ffe;
+padding:5px;
+padding-bottom:1em;
+margin:0;
+padding-left:10px;
+border:0 0 0 1px;
+border-color:#ccb
+}
+
+legend {
+background-color:#fff;
+padding:2px;
+border:0;
+font-size:125%
+}
+
+.logo {
+float:left
+}
+
+.message,.flash,#flashMessage,#authMessage {
+background-color:transparent;
+color:#f00
+}
+
+div #flashMessage {
+color:#900;
+font-weight:bold;
+margin-bottom:15px
+}
+
+div #authMessage {
+color:#900;
+font-weight:bold;
+margin-bottom:1.3em
+}
+
+/**** PAGE SPECIFIC STYLES ***
+** Associates controller **
+ Settings page /associates/edit_list (was /users/edit) 
+#quick-links h2 { font-size:1.1em; font-weight:bold }
+#quick-links li { font-size:.9em; font-weight: normal; color:#00f; cursor:pointer; text-decoration:underline;padding-bottom:.5em; list-style-type: none }
+#quick-links li.selected { font-weight:bold; color:#000; cursor:text; text-decoration:none;}*/
+.settings-group label {
+position:relative;
+margin-bottom:5px
+}
+
+.validation {
+color:#900
+}
+
+/* .settings-group label input { left: 6em; position: absolute } 
+** Admin controller ***/
+span.vars {
+font-weight:bold
+}
+
+/*** Users Controller **
+ Login page */
+#UserLoginForm {
+position:relative;
+min-height:80px
+}
+
+#UserLoginForm #UserPassword,#UserLoginForm #UserUsername {
+margin-left:10px;
+width:140px
+}
+
+#UserLoginForm label {
+width:100px;
+text-align:right
+}
+
+#UserLoginForm .submit {
+margin:5px 5px 5px 0;
+float:right
+}
+
+#UserLoginForm .error {
+font-style:italic
+}
+
+/*** Results Controllers **
+ /results/ : Main list of result areas */
+div.sparkline {
+width:260px;
+height:60px;
+cursor:pointer
+}
+
+.no-underline .scale {
+position:relative;
+width:205px;
+margin-right:20px;
+display:block
+}
+
+table#results-list {
+margin-left:10px
+}
+
+table#results-list td {
+padding:10px 20px
+}
+
+table#results-list caption {
+display:none
+}
+
+fieldset.scale {
+background-color:#fff;
+margin-bottom:10px;
+padding-left:2.5em;
+padding-bottom:1em;
+border:1px solid #333
+}
+
+a.no-underline {
+text-decoration:none;
+margin-bottom:5px
+}
+
+#results-list .data,#results-list .base,#results-list .max,#results-list .critical {
+display:none
+}
+
+/*** Survey Controller **
+ /survey/journal: Add and view journal entries 
+	fieldset#journal { background-color:transparent } */
+fieldset#journal {
+background-color:#eee;
+margin-top:10px;
+clear:both
+}
+
+div#subscales {
+float:right;
+clear:both
+}
+
+div#subscales strong {
+font-size:1.3em;
+font-weight:800
+}
+
+div#linkmaintopright {
+float:right;
+clear:both
+}
+
+div#coaching {
+background-color:#eee;
+padding:0 10px;
+border:1px solid #ccc
+}
+
+div#graph .ui-tabs-nav {
+margin:10px
+}
+
+/* added to fix problem with error on height & width calculation when graph is hidden. See http://docs.jquery.com/UI/Tabs for details */
+div#graph li.ui-tabs-selected {
+background-color:#fff
+}
+
+a.dontUnderlineLinks {
+color:#000;
+text-decoration:none
+}
+
+/*div#table-view table{ border: 1px solid #999;  }*/
+table#table-view {
+border:1px solid #999
+}
+
+div#customize-chart {
+float:right;
+width:32%;
+margin-top:10px;
+margin-right:0
+}
+
+div#customize-chart fieldset {
+background-color:#eee
+}
+
+div#graph-table.ui-tabs-panel {
+overflow:auto;
+width:420px;
+height:260px
+}
+
+div#graph div.ui-tabs-panel {
+position:absolute !important
+}
+
+div#labels {
+float:right;
+background-color:#eee;
+width:180px;
+margin-left:10px;
+border:1px solid #ccc;
+padding:10px
+}
+
+.symptom .hidden {
+font-size:.9em;
+padding:10px;
+background-color:#ccc;
+position:absolute
+}
+
+table tr td {
+font-family:arial;
+font-size:1.2em;
+}
+
+table.ui-datepicker tr td {
+font-size:.9em
+}
+
+#result-items li {
+font-size:1em;
+padding:3px 0
+}
+
+#result-coach-popouts a:link,#result-coach-popouts a:visited {
+color:#00c;
+text-decoration:underline;
+cursor:pointer;
+font-weight:normal
+}
+
+div.sparkline div.tickLabels {
+display:none
+}
+
+div.sparkline canvas {
+margin-left:-15px
+}
+
+#dates label {
+width:50px;
+float:left;
+display:block
+}
+
+#dates br {
+clear:both
+}
+
+.chartlegend {
+position:absolute;
+left:0;
+color:#9EA58E;
+font-weight:bold;
+font-style:italic;
+font-size:12px
+}
+
+.result-text { width: 260px; font-size: 13px; line-height: 17px; padding: 4px 8px 16px 0 } /* Used on /results/ when there are <2 two results instead of sparkline */
+.result-text div { margin-top: 4px }
+/* Charting styles - View My Reports */
+#graphnav {
+float:right;
+margin-top:-50px;
+margin-right:50px;
+padding:10px 0
+}
+
+#graphnav span,#graphnav a {
+margin-left:10px;
+border:1px solid #d3d3d3
+}
+
+#graphnav span.disablednav {
+text-align:center;
+text-decoration:none;
+padding:0.25em 0.5em;
+font-size:14px;
+color:#666;
+background-color:#fff;
+border:1px solid #d3d3d3;
+background-image:url(images/ui-bg_glass_100_f6f6f6_1x400.png);
+background-repeat:repeat-x
+}
+
+#fatigue-tips ul {
+margin-bottom:2em
+}
+
+#fatigue-tips .catlist li {
+line-height:1.5em
+}
+
+#chart-tips div.response {
+display:block;
+padding:5px 0 10px 10px
+}
+
+/* End charting styles 
+** End Results Controllers **
+** Activity Diary ***/
+#diarytable {
+font:15px/1.5em Helvetica,Arial,sans-serif;
+border-bottom:1px solid #999;
+width:100%;
+border-collapse:collapse
+}
+
+#diarytable th,#diarytable td {
+border-right:1px solid #999;
+border-top:1px solid #999
+}
+
+#diarytable th {
+text-align:center;
+background-color:#CCC;
+padding:3px 5px;
+font-size:15px
+}
+
+#diarytable th.today {
+background-color:#f2f233
+}
+
+#diarytable td {
+line-height:20px;
+padding:6px 5px;
+overflow:hidden;
+text-align:center;
+font-size:13px;
+width:84px
+}
+
+#diarytable td.diary-category {
+text-align:right;
+font-weight:bold;
+width:180px
+}
+
+#diarytable tr.odd {
+background-color:#E2E4FF
+}
+
+#diarytable tr.odd td.to-add {
+background-color:#ffd9d9
+}
+
+#diarytable tr.even td.to-add {
+background-color:#fff2f2
+}
+
+#diarytable tr.odd td.today {
+background-color:#fffa99
+}
+
+#diarytable tr.even td.today {
+background-color:#fffccc
+}
+
+#diarynav {
+text-align:right;
+padding-bottom:10px
+}
+
+#diarynav span {
+display:inline;
+padding:0 20px;
+font-size:1.3em;
+margin:0.83em 0
+}
+
+#diarynav span.disablednav {
+text-align:center;
+text-decoration:none;
+padding:0.25em 0.5em;
+font-size:14px;
+color:#666;
+background-color:#fff;
+border:1px solid #d3d3d3;
+background-image:url(images/ui-bg_glass_100_f6f6f6_1x400.png);
+background-repeat:repeat-x
+}
+
+a.weeknav,a.weeknav:link,a.weeknav:visited {
+text-align:center;
+text-decoration:none;
+padding:0.25em 0.5em;
+font-size:14px;
+color:#000
+}
+
+a.weeknav:hover,a.weeknav:active {
+color:#fff;
+background-color:#999;
+background-image:url(images/ui-bg_glass_50_999999_1x400.png);
+background-repeat:repeat-x
+}
+
+/* Styles for saving box and my results */
+#saving {
+display:none;
+font:11px/1.5em Helvetica,Arial,sans-serif;
+float:right;
+margin:10px 0 0 10px;
+padding:5px 10px;
+width:81px
+}
+
+#my-results {
+border:#999 solid 1px;
+padding:10px;
+margin-top:10px
+}
+
+#my-results li {
+line-height:1.5em
+}
+
+#diary-status {
+margin-bottom:10px;
+font-style:italic;
+font-size:0.9em
+}
+
+#diary-results {
+display:block;
+font-weight:bold;
+margin-top:20px
+}
+
+.edit-entry,.old-note {
+cursor:pointer
+}
+
+.edit-entry:hover,#diarytable tr.even td.to-add:hover,#diarytable tr.odd td.to-add:hover,#diarytable tr.odd td.today:hover,#diarytable tr.even td.today:hover {
+background-color:#e3ffef
+}
+
+.activity-other-edit {
+border-top:none
+}
+
+.diary-category {
+border-left:1px solid #999
+}
+
+.diary-edit,.diary-edit select,.diary-edit textarea,.notes-dialog,.notes-dialog-edit {
+font-size:13px;
+font-family:Helvetica, Arial, sans-serif
+}
+
+.diary-edit input {
+font-size:13px;
+font-weight:bold;
+text-align:center
+}
+
+/* Styles for notes dialog */
+.ui-dialog {
+margin-left:auto;
+margin-right:auto;
+overflow:hidden
+}
+
+/* margin fixes center align in Chrome, position/overflow fix layout problem in IE7 */
+.notes-dialog,.notes-dialog-edit {
+width:400px;
+margin:10px auto;
+min-height:100px;
+white-space:pre
+}
+
+/* white-space needed so that notes with line breaks display properly */
+.diary-edit {
+white-space:normal
+}
+
+/* Set whitespace back to normal when note becomes a textarea*/
+.diary-edit button {
+margin-top:10px
+}
+
+a.notes-box,a.notes-box:visited {
+color:#000;
+text-decoration:none
+}
+
+.ui-dialog-content {
+padding:0 10px
+}
+
+.ui-dialog-title {
+padding:5px;
+float:left
+}
+
+.ui-dialog-titlebar {
+position:relative
+}
+
+.ui-dialog-titlebar-close {
+height:16px;
+width:16px;
+position:absolute;
+top:0.3em;
+right:0.3em
+}
+
+/*** End Activity Diary **
+** Teaching Tips Controller **
+ /teaching/index: list of teaching tips */
+.siteId,.tipsSiteId, #chart-tips .survey-intro {
+display:none
+}
+
+/* Shows/hides appropriate intro based on whether recent result has reached
+critical value. */
+#chart-tips.critical-value .survey-intro {
+display:block
+}
+#chart-tips.critical-value .non-survey-intro {
+display: none;
+}
+a.view-reports {
+display:block
+}
+
+.symptom-category h2 {
+background-color:#eee;
+padding:5px;
+margin:1em 0
+}
+
+fieldset.subscale {
+border-style:solid none none;
+border-width:1px medium;
+border-color:#ccc;
+padding:5px 5px 1em;
+margin:10px 20px 5px;
+background-color:transparent
+}
+
+div.response {
+display:none;
+padding:5px 0 10px 10px
+}
+
+div.response div.quote {
+display:block;
+margin:12px 10px;
+font-style:italic
+}
+
+div.stem {
+font-weight:bold
+}
+
+a:visited.stem {
+color:#00c
+}
+
+fieldset.subscale div {
+margin-left:15px
+}
+
+fieldset.subscale div.sidebox div {
+margin-left:0
+}
+
+.response .tip-websites {
+margin-left:0;
+margin-top:12px
+}
+
+fieldset.fatigue {
+margin:0;
+padding:0;
+border:0
+}
+
+/*** Admin pages ***/
+table#viewall {
+font-size:1em;
+border-spacing:0;
+clear:both;
+table-layout:fixed;
+overflow:hidden;
+border-collapse:collapse
+}
+
+table#viewall tr td {
+font-size:0.8em;
+border:1px solid #999;
+overflow:hidden
+}
+
+table.viewone {
+font-size:1em;
+border-spacing:10px 5px;
+width:100%
+}
+
+table.viewone tr td {
+font-size:0.8em;
+border:1px solid #999;
+width:100%;
+padding:5px
+}
+
+table.viewone th {
+text-align:right
+}
+
+table.viewone.patientsearch td {
+width:40%
+}
+
+table#accrual {
+font-size:.9em;
+border-spacing:0;
+clear:both;
+width:100%
+}
+
+table#accrual tr td {
+font-size:.9em;
+border:1px solid #999;
+text-align:center
+}
+
+table#accrual th {
+border:1px solid #999;
+text-align:center
+}
+
+table.audioFiles {
+font-size:.9em;
+border-spacing:0;
+clear:both;
+width:100%
+}
+
+table.audioFiles tr td {
+font-size:.9em;
+border:1px solid #999;
+text-align:center
+}
+
+table.audioFiles th {
+border:1px solid #999;
+text-align:center
+}
+
+table.audio_coding {
+font-size:.9em;
+border-spacing:0;
+clear:both;
+width:100%
+}
+
+table.audio_coding tr td {
+font-size:.9em;
+font-weight:bold;
+border:1px solid #999;
+text-align:center;
+background-color:#D9EBFF
+}
+
+table.audio_coding th {
+border:1px solid #999;
+text-align:center;
+background-color:rgb(0, 44, 117);
+color:white
+}
+
+table.audio_coding.top {
+width:95%
+}
+
+table.audio_coding.top.chart {
+width:55%
+}
+
+table.audio_coding.top tr td {
+font-size:.9em;
+border:0;
+text-align:left;
+background-color:white
+}
+
+table.log {
+font-size:.9em;
+border-spacing:0;
+clear:both;
+width:100%
+}
+
+table.log tr td {
+font-size:.9em;
+border:1px solid #999;
+text-align:center;
+background-color:#FEFEFF
+}
+
+table.log th {
+border:1px solid #999;
+text-align:center;
+background-color:#F6E288;
+color:white
+}
+
+th#survey {
+text-align:center
+}
+
+td.High {
+background-color:red;
+text-align:center;
+width:5em
+}
+
+td.Med {
+background-color:orange;
+text-align:center;
+width:5em
+}
+
+td.Low {
+background-color:yellow;
+text-align:center;
+width:5em
+}
+
+table#calendar {
+font-size:1em;
+border-spacing:0;
+clear:both;
+width:95%;
+table-layout:fixed;
+overflow:auto;
+border-collapse:collapse
+}
+
+table#calendar th {
+border:1px solid #999
+}
+
+table#calendar tr td {
+font-size:0.8em;
+overflow:hidden;
+vertical-align:top;
+border:1px solid #999
+}
+
+td.T1 {
+background-color:aqua;
+text-align:center
+}
+
+td.T2 {
+background-color:red;
+text-align:center
+}
+
+td.T2UC {
+background-color:fuchsia;
+text-align:center
+}
+
+td.T3 {
+background-color:lime;
+text-align:center
+}
+
+td.T4 {
+background-color:yellow;
+text-align:center
+}
+
+/* Patient notes */
+.flaggednote {
+background-color:yellow
+}
+
+.notefooter,.pvnotefooter {
+padding:8px 0;
+color:#666;
+font-style:italic
+}
+
+/* Widths for tables - mostly deprecated */
+.medium {
+width:8em
+}
+
+.short {
+width:4em;
+text-align:center
+}
+
+.short_1em {
+width:1em;
+text-align:center
+}
+
+.short_2em {
+width:2em;
+text-align:center
+}
+
+.short_3em {
+width:3em;
+text-align:center
+}
+
+.short_4em {
+width:4em;
+text-align:center
+}
+
+.short_5em {
+width:5em;
+text-align:center
+}
+
+.short_6em {
+width:6em;
+text-align:center
+}
+
+.short_8em {
+width:8em;
+text-align:center
+}
+
+.short_10em {
+width:10em;
+text-align:center
+}
+
+td.centered {
+text-align:center
+}
+
+/* New styles added by mark47 as part of patients/admin UI updates */
+#admin-links {
+    font-size: 0.9em;
+    padding-bottom: 6px;
+    margin-bottom: 12px;
+    border-bottom: 1px solid #ccc;
+    clear: both;
+    overflow: auto
+}
+
+#admin-links ul, #admin-links li {
+    margin-bottom: 0px
+}
+
+.admin-table {
+font:13px/1.5em Helvetica,Arial,sans-serif;
+width:100%;
+border-collapse:collapse
+}
+
+.admin-table th,.admin-table td {
+border:1px solid #999
+}
+
+.admin-table th {
+text-align:center;
+background-color:#CCC;
+padding:3px;
+font-size:13px
+}
+
+.admin-table td {
+line-height:20px;
+padding:6px 3px;
+font-size:13px
+}
+
+#patients-nav {
+text-align:right;
+margin-left:20px;
+padding-bottom:5px
+}
+
+#patients-nav span {
+display:inline;
+padding:0 20px;
+font-size:1.3em;
+margin:0.83em 0
+}
+
+#patients-nav span.disablednav {
+text-align:center;
+text-decoration:none;
+padding:0.25em 0.5em;
+font-size:14px;
+color:#666;
+background-color:#fff;
+border:1px solid #d3d3d3;
+background-image:url(images/ui-bg_glass_100_f6f6f6_1x400.png);
+background-repeat:repeat-x
+}
+
+#PatientConsentsForm div.submit {
+margin-top:10px;
+margin-left:20px
+}
+
+#patient-view th {
+width:30%;
+text-align:right;
+padding-right:10px
+}
+
+#UserAddForm {
+font-size:13px
+}
+
+#UserAddForm div.input {
+display:block;
+margin:10px 0
+}
+
+#UserAddForm div {
+padding:5px 0
+}
+
+#UserAddForm label,#patient-edit label {
+text-align:right;
+margin-right:10px
+}
+
+#patient-edit .input.textarea label {
+vertical-align:top
+}
+
+#patient-edit tr {
+vertical-align:middle
+}
+
+#patient-search label {
+display:block;
+float:left;
+width:100px;
+padding:0;
+margin:5px 0;
+text-align:right
+}
+
+#patient-search input {
+width:auto;
+margin:5px 0 0 10px
+}
+
+.input.password label.error,.input.text label.error {
+background:url('../img/validateUnchecked.gif') no-repeat;
+float:left;
+padding-left:17px;
+width:auto;
+margin-left:1em
+}
+
+/* Style overrides of datatables.css - used in patients/admin tables */
+.dataTables_wrapper {
+font-size:13px;
+min-height:50px
+}
+
+/* fix to override default min-height in datatables.css */
+.dataTables_filter {
+margin-bottom:8px
+}
+
+.dataTables_info {
+margin-top:8px
+}
+
+#UserEditForm .input.text,#UserEditForm .input.date,#UserEditForm .input.checkbox {
+overflow:visible;
+height:auto
+}
+
+#patient-edit .input.checkbox {
+width:11.5em
+}
+
+/* added for consistency in IE7 */
+#patient-edit .input.checkbox input {
+float:right
+}
+
+/* added for consistency in IE7 */
+/* Needed to properly hide datepicker (none set in datepicker.css was being overriden by the theme css) */
+#ui-datepicker-div {
+display:none
+}
+
+/** Used for medications table in painTracker **/
+/* Mostly to leverage jquery autocomplete in our "look" */
+.med-edit {
+    position: relative
+}
+.med-edit select {
+    min-width: 60px;
+}
+.med-edit input.ui-autocomplete-input {
+    width: 50px;
+    height: 19px;
+    vertical-align: top;
+    font-size: 12px
+}
+.select-combo {
+    width: 26px;
+    background-image: url(../img/select-combo.jpg);
+    height: 23px;
+    display: inline-block;
+    
+}
+.select-combo:hover, .select-combo:active {
+    background-image: url(../img/select-combo-hover.jpg);
+}
+.ui-autocomplete li {
+    list-style: none;
+    font-size: 12px
+}
+select.select-100 {
+    min-width: 100px;
+}
+#UserMedicationsForm legend, #UserMedicationsForm label {
+   font-size: 13px
+}
+#UserMedicationsForm fieldset label {
+    padding-left: 6px
+}
+.form-error-message {
+    position: absolute;
+    left: 101%;
+    margin-left: 5px;
+    width: 200px;
+    color: red;
+    display: none
+}
+/* Used in PainTracker patient dashboard */
+.worst-pain { font-weight: bold }
+#header img.banner-logo-tight { margin: 0 0 -0.5em } /* tighter spacing for pt logo */
+
+/**** TO BE SORTED ***
+ tables */
+table.sorted,table#result-areas {
+font-family:arial;
+font-size:90%;
+background-color:#CDCDCD;
+margin:10px 0 15px;
+width:100%;
+text-align:left;
+border-color:#333;
+border-width:0 0 1px 1px;
+border-style:solid;
+border-collapse:collapse
+}
+
+table#result-areas th,table#result-areas td {
+background-color:#eee;
+border-color:#333;
+margin:0;
+padding:4px;
+border-width:1px 1px 0 0;
+border-style:solid
+}
+
+table.sorted thead tr th,table.sorted tfoot tr th {
+background-color:#ccc;
+border:1px solid #FFF;
+padding:4px
+}
+
+table.sorted thead tr .header {
+background-image:url(../images/table/bg.gif);
+background-repeat:no-repeat;
+background-position:center right;
+cursor:pointer
+}
+
+table.sorted tbody td {
+color:#3D3D3D;
+padding:4px;
+background-color:#FFF;
+vertical-align:top
+}
+
+table.sorted tbody tr.odd td {
+background-color:#F0F0F6
+}
+
+table.sorted thead tr .headerSortUp {
+background-image:url(../images/table/asc.gif)
+}
+
+table.sorted thead tr .headerSortDown {
+background-image:url(../images/table/desc.gif)
+}
+
+table.sorted thead tr .headerSortDown,table.sorted thead tr .headerSortUp {
+background-color:#777;
+color:#fff
+}
+
+/* prettyChecbox stuff moved from here to prettyCheckboxes.css 
+ jquery.validate stuff moved from here to jquery.validate.css */
+#AssociateRegisterFinishForm {
+position:relative
+}
+
+#create-associate {
+position:relative
+}
+
+/*label[for="data[User][email_confirm]"],label[for="data[User][email]"] {
+	float:left;
+	width:6em;
+}*/
+.input-container {
+position:relative;
+margin-bottom:.8em;
+display:block;
+clear:both
+}
+
+#about {
+padding:0 10px
+}
+
+.subscale p {
+margin-left:15px
+}
+
+#dates {
+    
+padding-top:0;
+position:relative
+}
+
+.button {
+background-color:#DDF;
+padding:10px 0;
+width:80%;
+border:2px solid #BBD;
+margin-left:auto;
+margin-right:auto;
+text-decoration:none
+}
+
+#journal-entries table {
+width:100%
+}
+
+#journal-entries table tr {
+width:100%
+}
+
+a.rounded,.rbutton {
+outline:none;
+border:none;
+text-decoration:none;
+cursor:pointer;
+white-space:nowrap;
+vertical-align:middle;
+display:inline-block;
+overflow:visible
+}
+
+.rbutton {
+color:#000;
+background-color:#acc;
+padding:5px 7px
+}
+
+.rbutton:hover {
+background-color:#cee
+}
+
+.rounded {
+padding:10px 15px;
+-webkit-border-radius:10px;
+-moz-border-radius:10px;
+border-radius:10px
+}
+
+.journal-entry {
+width:100%;
+border-bottom:solid black 1px
+}
+
+#journal-entries td {
+padding:0 0 0 1em;
+margin:0;
+border:0;
+border-spacing:0
+}
+
+td.journal-date {
+width:15%;
+border:0
+}
+
+td.journal-text {
+width:68%;
+border:0
+}
+
+ro.actions {
+width:15%;
+border:0
+}
+
+.highlightedrow {
+background-color:#ffffff
+}
+
+table#journal-entries {
+font-size:.9em;
+font-family:arial, sans;
+width:100%;
+padding:0;
+margin:0;
+position:relative
+}
+
+.navButton {
+float:right;
+border:1px solid #555;
+padding:0 1em;
+background-color:#999;
+color:#000;
+margin:0 5px
+}
+
+.teachingtip,.contentbox {
+background-color:#d9ebff
+}
+
+.aboutheaders {
+font-weight:bold
+}
+
+/**** Added by mark47 during JS upgrade - 201012 ***/
+.ui-widget {
+font-size:1em !important;
+font-family:Arial, Helvetica, sans-serif
+}
+
+.ut-tabs-nav,.ui-tabs-panel {
+font-size:95%
+}
+
+div#graph div#graph-line,div#graph div#graph-bar {
+padding:0 !important;
+margin-left:5px
+}
+
+/* updated to fix problem with graph labels overlapping graph due to new jquery tabs CSS */
+.ui-tabs .ui-tabs nav li a {
+padding:0.25em 1em
+}
+
+div#graph {
+padding:0;
+width:470px;
+float:left;
+margin-bottom:10px;
+height:400px
+}
+
+div.placeholder {
+margin:0;
+padding:0;
+width:440px;
+height:200px
+}
+
+.ui-tabs .ui-tabs-hide {
+position:absolute;
+left:-10000px
+}
+
+.sidebox {
+background-color:#FDEEA7;
+float:right
+}
+
+#infobox {
+background-color:#f2e8c2;
+border:#f1d676 1px solid;
+padding:10px;
+-webkit-border-radius:12px;
+-moz-border-radius:12px;
+border-radius:12px
+}
+
+#infobox:hover {
+background-color:#f1c62d
+}
+
+a#infobox {
+text-decoration:none
+}
+
+a#infobox:hover,a#infobox:active {
+color:#fff
+}
+
+.boxleft {
+float:left;
+margin:16px 12px 12px 0
+}
+
+.boxright {
+float:right;
+margin:16px 0 12px 12px
+}
+
+/**** End mark47 additions ****/
+
+#section-nav {
+    margin: 2em auto;
+    text-align: center
+}
+
+#section-nav a {
+    margin: 0 30px
+}
+.section-nav-next,a.section-nav-next:link,a.section-nav-next:visited {
+text-align:center;
+text-decoration:none;
+padding:0.75em;
+font-size:1.25em;
+font-weight: bold;
+color:#000
+}
+
+a.section-nav-next:hover,a.section-nav-next:active {
+color:#fff;
+background-color:#999;
+background-image:url(images/ui-bg_glass_50_999999_1x400.png);
+background-repeat:repeat-x
+}
+
+/* Testing rocketbar for fixed buttons */
+
+.floatnav {
+height:50px;
+width: 500px;
+margin-left: 230px;
+text-align: center;
+background-color: #F1F1F1;
+border:1px solid #97a7b0;
+color:#ccc;
+box-shadow: 0 0 7px rgba(0,0,0,0.4);
+	-webkit-box-shadow: 0 0 7px rgba(0,0,0,0.4);
+	-moz-box-shadow: 0 0 7px rgba(0,0,0,0.4);
+border-radius: .214em;
+	-webkit-border-radius: .214em;
+	-moz-border-radius: .214em;
+}
+
+.floatnav ul{
+ list-style-type:none;
+ margin: 0;
+ padding: 0
+}
+
+.floatnav ul li{
+ display: inline-block;
+ padding:8px;
+}
+
+.floatnav ul li a{
+ text-decoration:none;
+}
+
+.floating{
+position:fixed;
+bottom:0px;
+z-index:999;
+clear:both;
+float:left;
+border-bottom: 1px solid #F1F1F1;
+border-bottom-right-radius: 0;
+-webkit-border-bottom-right-radius: 0;
+-moz-border-bottom-right-radius: 0;
+border-bottom-left-radius: 0;
+-webkit-border-bottom-left-radius: 0;
+-moz-border-bottom-left-radius: 0;
+-webkit-transition:all .9s linear; /* Adds subtle highlighting effect with CSS3 */
+-moz-transition:all .9s linear;
+-o-transition:all .9s linear;
+transition:all .9s linear
+}
+
+.floating-menu{
+position:fixed;
+top:0px;
+-webkit-transition:all .9s linear; /* Adds subtle highlighting effect with CSS3 */
+-moz-transition:all .9s linear;
+-o-transition:all .9s linear;
+transition:all .9s linear
+}
+
+button {
+    line-height: 30px;
+	position: relative;
+	margin: 0;
+	padding: 0 1.5em;
+	font-size: 14px;
+	font-weight: bold;
+	font-family:Arial;
+	color: #1c4257;
+	text-shadow: 0 1px 1px #fff;
+	background: #a3cde3;
+	background: -webkit-gradient(linear, left top, left bottom, from(#b9e0f5), to(#85b2cb));
+	background: -moz-linear-gradient(top, #b9e0f5, #85b2cb);
+	border: 1px solid #759bb1;
+	border-top-color: #8ab0c6;
+	border-bottom-color: #587e93;
+	letter-spacing:-1px;
+	border-bottom-color: #949494;
+	border-radius: .214em;
+	-webkit-border-radius: .214em;
+	-moz-border-radius: .214em;
+	transition: all .2s ease-in-out;
+	-webkit-transition: all .2s ease-in-out;
+	-moz-transition: all .2s ease-in-out;
+	-o-transition: all .2s ease-in-out;
+	
+	         box-shadow: inset 0 1px 0 #fff;
+    		-webkit-box-shadow: inset 0 1px 0 #fff;
+    		-moz-box-shadow: inset 0 1px 0 #fff;
+    		-o-box-shadow: inset 0 1px 0 #fff;
+	       
+			
+	cursor: pointer;
+	}
+	button:hover,
+	button:focus {
+    	box-shadow: 0 0 7px #53a6d5;
+    		-webkit-box-shadow: 0 0 7px #53a6d5, inset 0 1px 0 #fff;
+    		-moz-box-shadow: 0 0 7px #53a6d5, inset 0 1px 0 #fff;
+    		-o-box-shadow: 0 0 7px #53a6d5, inset 0 1px 0 #fff;
+		}
+	button:active {
+		background: #8abcd7;
+		background: -webkit-gradient(linear, left top, left bottom, from(#81afc8), to(#b7def4));
+		background: -moz-linear-gradient(top, #81afc8, #b7def4);
+		border-color: #6e94a9;
+		border-top-color: #567c91;
+		border-bottom-color: #88aec4;
+
+		
+		box-shadow: inset 0 -1px 1px #fff;
+    		-webkit-box-shadow: inset 0 -1px 1px #fff;
+    		-moz-box-shadow: inset 0 -1px 1px #fff;
+    		-o-box-shadow: inset 0 -1px 1px #fff;
+		}
+button.selected {
+	color: #1c4257;
+	background: #a3cde3;
+	background: -webkit-gradient(linear, left top, left bottom, from(#b9e0f5), to(#85b2cb));
+	background: -moz-linear-gradient(top, #b9e0f5, #85b2cb);
+	border: 1px solid #759bb1;
+	border-top-color: #8ab0c6;
+	border-bottom-color: #587e93;
+		
+	}
+	button.selected:hover,
+	button.selected:focus {
+	box-shadow: 0 0 7px #53a6d5;
+	
+		
+		     box-shadow: 0 0 7px #53a6d5, inset 0 1px 0 #fff;
+    		-webkit-box-shadow: 0 0 7px #53a6d5, inset 0 1px 0 #fff;
+    		-moz-box-shadow: 0 0 7px #53a6d5, inset 0 1px 0 #fff;
+    		-o-box-shadow: 0 0 7px #53a6d5, inset 0 1px 0 #fff;
+			
+		}
+	button.selected:active {
+		background: #8abcd7;
+		background: -webkit-gradient(linear, left top, left bottom, from(#81afc8), to(#b7def4));
+		background: -moz-linear-gradient(top, #81afc8, #b7def4);
+		border-color: #6e94a9;
+		border-top-color: #567c91;
+		border-bottom-color: #88aec4;
+
+		
+		box-shadow: inset 0 -1px 1px #fff;
+    		-webkit-box-shadow: inset 0 -1px 1px #fff;
+    		-moz-box-shadow: inset 0 -1px 1px #fff;
+    		-o-box-shadow: inset 0 -1px 1px #fff;
+		
+		
+		}
+button.disabled,
+button.disabled:active {
+	color: #a7a7a7;
+	background: #efefef;
+	background: -webkit-gradient(linear, left top, left bottom, from(#f6f6f6), to(#e1e1e1));
+	background: -moz-linear-gradient(top, #f6f6f6, #e1e1e1);
+	border-color: #d4d4d4;
+	border-top-color: #dedede;
+	border-bottom-color: #c9c9c9;
+	cursor: default;
+	}
+	button.disabled:hover,
+	button.disabled:focus {
+		box-shadow: none;
+		-webkit-box-shadow: none;
+		-moz-box-shadow: none;
+		-o-box-shadow: none;
+		}
+        
+        button img {
+            vertical-align: middle
+        }
+/* Main areas for tabbed content when not using verticaltabs.js */
+#tab-content{overflow: auto; margin: 0px; padding: 20px; border: 1px solid #666666; -webkit-border-radius:10px; -moz-border-radius:10px; border-radius:10px; /*min-height: 660px*/ }
+#tab-content-control{overflow: auto; margin: 0px; padding: 20px; border: 1px solid #666666; -webkit-border-radius:10px; -moz-border-radius:10px; border-radius:10px; min-height: 460px }
+#video-container { overflow: auto; width: 400px; padding: 10px; background-color: #000; -webkit-border-radius:10px; -moz-border-radius:10px; border-radius:10px;} /* black background necessary for IE9 problem where video controls are transparent */
+.right-box { float: right; margin: 0 0 20px 20px }
+.center-box { margin: 20px auto }
+
+.speech-bubble:after {
+    border-color: #FFFFFF transparent;
+    border-style: solid;
+    border-width: 16px 16px 0;
+    bottom: -16px;
+    content: "";
+    display: block;
+    left: 44px;
+    position: absolute;
+    width: 0;
+}
+.speech-bubble:before {
+    border-color: #759BB1 transparent;
+    border-style: solid;
+    border-width: 20px 20px 0;
+    bottom: -20px;
+    content: "";
+    display: block;
+    left: 40px;
+    position: absolute;
+    width: 0;
+}
+.speech-bubble {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 3px solid #759BB1;
+    border-radius: 10px 10px 10px 10px;
+    color: #333333;
+    margin: 0 0 2em 1em;
+    padding: 10px;
+    position: relative;
+    display: inline-block
+}
+.speech-bubble-container { /*Needed for bubble in factors where it may overlap with video */
+    overflow: hidden
+}
+.speech-bubble-container .speech-bubble {
+    margin: 0 0 2em 0
+}
+.rounded-container {overflow: auto; margin: 0px 40px; padding: 20px; border: 1px solid #666666; -webkit-border-radius:10px; -moz-border-radius:10px; border-radius:10px }
+
+/*** Vertical tab container styles. Was previously a separate .css file ***/
+/* Container */
+.verticalslider {margin: 25px auto 0; overflow: auto }
+/* Tabs */
+.verticalslider_tabs, .verticalslider_tabs li{margin: 0px; padding: 0px;}
+.verticalslider_tabs {float: left; border: none; -webkit-border-radius:10px 0 0 10px; -moz-border-radius:10px 0 0 10px; border-radius:10px 0 0 10px; font-size: 0.9em; text-shadow: 0 1px 3px #999; margin-bottom: 20px }
+.verticalslider_tabs li{list-style-type: none; margin-left: 6px}
+.verticalslider_tabs a:link, .verticalslider_tabs a:visited{display: block; padding: 6px 10px; background-color: #FFC34C; color: #333333;  border-left: 1px solid #666666; border-bottom: 1px solid #666666; text-decoration: none;}
+.verticalslider_tabs a:hover, .verticalslider_tabs a:active{ background-color: #FFAA00}
+.verticalslider_tabs div:first-child { padding-top: 0px }
+.verticalslider_tabs li:first-child a {-webkit-border-top-left-radius:10px; -moz-border-radius-topleft:10px; border-top-left-radius:10px }
+.verticalslider_tabs li.tab-bottom a, .verticalslider_tabs li:last-child a { -webkit-border-bottom-left-radius:10px; -moz-border-radius-bottomleft:10px; border-bottom-left-radius:10px }
+.verticalslider_tabs .activeTab a {background: #ffffff; border-right: 1px solid #fffff; margin-right: -1px} /* border and margin added to connect activeTab with contents area */
+.verticalslider_tabs .activeTab a:hover, .verticalslider_tabs .activeTab a:active{background: #ffffff}
+.verticalslider .arrow {display: none; background: url(../img/verticaltabs/arrow.png); width: 27px; height: 60px; position: absolute; z-index: 1000; margin-left: 249px; margin-top: -55px; } /* display: none to hide for now */
+/* Contents */
+.verticalslider_contents{overflow: auto; margin: 0px; padding: 0px; border: 1px solid #666666; -webkit-border-radius:10px; -moz-border-radius:10px; border-radius:10px  }
+.verticalslider_contents li.tabContent{margin: 0px; padding: 20px 0;width: 500px; visibility: hidden;position: absolute;list-style-type: none; }
+.verticalslider_contents .contentContainer { padding: 0 20px }
+.verticalslider_contents li.activeContent{visibility: visible;}
+/* Creating group tab sets */
+.tab-top a { border-top: 1px solid #666; -webkit-border-top-left-radius:10px; -moz-border-radius-topleft:10px; border-top-left-radius:10px }
+.group-tab {background-color: #fff; font-weight: bold; padding: 16px 0 4px}
+.verticalslider_contents li.activeContent .video-container { display: block }
+
+/*** Disable tab elements - 201109 addition ***/
+/* Used for disabled links in P3P Intervention */
+.verticalslider_tabs div.disabled { color: #999999; cursor: default; text-shadow: none }
+a.disabled:link { color: #999999; cursor: default }
+.verticalslider_tabs a.disabled:link, .verticalslider_tabs a.disabled:visited, .verticalslider_tabs a.disabled:hover, .verticalslider_tabs a.disabled:active { text-shadow: none; color: #999999; cursor: default; background-color: #EDEDED; border-left-color: #999; border-bottom-color: #999 }
+.tab-top a.disabled { border-top-color: #999 }
+
+/* Used to keep content box in place when left tabs are fixed */
+.content-margin { margin-left: 261px }
+
+/* Used for notes on P3P intervention. Include page-note class as well as side/arrow class. Specify vertical position via margin-top inline. */
+.page-note { padding: 0; text-align: left; width: 166px; position: absolute; line-height: 1.3em; font-size: 0.8em; clear: both }
+.note-arrow-left-down { margin-left: -170px; background: url(../img/note-arrow-left-down-sm.png); background-position: right bottom; background-repeat: no-repeat; padding-bottom: 46px }
+.note-arrow-left-up { margin-left: -170px; background: url(../img/note-arrow-left-up-sm.png); background-position: right top; background-repeat: no-repeat; padding-top: 46px }
+.note-arrow-right-down { margin-left: 922px; background: url(../img/note-arrow-right-down-sm.png); background-position: left bottom; background-repeat: no-repeat; padding-bottom: 46px }
+.note-arrow-right-up { margin-left: 922px; background: url(../img/note-arrow-right-up-sm.png); background-position: left top; background-repeat: no-repeat; padding-top: 46px }
+/* -small- used when window size is below 1280px */
+.note-arrow-small-left-up { margin-left: -30px; background: url(../img/note-arrow-up-sm.png); background-position: center top; background-repeat: no-repeat; padding-top: 74px }
+.note-arrow-small-left-down { margin-left: -30px; background: url(../img/note-arrow-down-sm.png); background-position: center bottom; background-repeat: no-repeat; padding-bottom: 74px }
+.note-arrow-small-right-up { margin-left: 782px; background: url(../img/note-arrow-up-sm.png); background-position: center top; background-repeat: no-repeat; padding-top: 74px }
+.note-arrow-small-right-down { margin-left: 782px; background: url(../img/note-arrow-down-sm.png); background-position: center bottom; background-repeat: no-repeat; padding-bottom: 74px }
+.note-no-arrow-right { margin-left: 782px; background: url(../img/note-arrow-up-sm.png); background-position: center top; background-repeat: no-repeat }
+.note-arrow-left-up div, .note-arrow-left-down div, .note-arrow-small-left-down div, .note-arrow-small-left-up div { margin-right: 6px }
+.note-arrow-right-up div, .note-arrow-right-down div, .note-arrow-small-right-down div, .note-arrow-small-right-up div { margin-left: 6px }
+.page-note div { border: 1px solid #97A7B0; background-color: #F1F1F1; padding: 5px; -webkit-border-radius: .214em; -moz-border-radius: .214em; border-radius: .214em; box-shadow: 0 0 3px rgba(0,0,0,0.4);
+	-webkit-box-shadow: 0 0 3px rgba(0,0,0,0.4);
+	-moz-box-shadow: 0 0 3px rgba(0,0,0,0.4); } /* text goes here */
+
+.print-icon { height: 50px; margin-left: 10px }
+.print-icon img { padding: 0 10px }
+#priorities-box { padding: 20px; text-align: center }
+#priorities-box div.checkbox { margin-bottom: 10px }
+#priorities-box p, #priorities-box div { text-align: left }
+.page-break  { display:none }
+
+/* Use this to specify styles specifically for 1024px interface */
+/*@media screen and (max-device-width: 1024px) {
+  div.page-note-holder { display: none }
+}*/
+
+
+/*** Tables styles based on Bootstrap ***/
+.results-table {
+    max-width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-collapse: separate;
+    *border-collapse: collapsed;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+.results-table th, .results-table td {
+    line-height: 18px;
+    border-top: 1px solid #ddd;
+    padding: 4px 5px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 11px
+}
+.results-table td {
+    vertical-align: top;
+    text-align: left
+}
+.results-table th {
+    font-weight: bold;
+    vertical-align: bottom;
+    text-align: center;
+    background-color: #c7c7c7
+}
+.results-table thead:first-child tr th {
+    border-top: 0
+}
+.results-table tbody + tbody {
+    border-top: 2px solid #ddd
+}
+.results-table th + th,
+.results-table td + td,
+.results-table th + td,
+.results-table td + th {
+    border-left: 1px solid #ddd;
+}
+.results-table thead:first-child tr:first-child th, .results-table tbody:first-child tr:first-child th, .results-table tbody:first-child tr:first-child td {
+    border-top: 0;
+}
+.results-table thead:first-child tr:first-child th:first-child, .results-table tbody:first-child tr:first-child td:first-child {
+    -webkit-border-radius: 4px 0 0 0;
+    -moz-border-radius: 4px 0 0 0;
+    border-radius: 4px 0 0 0;
+}
+.results-table thead:first-child tr:first-child th:last-child, .results-table tbody:first-child tr:first-child td:last-child {
+    -webkit-border-radius: 0 4px 0 0;
+    -moz-border-radius: 0 4px 0 0;
+    border-radius: 0 4px 0 0;
+}
+.results-table thead:last-child tr:last-child th:first-child, .results-table tbody:last-child tr:last-child td:first-child {
+    -webkit-border-radius: 0 0 0 4px;
+    -moz-border-radius: 0 0 0 4px;
+    border-radius: 0 0 0 4px;
+}
+.results-table thead:last-child tr:last-child th:last-child, .results-table tbody:last-child tr:last-child td:last-child {
+    -webkit-border-radius: 0 0 4px 0;
+    -moz-border-radius: 0 0 4px 0;
+    border-radius: 0 0 4px 0;
+}
+.results-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+.results-table tbody tr:hover {
+    background-color: #ededed
+}
+.results-table td span { font-weight: bold; font-style: italic }
+
+/* Inline nav based on Bootstrap pill nav */
+.nav-pill { margin-left: 0px; margin-bottom: 18px; padding-left: 0px; list-style: none; clear: both; display: block }
+.nav-pill > li > a { display: block }
+.nav-pill::before, .nav-pill::after { 
+    display: table;
+    content: "";
+}
+.nav-pill::after { 
+    clear: both;
+}
+.nav-pill > li {
+    float: left;
+    list-style: none;
+    border-right: 1px solid #ccc
+}
+.nav-pill > li:last-child, li.list-intro {
+    border-right: none
+}
+.nav-pill > li > a, .nav-pill > li > div {
+    line-height: 14px;
+    margin: 0 3px;
+    padding: 6px 0;
+}
+.nav-pill > li > a {
+    padding: 6px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    line-height: 14px;
+}
+.nav-pill > li > a:hover {
+    background-color:#EEE
+}
+/* Allowing nav-pill to be disabled */
+.nav-pill > li.disabled {
+    color: #999999;
+    cursor: default;
+    padding: 6px;
+    line-height: 14px;
+}
+
+.yellow-warning {
+    background-color: #FCFFC5
+}
+.red-warning {
+    background-color: #FFD9D9;
+    font-weight: bold;
+    color: red
+}
+.bottom-logo {
+    float: right;
+    padding: 10px 0 20px
+}

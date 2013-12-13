@@ -1,0 +1,17 @@
+/*** Styles specific to IE8 (and older). called from layout ***/
+
+/* Hack to allow the font-awesome/bootstrap method for replacing default radio
+and checkbox inputs to display properly in IE8 */
+.q-container input[type="radio"], .q-container input[type="checkbox"] {  display: block; width: 1px; height: 1px; min-height: 1px; float: left; }
+
+/* Older - potentially can be removed */
+fieldset.scale,
+fieldset.scale fieldset.subscale,
+fieldset {position:relative;padding-top:2em; }
+fieldset.scale legend,
+legend,
+fieldset.subscale legend {top:-.7em;left:1em;position:absolute; }
+fieldset.subscale p.non-survey-intro { margin-top: 20px; }
+div#customize-chart fieldset { margin-top: 10px; }
+.main { overflow: visible }
+

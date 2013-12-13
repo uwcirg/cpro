@@ -1,0 +1,679 @@
+# LANGUAGE translation of CakePHP Application
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2012-11-07 13:59-0800\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: /controllers/users_controller.php:73
+msgid "Welcome, "
+msgstr ""
+
+#: /controllers/users_controller.php:209
+msgid "New password is the same as the old."
+msgstr ""
+
+#: /controllers/users_controller.php:211
+msgid "New password is too short."
+msgstr ""
+
+#: /controllers/users_controller.php:214
+msgid "New password does not contain enough different types of characters."
+msgstr ""
+
+#: /controllers/users_controller.php:217
+msgid "New password must contain a letter and a number."
+msgstr ""
+
+#: /controllers/users_controller.php:222
+msgid "Your passwords did not match."
+msgstr ""
+
+#: /controllers/users_controller.php:230
+msgid "Your password was successfully changed."
+msgstr ""
+
+#: /controllers/users_controller.php:240
+msgid "Sorry, your password was not successfully changed"
+msgstr ""
+
+#: /views/elements/intro_p3pmazzone.ctp:15
+msgid "You are logged in to P3P - your personal patient profile for prostate cancer. This site allows you to build a profile by answering questions, and then view personalized information about prostate cancer care options."
+msgstr ""
+
+#: /views/elements/intro_p3pmazzone.ctp:20
+msgid "Click the button below to build your P3P profile:"
+msgstr ""
+
+#: /views/elements/intro_p3pmazzone.ctp:31
+msgid "Build your P3P Profile"
+msgstr ""
+
+#: /views/elements/intro_p3pmazzone.ctp:47
+msgid "Click the button below to view your P3P profile:"
+msgstr ""
+
+#: /views/elements/intro_p3pmazzone.ctp:60
+msgid "Please talk with clinic staff about building and viewing your P3P"
+msgstr ""
+
+#: /views/elements/intro_p3pmazzone.ctp:75
+msgid "You are logged in as an administrator. Use the tabs above to view patient records, set appointments and access the data."
+msgstr ""
+
+#: /views/layouts/survey.ctp:80
+#: /views/users/help.ctp:11
+#: /views/users/help_p3pmazzone.ctp:15
+#: /views/users/help_paintracker.ctp:18
+#: /views/users/help_paintrackerrural.ctp:18
+#: /views/users/help_paintrackeruwmc.ctp:18
+msgid "Help"
+msgstr ""
+
+#: /views/p3p/control.ctp:62
+msgid "<i class='icon icon-ok icon-blue'></i> Decision Is Yours"
+msgstr ""
+
+#: /views/p3p/control.ctp:65
+msgid "<i class='icon icon-ok' style='display: none'></i> Decision Is Yours"
+msgstr ""
+
+#: /views/p3p/control.ctp:71
+msgid "<i class='icon icon-ok icon-blue'></i> Decision Is Shared"
+msgstr ""
+
+#: /views/p3p/control.ctp:74
+msgid "<i class='icon icon-ok' style='display: none'></i> Decision Is Shared"
+msgstr ""
+
+#: /views/p3p/control.ctp:80
+msgid "<i class='icon icon-ok icon-blue'></i> Decision Is Doctor's"
+msgstr ""
+
+#: /views/p3p/control.ctp:83
+msgid "<i class='icon icon-ok' style='display: none'></i> Decision Is Doctor's"
+msgstr ""
+
+#: /views/p3p/control.ctp:95
+msgid "My Role in Making a Decision"
+msgstr ""
+
+#: /views/p3p/control.ctp:96
+msgid "It may be helpful to tell your doctor how you prefer to make your decision about prostate cancer care."
+msgstr ""
+
+#: /views/p3p/control.ctp:97
+msgid "Based on what you told us earlier, your preferred role in making your prostate cancer care decision is shown below. You can also learn about other approaches by clicking on the left tabs to view other videos."
+msgstr ""
+
+#: /views/p3p/control.ctp:116
+msgid "Based on your answers, <strong>your preferred approach is</strong>:"
+msgstr ""
+
+#: /views/p3p/control.ctp:120
+msgid "\"I prefer to make the final treatment decision.\""
+msgstr ""
+
+#: /views/p3p/control.ctp:122
+msgid "\"I prefer to make the final treatment decision after seriously considering my doctor's opinion.\""
+msgstr ""
+
+#: /views/p3p/control.ctp:124
+msgid "Another approach to making a decision would be: \"I prefer to make the final treatment decision after serioiusly considering my doctor's opinion.\""
+msgstr ""
+
+#: /views/p3p/control.ctp:129
+msgid "\"I prefer that my doctor and I share responsibility for deciding which treatment is best.\""
+msgstr ""
+
+#: /views/p3p/control.ctp:131
+msgid "Another approach to making a decision would be: \"I prefer that my doctor and I share responsibility for deciding which treatment is best.\""
+msgstr ""
+
+#: /views/p3p/control.ctp:136
+msgid "\"I prefer that my doctor makes the final treament decision, but seriously considers my opinion.\""
+msgstr ""
+
+#: /views/p3p/control.ctp:138
+msgid "\"I prefer to leave all treatment decisions to my doctor.\""
+msgstr ""
+
+#: /views/p3p/control.ctp:140
+msgid "Another approach to making a decision would be: \"I prefer that my doctor makes the final treament decision, but seriously considers my opinion.\""
+msgstr ""
+
+#: /views/p3p/index.ctp:12
+msgid "View My P3P"
+msgstr ""
+
+#: /views/p3p/index.ctp:14
+msgid "The P3P program is now ready to give you information <strong>matched to your answers</strong>. You also will have a chance to see short videos about topics important to you. At the end, you can print out information to keep. Here is a list of the types of information you will be able to see on the screen."
+msgstr ""
+
+#: /views/p3p/index.ctp:18
+msgid "What might happen to your bladder, bowels, and ability to work and play."
+msgstr ""
+
+#: /views/p3p/index.ctp:21
+msgid "People who might influence your decision."
+msgstr ""
+
+#: /views/p3p/index.ctp:24
+msgid "Health conditions or symptoms you have right now."
+msgstr ""
+
+#: /views/p3p/index.ctp:27
+msgid "How to understand statistics."
+msgstr ""
+
+#: /views/p3p/index.ctp:30
+msgid "Taking part in the treatment decision."
+msgstr ""
+
+#: /views/p3p/index.ctp:33
+msgid "Other websites with prostate cancer information."
+msgstr ""
+
+#: /views/p3p/next_steps.ctp:117
+msgid "Read through the resources below to learn more about the next steps in making your decision. Use the Print button to print out all these tips so you can refer to them later."
+msgstr ""
+
+#: /views/p3p/next_steps.ctp:174
+msgid "<p><strong>We will now print your P3P resources.</strong><br />\n        Below are a few more topics that you may want to know about. Check any you want and then click \"Print Now\" below.</p>"
+msgstr ""
+
+#: /views/p3p/next_steps.ctp:177
+#: /views/p3p/priorities.ctp:41
+msgid " Home Care After Treatment (Information for your recovery time)"
+msgstr ""
+
+#: /views/p3p/next_steps.ctp:180
+#: /views/p3p/priorities.ctp:44
+msgid " Impact on Family (How your prostate cancer diagnosis affects your family)"
+msgstr ""
+
+#: /views/p3p/next_steps.ctp:183
+#: /views/p3p/priorities.ctp:47
+msgid " Family Risk (The risk of family members having prostate cancer)"
+msgstr ""
+
+#: /views/p3p/print_links.ctp:24
+msgid "This has been printed especially for "
+msgstr ""
+
+#: /views/p3p/print_links.ctp:29
+msgid "Read through the resources below to learn more about the next steps in making your decision on prostate cancer treatment."
+msgstr ""
+
+#: /views/p3p/priorities.ctp:17
+msgid "Information Priorities"
+msgstr ""
+
+#: /views/p3p/priorities.ctp:21
+msgid "Many men with prostate cancer have questions about the following topics:"
+msgstr ""
+
+#: /views/p3p/priorities.ctp:24
+msgid "Stage of disease (where your prostate cancer is)"
+msgstr ""
+
+#: /views/p3p/priorities.ctp:25
+msgid "Prognosis (factors that predict the chance of cure)"
+msgstr ""
+
+#: /views/p3p/priorities.ctp:26
+msgid "Treatment options - from watchful waiting to surgery to radiation or hormone therapy"
+msgstr ""
+
+#: /views/p3p/priorities.ctp:27
+msgid "Side effects of treatments"
+msgstr ""
+
+#: /views/p3p/priorities.ctp:28
+msgid "Sexual activity (possible changes)"
+msgstr ""
+
+#: /views/p3p/priorities.ctp:31
+msgid "This program will provide you with written printouts on these common topics."
+msgstr ""
+
+#: /views/p3p/priorities.ctp:33
+msgid "<strong>Get More Information</strong><br />In addition to those handouts, would you like to find out more about any of these topics:"
+msgstr ""
+
+#: /views/p3p/statistics.ctp:82
+msgid "Understanding statistics"
+msgstr ""
+
+#: /views/p3p/statistics.ctp:83
+msgid "While you think about care options, it is important to understand the numbers you will read and hear. Statistics from large numbers of men with prostate cancer can tell you <strong>how likely</strong> different outcomes are for you. But no one can know for certain exactly what will happen with you."
+msgstr ""
+
+#: /views/p3p/statistics.ctp:84
+msgid "You can ask your doctor to explain how the statistics you will read apply to you or men like you. You can also see examples below that explain how to read statistics about prostate cancer. Click the links on the left to view different examples."
+msgstr ""
+
+#: /views/surveys/complete.ctp:9
+msgid "Thank you"
+msgstr ""
+
+#: /views/surveys/complete.ctp:11
+msgid "Touch or click 'Complete' below to record your answers and finish your report."
+msgstr ""
+
+#: /views/surveys/complete.ctp:32;36
+msgid "Previous Page"
+msgstr ""
+
+#: /views/surveys/show.ctp:54
+msgid "Administering assessment for %s"
+msgstr ""
+
+#: /views/surveys/show.ctp:59
+msgid "Warning: this portion of the survey is no longer editable. Though you may view answers, they cannot be changed."
+msgstr ""
+
+#: /views/surveys/show.ctp:151
+msgid "results page"
+msgstr ""
+
+#: /views/surveys/show.ctp:154
+msgid "results for this question"
+msgstr ""
+
+#: /views/surveys/show.ctp:164
+msgid "Return to skipped questions page"
+msgstr ""
+
+#: /views/surveys/teaching_tips.ctp:21
+msgid "Next Page"
+msgstr ""
+
+#: /views/teaching/export.ctp:9
+msgid "Teaching Tips"
+msgstr ""
+
+#: /views/teaching/index.ctp:11
+msgid "Expand all tips?"
+msgstr ""
+
+#: /views/teaching/index.ctp:20
+msgid "Skip to a symptom"
+msgstr ""
+
+#: /views/teaching/manage_fatigue.ctp:9
+msgid "Manage My Fatigue"
+msgstr ""
+
+#: /views/teaching/manage_fatigue.ctp:41
+msgid "Studies have shown that a walking or low impact activity may help reduce the severity of fatigue you experience. To help you manage your fatigue, browse the tips below:"
+msgstr ""
+
+#: /views/teaching/manage_fatigue.ctp:46;56
+msgid "Activity Tips"
+msgstr ""
+
+#: /views/teaching/manage_fatigue.ctp:47;79
+msgid "Keeping an Activity Diary"
+msgstr ""
+
+#: /views/teaching/manage_fatigue.ctp:48;100
+msgid "Using the Pedometer"
+msgstr ""
+
+#: /views/teaching/manage_fatigue.ctp:49;117
+msgid "When Should I Call?"
+msgstr ""
+
+#: /views/teaching/manage_fatigue.ctp:59
+msgid "What activity should I consider?"
+msgstr ""
+
+#: /views/teaching/manage_fatigue.ctp:60
+msgid "When beginning any activity, is important that it is simple enough to fit into your lifestyle and that you enjoy the activity. Planning this out ahead of time will help you decide which activities to consider."
+msgstr ""
+
+#: /views/teaching/manage_fatigue.ctp:62
+msgid "How often should I do these low-impact activities?"
+msgstr ""
+
+#: /views/teaching/manage_fatigue.ctp:63
+msgid "Our goal is for you to participate by performing this activity during each week. We encourage you to walk or be active 30 minutes a day 3-5 times a week at a speed that you can tolerate."
+msgstr ""
+
+#: /views/teaching/manage_fatigue.ctp:65
+msgid "How do I follow-up about my activity?"
+msgstr ""
+
+#: /views/teaching/manage_fatigue.ctp:66
+msgid "We will be following up with you either in person at your clinic visit or on the telephone every two weeks about your activity and fatigue. Please have your daily diary available when we talk at those times so that we can review together how you are doing and how we can help you best remain active and manage your fatigue."
+msgstr ""
+
+#: /views/teaching/manage_fatigue.ctp:68;92;108
+#: /views/users/login.ctp:38
+msgid "Learn more"
+msgstr ""
+
+#: /views/teaching/manage_fatigue.ctp:70
+msgid "Get more detailed"
+msgstr ""
+
+#: /views/teaching/manage_fatigue.ctp:82
+msgid "Why do I keep a diary of my daily activities"
+msgstr ""
+
+#: /views/teaching/manage_fatigue.ctp:83
+msgid "Keeping a diary is a way to monitor your activity and how you feel regarding fatigue while doing activities on a daily basis."
+msgstr ""
+
+#: /views/teaching/manage_fatigue.ctp:85
+msgid "Where do I find my daily activity diary?"
+msgstr ""
+
+#: /views/teaching/manage_fatigue.ctp:86
+msgid "Click on the <a href=\"\">Activity Diary</a> tab that appears at the top of all the pages."
+msgstr ""
+
+#: /views/teaching/manage_fatigue.ctp:88
+msgid "How do I keep an activity diary?"
+msgstr ""
+
+#: /views/teaching/manage_fatigue.ctp:89
+msgid "You will be asked to keep track of the type of activity, number of minutes you were active, and number of steps that you take based on your pedometer and fatigue level. Also, there will be space for you to keep notes about any additional information you would like to record. We encourage you to record your activity daily using the online activity diary.  You may also record your activity on the paper diary daily if you prefer.  Please be sure to enter your daily activity into the online diary at least once a week."
+msgstr ""
+
+#: /views/teaching/manage_fatigue.ctp:93;109
+msgid "Get further "
+msgstr ""
+
+#: /views/teaching/manage_fatigue.ctp:94
+msgid "instructions on keeping an activity diary"
+msgstr ""
+
+#: /views/teaching/manage_fatigue.ctp:102
+msgid "What is a pedometer?"
+msgstr ""
+
+#: /views/teaching/manage_fatigue.ctp:103
+msgid "A pedometer is a small device that measures the number of steps that you take each day."
+msgstr ""
+
+#: /views/teaching/manage_fatigue.ctp:105
+msgid "How do I wear a pedometer?"
+msgstr ""
+
+#: /views/teaching/manage_fatigue.ctp:106
+msgid "Please start by wearing the pedometer each day while you are awake for one week and record the number of steps taken daily in the exercise journal.  Do not do anything to change your normal activity routine, this information will allow you to see how many steps you take daily before starting the intervention. Please bring the log with you when you meet with the research nurse to discuss your activity plan. Once you get started with your activity plan, please continue to wear your pedometer while you are awake and write down how many steps that you take each day."
+msgstr ""
+
+#: /views/teaching/manage_fatigue.ctp:110
+msgid "instructions on using your pedometer"
+msgstr ""
+
+#: /views/teaching/manage_fatigue.ctp:119
+msgid "Please report symptoms such as shortness of breath, chest discomfort or difficulty walking to your provider or nurse."
+msgstr ""
+
+#: /views/teaching/manage_fatigue.ctp:120
+msgid "If you have any questions or concerns please call the DFCI operator at 617-632-3352 to contact your provider"
+msgstr ""
+
+#: /views/users/about.ctp:12
+msgid "About DHAIR"
+msgstr ""
+
+#: /views/users/about.ctp:14
+msgid "DHAIR stands for Distributed Health Assessment and Intervention Research. Efforts in this area have led to the development of flexible web assessment/intervention platform that is unique in meeting the needs of both patients and researchers."
+msgstr ""
+
+#: /views/users/about.ctp:16
+msgid "To learn more about DHAIR, see"
+msgstr ""
+
+#: /views/users/about.ctp:16
+msgid "the DHAIR project website"
+msgstr ""
+
+#: /views/users/about.ctp:18
+#: /views/users/about_p3pmazzone.ctp:21
+#: /views/users/about_paintrackerrural.ctp:18
+#: /views/users/about_paintrackeruwmc.ctp:18
+#: /views/users/about_sme.ctp:17
+msgid "Project Team"
+msgstr ""
+
+#: /views/users/about.ctp:20
+#: /views/users/about_p3pmazzone.ctp:27
+#: /views/users/about_paintrackerrural.ctp:20
+#: /views/users/about_paintrackeruwmc.ctp:20
+#: /views/users/about_sme.ctp:23
+#: /views/users/contact.ctp:20
+msgid "University of Washington"
+msgstr ""
+
+#: /views/users/about_p3pmazzone.ctp:15
+msgid "About P3P"
+msgstr ""
+
+#: /views/users/about_p3pmazzone.ctp:17
+msgid "P3P is a web-based program that men can use to prepare for making a decision about how to manage a diagnosis of prostate cancer. A recent study showed that using P3P reduced the amount of decisional conflict experienced by men while making a decision. We are pleased to make this program available to you today."
+msgstr ""
+
+#: /views/users/about_p3pmazzone.ctp:19
+msgid "This newest version of P3P has been developed in collaboration between the Dana-Farber Cancer Institute in Boston and the Clinical Informatics Research Group at the University of Washington."
+msgstr ""
+
+#: /views/users/about_p3pmazzone.ctp:23
+msgid "Dana-Farber Cancer Institute"
+msgstr ""
+
+#: /views/users/about_paintrackerrural.ctp:12
+#: /views/users/about_paintrackeruwmc.ctp:12
+msgid "About cPRO"
+msgstr ""
+
+#: /views/users/about_paintrackerrural.ctp:14
+#: /views/users/about_paintrackeruwmc.ctp:14
+msgid "\"cPRO\" (http://cprohealth.org)  is an open-source \"computerized patient-reported outcome\" implementation. cPRO projects comprise a series of flexible web-based interactive health assessments and interventions, built on a common platform developed for funded research activities over the last decade. Efforts in this area have led to the development of a platform that is unique in meeting the needs of both patients and researchers. Dozens of cPRO systems have been deployed for use by clinical and research teams domestically and internationally."
+msgstr ""
+
+#: /views/users/about_paintrackerrural.ctp:16
+#: /views/users/about_paintrackeruwmc.ctp:16
+msgid "To learn more about cPRO, see"
+msgstr ""
+
+#: /views/users/about_paintrackerrural.ctp:16
+#: /views/users/about_paintrackeruwmc.ctp:16
+msgid "the cPRO project website"
+msgstr ""
+
+#: /views/users/about_sme.ctp:11
+msgid "About ESRA-C"
+msgstr ""
+
+#: /views/users/about_sme.ctp:13
+msgid "Electronic Self-Report Assessment for Cancer (ESRA-C) is a web-based program that patients can use to report health information to their care team and receive information on how to manage symptoms and side effects at home. A recent study showed that using ESRA-C helps patients and their doctors and nurses discuss symptoms and quality of life issues during clinic visits. We are pleased to make this program available to you today."
+msgstr ""
+
+#: /views/users/about_sme.ctp:15
+msgid "This newest version of ESRA-C, with a special section on cancer-related fatigue, has been developed for the Dana-Farber Cancer Institute in Boston with our team at the University of Washington."
+msgstr ""
+
+#: /views/users/change_password_of_authd_user.ctp:21
+msgid "Change password"
+msgstr ""
+
+#: /views/users/change_password_of_authd_user.ctp:26
+msgid "Your password must be at least"
+msgstr ""
+
+#: /views/users/change_password_of_authd_user.ctp:28
+msgid "characters long; it must contain"
+msgstr ""
+
+#: /views/users/change_password_of_authd_user.ctp:46
+msgid "Type your password again"
+msgstr ""
+
+#: /views/users/contact.ctp:11
+msgid "Contact"
+msgstr ""
+
+#: /views/users/contact.ctp:12
+msgid "Research Center"
+msgstr ""
+
+#: /views/users/contact.ctp:13
+msgid "For general questions please call our main research center:"
+msgstr ""
+
+#: /views/users/contact.ctp:15
+msgid "Phone:"
+msgstr ""
+
+#: /views/users/contact.ctp:17
+msgid "Email:"
+msgstr ""
+
+#: /views/users/contact.ctp:19
+msgid "Address:"
+msgstr ""
+
+#: /views/users/help.ctp:13
+#: /views/users/help_p3pmazzone.ctp:17
+#: /views/users/help_paintracker.ctp:20
+#: /views/users/help_paintrackerrural.ctp:20
+#: /views/users/help_paintrackeruwmc.ctp:20
+msgid "For help with the application, please contact"
+msgstr ""
+
+#: /views/users/help.ctp:17
+#: /views/users/help_p3pmazzone.ctp:21
+#: /views/users/help_paintracker.ctp:24
+#: /views/users/help_paintrackerrural.ctp:24
+#: /views/users/help_paintrackeruwmc.ctp:24
+msgid "Clinic"
+msgstr ""
+
+#: /views/users/help.ctp:17
+#: /views/users/help_p3pmazzone.ctp:21
+#: /views/users/help_paintracker.ctp:24
+#: /views/users/help_paintrackerrural.ctp:24
+#: /views/users/help_paintrackeruwmc.ctp:24
+msgid "Email"
+msgstr ""
+
+#: /views/users/help.ctp:17
+#: /views/users/help_p3pmazzone.ctp:21
+#: /views/users/help_paintracker.ctp:24
+#: /views/users/help_paintrackerrural.ctp:24
+#: /views/users/help_paintrackeruwmc.ctp:24
+msgid "Phone"
+msgstr ""
+
+#: /views/users/help.ctp:37
+#: /views/users/help_paintracker.ctp:44
+#: /views/users/help_paintrackerrural.ctp:44
+#: /views/users/help_paintrackeruwmc.ctp:44
+msgid "Change Password"
+msgstr ""
+
+#: /views/users/help.ctp:42
+#: /views/users/help_p3pmazzone.ctp:45
+#: /views/users/help_paintracker.ctp:49
+#: /views/users/help_paintrackerrural.ctp:49
+#: /views/users/help_paintrackeruwmc.ctp:49
+msgid "Compatible browsers and operating systems"
+msgstr ""
+
+#: /views/users/help.ctp:45
+#: /views/users/help_p3pmazzone.ctp:48
+#: /views/users/help_paintracker.ctp:52
+#: /views/users/help_paintrackerrural.ctp:52
+#: /views/users/help_paintrackeruwmc.ctp:52
+msgid "version 2 and above"
+msgstr ""
+
+#: /views/users/help.ctp:46
+#: /views/users/help_p3pmazzone.ctp:49
+#: /views/users/help_paintracker.ctp:53
+#: /views/users/help_paintrackerrural.ctp:53
+#: /views/users/help_paintrackeruwmc.ctp:53
+msgid "version 7 and above"
+msgstr ""
+
+#: /views/users/help.ctp:47;51
+#: /views/users/help_p3pmazzone.ctp:50;54
+#: /views/users/help_paintracker.ctp:54;58
+#: /views/users/help_paintrackerrural.ctp:54;58
+#: /views/users/help_paintrackeruwmc.ctp:54;58
+msgid "all versions"
+msgstr ""
+
+#: /views/users/help.ctp:49;50
+#: /views/users/help_p3pmazzone.ctp:52;53
+#: /views/users/help_paintracker.ctp:56;57
+#: /views/users/help_paintrackerrural.ctp:56;57
+#: /views/users/help_paintrackeruwmc.ctp:56;57
+msgid "version 3 and above"
+msgstr ""
+
+#: /views/users/help.ctp:53
+#: /views/users/help_p3pmazzone.ctp:56
+#: /views/users/help_paintracker.ctp:60
+#: /views/users/help_paintrackerrural.ctp:60
+#: /views/users/help_paintrackeruwmc.ctp:60
+msgid "Standard iPad web browser (Safari 5 and above)"
+msgstr ""
+
+#: /views/users/help_p3pmazzone.ctp:37
+msgid "Password"
+msgstr ""
+
+#: /views/users/help_p3pmazzone.ctp:40
+msgid "Change Your Password"
+msgstr ""
+
+#: /views/users/help_paintracker.ctp:11
+#: /views/users/help_paintrackerrural.ctp:11
+#: /views/users/help_paintrackeruwmc.ctp:11
+msgid "User Guide"
+msgstr ""
+
+#: /views/users/login.ctp:36
+msgid "Welcome to "
+msgstr ""
+
+#: /views/users/login.ctp:38
+msgid "about "
+msgstr ""
+
+#: /views/users/login.ctp:40
+msgid "Sign In"
+msgstr ""
+
+#: /views/users/login.ctp:53
+msgid "Login assistance"
+msgstr ""
+
+#: /views/users/must_be_logged_in.ctp:9
+msgid "You made it to the must be logged in page"
+msgstr ""
+
+#: /views/users/settings.ctp:26
+msgid "Use the \"Quick Links\" menu on the right to change your personal settings."
+msgstr ""
+
+#: /webroot/test.php:88
+msgid "Debug setting does not allow access to this url."
+msgstr ""
+
